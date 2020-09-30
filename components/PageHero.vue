@@ -14,7 +14,7 @@
           <img
             :src="image"
             :alt="heading"
-            class="w-full mt-10 content-center"
+            class="w-full feture-image mt-10 content-center"
           />
         </div>
       </div>
@@ -41,4 +41,8 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+.feture-image {
+  max-width: 400px;
+}
+</style>
