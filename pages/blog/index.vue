@@ -8,12 +8,12 @@
     <div class="section">
       <div class="container mx-auto">
         <div class="flex flex-row flex-wrap">
-          <div class="w-full px-5">
+          <div class="w-full">
             <div v-if="posts" class="flex flex-wrap">
               <post-card
                 v-for="(post, i) in posts"
                 :key="i"
-                class="md:w-1/3"
+                class="w-full md:w-1/3"
                 :post="post"
               />
             </div>

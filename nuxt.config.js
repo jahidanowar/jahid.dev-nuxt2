@@ -75,7 +75,7 @@ export default {
   apollo: {
     clientConfigs: {
       default: {
-        httpEndpoint: process.env.STRAPI_URL || 'http://localhost:1337/graphql'
+        httpEndpoint: process.env.STRAPI_URL || 'https://jahidadmin.herokuapp.com/graphql'
       }
     }
   },

@@ -11,7 +11,11 @@
           <p>{{ leading }}</p>
         </div>
         <div v-if="image" class="px-6">
-          <img :src="image" :alt="heading" class="featured-image" />
+          <img
+            :src="image"
+            :alt="heading"
+            class="w-full mt-10 content-center"
+          />
         </div>
       </div>
     </div>
@@ -37,9 +41,4 @@ export default {
 }
 </script>
 
-<style>
-.featured-image {
-  max-width: 400px;
-  margin: 0 auto;
-}
-</style>
+<style></style>
