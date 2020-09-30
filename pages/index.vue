@@ -34,7 +34,7 @@
         <img
           src="https://jahid.dev/wp-content/uploads/2020/04/jahid-anowar-1.png"
           alt="Jahid Anowar"
-          class="feature-image"
+          class="w-full feature-image"
         />
       </div>
     </div>
