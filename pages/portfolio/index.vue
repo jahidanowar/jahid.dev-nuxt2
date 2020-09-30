@@ -6,6 +6,7 @@
       image="/img/Portfolio-Full-Stack-Web-Development.png"
     ></page-hero>
     <div
+      v-if="portfolios"
       class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 my-10 px-6"
     >
       <portfolio-card
@@ -24,11 +25,6 @@ import PortfolioCard from '~/components/PortfolioCard'
 
 export default {
   components: { PageHero, PortfolioCard },
-  data() {
-    return {
-      portfolios: []
-    }
-  },
   /* eslint-disable */
   async asyncData(context) {
     let portfolios = await context.app.apolloProvider.defaultClient
