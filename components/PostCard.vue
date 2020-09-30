@@ -6,7 +6,7 @@
     >
       <img
         class="lg:h-48 md:h-36 w-full object-cover object-center"
-        :src="'http://localhost:1337' + post.Image[0].url"
+        :src="post.Image[0].url"
         :alt="post.Title"
       />
       <div class="p-6">

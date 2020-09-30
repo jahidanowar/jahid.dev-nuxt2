@@ -8,7 +8,7 @@
       <div class="rounded-lg relative w-full h-half overflow-hidden">
         <img
           v-if="post.Image"
-          :src="'http://localhost:1338' + post.Image[0].url"
+          :src="post.Image[0].url"
           :alt="post.Title"
           class="absolute w-full h-full content-center object-cover"
         />
