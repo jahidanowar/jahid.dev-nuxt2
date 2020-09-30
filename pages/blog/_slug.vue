@@ -49,13 +49,17 @@ export default {
       .then(({ data }) => {
         return data.posts
       })
+      .catch((e) => {
+        return posts
+        console.log(e)
+      })
     return {
       posts
     }
   },
   head() {
     return {
-      title: this.posts[0].Title
+      title: this.posts.length > 0 ? this.posts[0].Title : '404 Page Not Found'
     }
   }
 }
