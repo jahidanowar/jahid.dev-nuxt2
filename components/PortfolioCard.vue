@@ -12,9 +12,7 @@
       <p class="text-gray-600 text-sm mt-3">
         {{ portfolio.Description.substring(0, 100) + '...' }}
       </p>
-      <nuxt-link
-        :to="'/portfolio/' + portfolio.id"
-        class="mt-5 text-primary inline-flex items-center"
+      <nuxt-link to="/" class="mt-5 text-primary inline-flex items-center"
         >View Porject
         <svg
           class="w-4 h-4 ml-2"
