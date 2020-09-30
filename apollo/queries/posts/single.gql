@@ -1,0 +1,21 @@
+# Write your query or mutation here
+query Posts($slug: String!) {
+  posts(where: {slug: $slug}) {
+    id
+    updated_at
+    Title
+    slug
+    content
+    Image {
+      url
+    }
+    categories {
+      id
+      Name
+    }
+    comments {
+      Name
+      Content
+    }
+  }
+}

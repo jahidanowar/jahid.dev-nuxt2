@@ -1,0 +1,20 @@
+query Posts {
+  posts {
+    id
+    updated_at
+    slug
+    Title
+    content
+    Image {
+      url
+    }
+    categories {
+      id
+      Name
+    }
+    comments {
+      Name
+      Content
+    }
+  }
+}

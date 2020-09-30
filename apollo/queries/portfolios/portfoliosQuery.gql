@@ -1,0 +1,11 @@
+# Write your query or mutation here
+query {
+  portfolios {
+    id
+    Title
+    Description
+    Image {
+      url
+    }
+  }
+}
