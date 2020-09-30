@@ -9,7 +9,7 @@
       <div class="container mx-auto">
         <div class="flex flex-row flex-wrap">
           <div class="w-full px-5">
-            <div class="flex flex-wrap">
+            <div v-if="posts" class="flex flex-wrap">
               <post-card
                 v-for="(post, i) in posts"
                 :key="i"
@@ -36,17 +36,20 @@ import postsQuery from '~/apollo/queries/posts/postsQuery'
 
 export default {
   components: { PageHero, PostCard, Brands },
-  data() {
+  /* eslint-disable */
+  async asyncData(context) {
+    let posts = await context.app.apolloProvider.defaultClient
+      .query({
+        query: postsQuery
+      })
+      .then(({ data }) => {
+        return data.posts
+      })
     return {
-      posts: []
+      posts
     }
   },
-  apollo: {
-    posts: {
-      prefetch: true,
-      query: postsQuery
-    }
-  },
+  /* eslint-enable */
   head() {
     return {
       title: 'Website Design, WordPress and Digital Marketing Article',

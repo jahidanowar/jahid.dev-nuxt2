@@ -1,6 +1,9 @@
 <template>
   <div class="p-4">
-    <div class="h-full border-2 border-gray-200 rounded-lg overflow-hidden">
+    <div
+      v-if="post.Image.length > 0"
+      class="h-full border-2 border-gray-200 rounded-lg overflow-hidden"
+    >
       <img
         class="lg:h-48 md:h-36 w-full object-cover object-center"
         :src="'http://localhost:1337' + post.Image[0].url"

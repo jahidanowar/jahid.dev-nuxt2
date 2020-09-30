@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="posts">
     <article
       v-for="post in posts"
       :key="post.id"
@@ -39,14 +39,16 @@
 import single from '~/apollo/queries/posts/single'
 export default {
   async asyncData(context) {
-    let posts = await context.app.apolloProvider.defaultClient.query({
-      query: single,
-      variables:{
-        slug: context.params.slug
-      }
-    }).then(({data}) =>{
-      return data.posts
-    })
+    let posts = await context.app.apolloProvider.defaultClient
+      .query({
+        query: single,
+        variables: {
+          slug: context.params.slug
+        }
+      })
+      .then(({ data }) => {
+        return data.posts
+      })
     return {
       posts
     }
