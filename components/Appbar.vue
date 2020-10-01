@@ -5,7 +5,11 @@
     >
       <div class="flex items-center justify-between px-4 py-3 sm:p-0">
         <nuxt-link to="/">
-          <img class="h-10" src="/img/jahid-anowar-logo.svg" alt="Workcation" />
+          <img
+            class="h-10"
+            src="~/assets/img/jahid-anowar-logo.svg"
+            alt="Workcation"
+          />
         </nuxt-link>
         <div class="sm:hidden">
           <button

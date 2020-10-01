@@ -9,7 +9,7 @@
         <h2
           class="text-gray-900 text-4xl md:text-5xl font-medium leading-tight tracking-tight"
         >
-          Creatig Kickass website for businesses.<br />
+          Creating Kickass website for businesses.<br />
           <span class="text-primary">One at a Time.</span>
         </h2>
         <p class="leading-relaxed mt-6 sm:text-lg md:text-xl xl:text-lg">
@@ -32,7 +32,7 @@
       </div>
       <div class="w-full md:w-1/2 self-center align-bottom feature-image-box">
         <img
-          src="https://jahid.dev/wp-content/uploads/2020/04/jahid-anowar-1.png"
+          src="~/assets/img/jahid-anowar.png"
           alt="Jahid Anowar"
           class="w-full feature-image"
         />

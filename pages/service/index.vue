@@ -3,7 +3,7 @@
     <page-hero
       heading="How I bring value to your business."
       leading="Think of me as your remote Website Development and Marketing Agency. I help businesses connect with audiences, delivering greater brand engagement through designing engaging websites and web Apps."
-      image="/img/full-stack-development-services.png"
+      image="~/assets/img/full-stack-development-services.png"
     ></page-hero>
   </main>
 </template>

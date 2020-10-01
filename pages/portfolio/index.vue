@@ -3,7 +3,7 @@
     <page-hero
       heading="Few projects I have worked on so far."
       leading="Designed Website for Small and Medium Sized Business and did UI/UX enhancements to bring more customers to the business."
-      image="/img/Portfolio-Full-Stack-Web-Development.png"
+      image="~/assets/img/Portfolio-Full-Stack-Web-Development.png"
     ></page-hero>
     <div
       v-if="portfolios"

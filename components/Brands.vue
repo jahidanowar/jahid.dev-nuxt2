@@ -7,7 +7,11 @@
       {{ subheading }}
     </p>
     <div class="flex justify-center">
-      <img src="/img/clientele.png" alt="Work Experience" class="w-3/4" />
+      <img
+        src="~/assets/img/clientele.png"
+        alt="Work Experience"
+        class="w-3/4"
+      />
     </div>
   </div>
 </template>

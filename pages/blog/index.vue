@@ -3,7 +3,7 @@
     <page-hero
       heading="Website Design, WordPress and Digital Marketing Articles."
       leading="Get Website Design, Development , Digital Marketing and WordPress Related Articles, Tips , Web Hosting deals coupons and more."
-      image="/img/full-stack-blog.png"
+      image="~/assets/img/full-stack-blog.png"
     ></page-hero>
     <div class="section">
       <div class="container mx-auto">
