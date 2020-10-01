@@ -5,7 +5,16 @@
       :key="post.id"
       class="container mx-auto py-16 px-6"
     >
-      <div class="rounded-lg relative w-full h-half overflow-hidden">
+      <div class="text-center px-0 md:px-10">
+        <h1
+          class="text-gray-900 text-4xl md:text-6xl tracking-tight font-bold leading-tight"
+        >
+          {{ post.Title }}
+        </h1>
+      </div>
+      <div
+        class="rounded-lg shadow-lg relative w-full h-half overflow-hidden mt-5"
+      >
         <img
           v-if="post.Image"
           :src="post.Image[0].url"
@@ -13,17 +22,36 @@
           class="absolute w-full h-full content-center object-cover"
         />
       </div>
-      <div
-        class="-mt-16 bg-white shadow rounded-lg mx-5 md:mx-8 p-6 md:p-8 relative z-10"
-      >
-        <p class="text-sm font-semibold uppercase text-gray-500">
-          <span v-for="(category, i) in post.categories" :key="i">{{
-            category.Name + ' '
-          }}</span>
-        </p>
-        <h1 class="text-gray-900 text-3xl tracking-tight font-medium">
-          {{ post.Title }}
-        </h1>
+      <div class="mt-8 flex flex-wrap px-6">
+        <div class="w-full md:w-1/3 inline-flex items-center">
+          <img
+            src="https://secure.gravatar.com/avatar/06973051ae1000ce76854211a57b12f1?s=96&d=mm&r=g"
+            alt=""
+            class="rounded-full border"
+          />
+          <div class="ml-4">
+            <h4
+              class="text-xl font-medium"
+              itemprop="author"
+              itemtype="http://schema.org/Person"
+            >
+              Jahid Anowar
+            </h4>
+            <p>22 Jan 2020</p>
+            <p>5 Minutes Read</p>
+          </div>
+        </div>
+        <div
+          class="w-full md:w-2/3 mt-4 md:mt-0 inline-flex items-center justify-end"
+        >
+          <p class="font-medium">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s
+          </p>
+        </div>
+      </div>
+      <div class="p-6 md:p-8">
         <div
           v-if="post.content"
           class="mt-5 content"
@@ -68,6 +96,6 @@ export default {
 
 <style>
 .h-half {
-  height: 50vh;
+  height: 60vh;
 }
 </style>
