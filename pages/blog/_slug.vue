@@ -99,6 +99,10 @@ export default {
 </script>
 
 <style>
+:not(pre) > code[class*='language-'],
+pre[class*='language-'] {
+  background: #1a202c !important;
+}
 .h-half {
   height: 60vh;
 }
