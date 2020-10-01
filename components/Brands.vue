@@ -10,7 +10,12 @@
       <img
         src="~/assets/img/clientele.png"
         alt="Work Experience"
-        class="w-3/4"
+        class="w-3/4 hidden md:block"
+      />
+      <img
+        src="~/assets/img/clientele-mobile.png"
+        alt="Work Experience"
+        class="w-3/4 block md:hidden"
       />
     </div>
   </div>

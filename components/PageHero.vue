@@ -44,5 +44,6 @@ export default {
 <style>
 .feture-image {
   max-width: 400px;
+  max-height: 343px;
 }
 </style>

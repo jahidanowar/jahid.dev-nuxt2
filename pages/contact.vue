@@ -3,7 +3,7 @@
     <page-hero
       heading="Hello! I'm glad that you're here!"
       leading="You have an idea in your mind and looking for execution with pixel perfect designs. Let’s build your idea and give your brand an exposure."
-      image="~/assets/img/contact-jahid.png"
+      :image="require('~/assets/img/contact-jahid.png')"
     ></page-hero>
     <div class="section">
       <div class="container mx-auto">
