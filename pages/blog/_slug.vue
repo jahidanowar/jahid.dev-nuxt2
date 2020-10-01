@@ -65,6 +65,7 @@
 <script>
 /* eslint-disable */
 import single from '~/apollo/queries/posts/single'
+import Prism from '~/plugins/prism'
 export default {
   async asyncData(context) {
     let posts = await context.app.apolloProvider.defaultClient
@@ -89,6 +90,9 @@ export default {
     return {
       title: this.posts.length > 0 ? this.posts[0].Title : '404 Page Not Found'
     }
+  },
+  mounted() {
+    Prism.highlightAll()
   }
 }
 /* eslint-enable */
