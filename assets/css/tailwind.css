@@ -56,7 +56,10 @@ nav .nuxt-link-active {
 .content > h1,
 h2,
 h3 {
-  @apply font-medium text-gray-900 mt-3 mb-1;
+  @apply font-medium;
+  @apply text-gray-900;
+  @apply mt-3;
+  @apply mb-1;
 }
 
 .content > h1 {
@@ -78,11 +81,7 @@ h3 {
 }
 
 .content > pre {
-  @apply bg-gray-900;
-  @apply text-gray-100;
-  @apply p-5;
   @apply rounded-lg;
-  @apply font-mono;
   overflow: auto;
   scrollbar-width: none;
 }
