@@ -22,7 +22,7 @@
           class="absolute w-full h-full content-center object-cover"
         />
       </div>
-      <div class="mt-8 flex flex-wrap px-6">
+      <div class="mt-8 flex flex-wrap px-0 md:px-6">
         <div class="w-full md:w-1/3 inline-flex items-center">
           <img
             src="https://secure.gravatar.com/avatar/06973051ae1000ce76854211a57b12f1?s=96&d=mm&r=g"
@@ -51,7 +51,7 @@
           </p>
         </div>
       </div>
-      <div class="p-6 md:p-8">
+      <div class="py-6 px-0 md:py-8 md:px-8">
         <div
           v-if="post.content"
           class="mt-5 content"
