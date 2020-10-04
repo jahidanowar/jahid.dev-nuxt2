@@ -80,7 +80,7 @@ export default {
   apollo: {
     clientConfigs: {
       default: {
-        httpEndpoint: process.env.STRAPI_URL || 'http://localhost:1338/graphql'
+        httpEndpoint: process.env.STRAPI_URL || 'http://localhost:1337/graphql'
       }
     }
   },

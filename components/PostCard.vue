@@ -1,10 +1,8 @@
 <template>
   <div class="p-4">
-    <div
-      v-if="post.Image.length > 0"
-      class="h-full border-2 border-gray-200 rounded-lg overflow-hidden"
-    >
+    <div class="h-full border-2 border-gray-200 rounded-lg overflow-hidden">
       <img
+        v-if="post.Image.length > 0"
         class="lg:h-48 md:h-36 w-full object-cover object-center"
         :src="post.Image[0].url"
         :alt="post.Title"
