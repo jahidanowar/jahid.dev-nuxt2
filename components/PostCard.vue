@@ -42,7 +42,7 @@
             </svg>
           </nuxt-link>
           <span
-            class="text-gray-600 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-300"
+            class="text-gray-600 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-gray-300"
           >
             <svg
               class="w-6 h-6"
