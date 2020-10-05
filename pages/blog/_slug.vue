@@ -37,8 +37,8 @@
             >
               Jahid Anowar
             </h4>
-            <p>22 Jan 2020</p>
-            <p>5 Minutes Read</p>
+            <p>{{ post.updated_at | formatDate }}</p>
+            <p>{{ readTime }} Minutes Read</p>
           </div>
         </div>
         <div
@@ -93,6 +93,16 @@ export default {
   },
   mounted() {
     Prism.highlightAll()
+  },
+  computed: {
+    readTime() {
+      let minutes = 0
+      const contentString = JSON.stringify(this.posts[0].content)
+      const words = contentString.split(' ').length
+      const wordsPerMinute = 200
+      minutes = Math.ceil(words / wordsPerMinute)
+      return minutes
+    }
   }
 }
 /* eslint-enable */

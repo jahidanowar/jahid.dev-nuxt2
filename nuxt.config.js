@@ -44,7 +44,8 @@ export default {
    ** https://nuxtjs.org/guide/plugins
    */
   plugins: [
-    '~/plugins/prism'
+    '~/plugins/prism',
+    '~/plugins/filters'
   ],
   /*
    ** Auto import components
