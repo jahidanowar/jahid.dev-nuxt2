@@ -2,9 +2,9 @@
   <div class="p-4">
     <div class="h-full border-2 border-gray-200 rounded-lg overflow-hidden">
       <img
-        v-if="post.Image.length > 0"
+        v-if="post.Image"
         class="lg:h-48 md:h-36 w-full object-cover object-center"
-        :src="post.Image[0].url"
+        :src="post.Image.url"
         :alt="post.Title"
       />
       <div class="p-6">

@@ -17,7 +17,7 @@
       >
         <img
           v-if="post.Image"
-          :src="post.Image[0].url"
+          :src="post.Image.url"
           :alt="post.Title"
           class="absolute w-full h-full content-center object-cover"
         />

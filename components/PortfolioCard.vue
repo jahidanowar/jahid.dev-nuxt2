@@ -2,7 +2,7 @@
   <div class="rounded-lg shadow-lg overflow-hidden border bg-white">
     <div class="relative h-64">
       <img
-        :src="portfolio.Image[0].url"
+        :src="portfolio.Image.url"
         :alt="portfolio.Title"
         class="absolute w-full h-full object-cover"
       />
