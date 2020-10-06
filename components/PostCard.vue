@@ -12,7 +12,7 @@
           class="tracking-widest text-xs title-font font-medium text-gray-500 mb-1"
         >
           <p class="uppercase text-xs">
-            <span class="inline-flex pr-2 border-r-2 border-gray-400s"
+            <span class="inline-flex pr-2"
               ><svg
                 class="w-4 h-4 mr-2"
                 fill="none"
@@ -28,7 +28,7 @@
                 ></path></svg
               >{{ post.updated_at | formatDate }}</span
             >
-            <span class="inline-flex pl-2">
+            <span class="inline-flex">
               <svg
                 class="w-4 h-4 mr-2"
                 fill="none"
