@@ -13,7 +13,7 @@
         </h1>
       </div>
       <div
-        class="rounded-lg shadow-lg relative w-full h-half overflow-hidden mt-5"
+        class="rounded-lg shadow-lg relative w-full h-half overflow-hidden mt-5 md:mt-10"
       >
         <img
           v-if="post.Image"
