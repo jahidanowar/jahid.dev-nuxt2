@@ -14,7 +14,8 @@
         </p>
         <div class="flex mt-3">
           <a
-            href="https://facebook.com"
+            href="https://www.linkedin.com/in/jahidanowar/"
+            target="_blank"
             class="p-3 bg-gray-900 hover:bg-primary text-white rounded-full"
             ><svg
               viewBox="0 0 24 24"
@@ -27,7 +28,7 @@
               /></svg
           ></a>
           <a
-            href="https://facebook.com"
+            href="https://facebook.com/jahid500k"
             class="p-3 bg-gray-900 hover:bg-primary text-white rounded-full ml-2"
             ><svg
               viewBox="0 0 24 24"
@@ -41,7 +42,7 @@
               /></svg
           ></a>
           <a
-            href="https://facebook.com"
+            href="https://www.instagram.com/jahid20k/"
             class="p-3 bg-gray-900 hover:bg-primary text-white rounded-full ml-2"
             ><svg
               viewBox="0 0 24 24"
@@ -54,7 +55,7 @@
               /></svg
           ></a>
           <a
-            href="https://facebook.com"
+            href="https://www.youtube.com/channel/UCeLvns7Gwo_aq18-GKT-yww"
             class="p-3 bg-gray-900 hover:bg-primary text-white rounded-full ml-2"
             ><svg
               viewBox="0 0 24 24"

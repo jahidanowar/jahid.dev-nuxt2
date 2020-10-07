@@ -1,5 +1,12 @@
 <template>
-  <form action="" class="text-center flex flex-col w-full">
+  <form
+    name="contact"
+    method="POST"
+    data-netlify="true"
+    data-netlify-honeypot="bot-field"
+    action="/thankyou"
+    class="text-center flex flex-col w-full"
+  >
     <div class="flex flex-col md:flex-row gap-2">
       <div class="w-full">
         <input
@@ -25,6 +32,10 @@
           class="block bg-white shadow-sm rounded border border-gray-400 focus:outline-none focus:border-primary text-base px-4 py-2 appearance-none w-full"
         >
           <option value="0" class="text-gray-400">Interested In</option>
+          <option value="Projects" class="text-gray-400">Projects</option>
+          <option value="Inquiry" class="text-gray-400">Inquiry</option>
+          <option value="Connect" class="text-gray-400">Connect</option>
+          <option value="Other" class="text-gray-400">Other</option>
         </select>
         <div
           class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
@@ -40,7 +51,7 @@
           </svg>
         </div>
       </div>
-      <div class="relative w-full mb-4">
+      <!-- <div class="relative w-full mb-4">
         <select
           name="budgetRange"
           class="block bg-white shadow-sm rounded border border-gray-400 focus:outline-none focus:border-primary text-base px-4 py-2 appearance-none w-full"
@@ -60,14 +71,17 @@
             />
           </svg>
         </div>
-      </div>
+      </div> -->
     </div>
     <textarea
       name="description"
       class="bg-white shadow-sm rounded border border-gray-400 focus:outline-none focus:border-primary text-base px-4 py-2 mb-4 h-32"
       placeholder="Description"
     ></textarea>
-    <button class="btn block w-full bg-primary hover:bg-secondary text-white">
+    <button
+      class="btn block w-full bg-primary hover:bg-secondary text-white"
+      type="submit"
+    >
       Submit
     </button>
   </form>
