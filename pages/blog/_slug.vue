@@ -116,4 +116,10 @@ pre[class*='language-'] {
 .h-half {
   height: 60vh;
 }
+.content img {
+  width: 100%;
+  border-radius: 0.5rem;
+  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+}
 </style>

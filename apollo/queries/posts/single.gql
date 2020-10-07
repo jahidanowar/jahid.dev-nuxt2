@@ -13,9 +13,9 @@ query Posts($slug: String!) {
       id
       Name
     }
-    comments {
-      Name
-      Content
+    created_by{
+      firstname
+      lastname
     }
   }
 }
