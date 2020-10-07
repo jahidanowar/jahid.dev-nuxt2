@@ -138,7 +138,7 @@ table {
   border-collapse: collapse;
   border-radius: 0.5rem;
   overflow: hidden;
-  margin: 3rem 0;
+  margin: 2rem 0;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 }
 thead {
