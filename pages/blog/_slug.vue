@@ -4,6 +4,7 @@
       v-for="post in posts"
       :key="post.id"
       class="container mx-auto py-16 px-6"
+      itemtype="https://schema.org/CreativeWork"
     >
       <div class="text-center px-0 md:px-10">
         <h1
@@ -12,14 +13,12 @@
           {{ post.Title }}
         </h1>
       </div>
-      <div
-        class="rounded-lg shadow-lg relative w-full h-half overflow-hidden mt-5 md:mt-10"
-      >
+      <div class="mt-5 md:mt-10">
         <img
           v-if="post.Image"
           :src="post.Image.url"
           :alt="post.Title"
-          class="absolute w-full h-full content-center object-cover"
+          class="rounded-lg shadow-lg w-full content-center object-cover"
         />
       </div>
       <div class="mt-8 flex flex-wrap px-0 md:px-6">
@@ -37,7 +36,14 @@
             >
               {{ post.created_by.firstname + ' ' + post.created_by.lastname }}
             </h4>
-            <p>{{ post.updated_at | formatDate }}</p>
+            <p>
+              <time
+                class="entry-date published"
+                :datetime="post.updated_at"
+                itemprop="datePublished"
+                >{{ post.updated_at | formatDate }}</time
+              >
+            </p>
             <p>{{ readTime }} Minutes Read</p>
           </div>
         </div>
@@ -110,9 +116,6 @@ export default {
 :not(pre) > code[class*='language-'],
 pre[class*='language-'] {
   background: #1a202c !important;
-}
-.h-half {
-  height: 60vh;
 }
 .content img {
   width: 100%;
