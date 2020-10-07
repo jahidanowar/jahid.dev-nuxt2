@@ -1,5 +1,5 @@
 query Posts {
-  posts(where: {_sort: "id:desc", _limit: 9}) {
+  posts(where: {_sort: "created_at:desc", _limit: 9}) {
     id
     updated_at
     slug
