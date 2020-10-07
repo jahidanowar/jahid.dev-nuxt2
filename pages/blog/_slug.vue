@@ -133,11 +133,33 @@ ul {
   margin: revert;
   padding: revert;
 }
-.content > table {
+table {
+  max-width: 750px;
   border-collapse: collapse;
-  border-spacing: 0;
-  width: 100%;
-  margin: 0 0 1rem;
-  table-layout: fixed;
+  margin: 50px auto;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+thead {
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+tbody {
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+/* Zebra striping */
+tr:nth-of-type(odd) {
+  background: #edf2f7;
+}
+
+th {
+  background: #4dc0b5;
+  color: white;
+  font-weight: bold;
+}
+
+td,
+th {
+  padding: 10px;
+  text-align: left;
 }
 </style>
