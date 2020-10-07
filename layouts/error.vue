@@ -1,16 +1,22 @@
 <template>
   <div class="section error">
     <div class="container mx-auto flex flex-wrap flex-col items-center">
-      <h1
-        v-if="error.statusCode === 404"
-        class="text-4xl text-center font-bold"
-      >
-        Page not found
-      </h1>
-      <h1 v-else>An error occured</h1>
+      <div v-if="error.statusCode === 404" class="">
+        <img
+          src="https://res.cloudinary.com/jahiddev/image/upload/v1602058256/404_kaloxm.png"
+          alt="404 Not Found"
+          style="max-width: 100%"
+          class="content-center"
+        />
+        <h1 class="text-3xl text-center font-medium mt-5">Page not found</h1>
+      </div>
+      <div v-else>
+        <h1 class="text-3xl text-center font-medium">An error occured</h1>
+      </div>
+
       <nuxt-link
         to="/"
-        class="btn bg-primary hover:bg-secondary text-white text-center mt-5 w-1/4"
+        class="btn bg-primary hover:bg-secondary text-white text-center mt-5 md:w-1/4"
         >Go to Home Page</nuxt-link
       >
     </div>
