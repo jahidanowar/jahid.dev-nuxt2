@@ -134,11 +134,12 @@ ul {
   padding: revert;
 }
 table {
-  max-width: 750px;
+  width: 100%;
   border-collapse: collapse;
-  margin: 50px auto;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin: 3rem 0;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 }
 thead {
   border-radius: 0.5rem 0.5rem 0 0;
