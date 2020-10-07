@@ -92,7 +92,7 @@ export default {
   created() {
     setTimeout(() => {
       this.showGif = false
-    }, 3000)
+    }, 500)
   },
   head() {
     return {
