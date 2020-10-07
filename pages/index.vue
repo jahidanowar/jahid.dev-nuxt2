@@ -190,7 +190,12 @@
           in!
         </p>
         <div class="flex flex-wrap -m-4 mt-8">
-          <testimonial-card v-for="i in 3" :key="i" class="w-full md:w-1/3" />
+          <testimonial-card
+            v-for="(testimonial, i) in testimonials"
+            :key="i"
+            :testimonial="testimonial"
+            class="w-full md:w-1/3"
+          />
         </div>
       </div>
     </div>
@@ -226,6 +231,36 @@ export default {
     TestimonialCard,
     ContactForm,
     Brands
+  },
+  data() {
+    return {
+      testimonials: [
+        {
+          review:
+            'Jahid took time to understand the requirements and finished before the deadline set. His task was to create a multi-lingual landing page with automatic language change based on location, and he did it successfully in a timely manner',
+          name: 'Hasan Alkhater',
+          job: 'Co-Founder & COO, MacQueen',
+          avatar:
+            'https://res.cloudinary.com/jahiddev/image/upload/v1602061416/hasan-alkhater_u4yk5x.jpg'
+        },
+        {
+          review:
+            'Jahid understands the requirements quite well, and implementation is praiseworthy .. He puts in his mind and gives real good practical suggestions. Would surely work on more projects with him in future.. Recommend that one should try out his work.. I believe you would like his work.',
+          name: 'Jaideep Hinduja',
+          job: 'Director, Simext Technologies',
+          avatar:
+            'https://res.cloudinary.com/jahiddev/image/upload/v1602061416/Jaideep-Hinduja_ism2bb.jpg'
+        },
+        {
+          review:
+            "I really like working with Jahid. He has a lot of experience with WordPress, is friendly and doesn't stop working until you are completely satisfied with the result.",
+          name: 'Duelen',
+          job: 'Entrepreneur & Digital Marketer',
+          avatar:
+            'https://res.cloudinary.com/jahiddev/image/upload/v1602061416/Duelen_qc99of.jpg'
+        }
+      ]
+    }
   },
   /* eslint-disable */
   async asyncData(context) {
