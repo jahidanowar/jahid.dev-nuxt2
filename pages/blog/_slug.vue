@@ -123,4 +123,21 @@ pre[class*='language-'] {
   box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.1);
   margin: 2rem auto;
 }
+.content > ol,
+ul {
+  list-style: disc;
+}
+.content > fieldset,
+ol,
+ul {
+  margin: revert;
+  padding: revert;
+}
+.content > table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  margin: 0 0 1rem;
+  table-layout: fixed;
+}
 </style>
