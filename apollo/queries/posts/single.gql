@@ -17,5 +17,6 @@ query Posts($slug: String!) {
       firstname
       lastname
     }
+    Summary
   }
 }

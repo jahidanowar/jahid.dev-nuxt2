@@ -20,9 +20,6 @@
           </div>
           <!-- <div class="w-full md:w-1/4">SIdebar</div> -->
         </div>
-        <div class="brands-experience mt-16">
-          <brands heading="Trusted by Brands" />
-        </div>
       </div>
     </div>
   </main>
@@ -31,11 +28,10 @@
 <script>
 import PageHero from '~/components/PageHero'
 import PostCard from '~/components/PostCard'
-import Brands from '~/components/Brands'
 import postsQuery from '~/apollo/queries/posts/postsQuery'
 
 export default {
-  components: { PageHero, PostCard, Brands },
+  components: { PageHero, PostCard },
   /* eslint-disable */
   async asyncData(context) {
     let posts = await context.app.apolloProvider.defaultClient

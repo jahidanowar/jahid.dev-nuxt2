@@ -35,7 +35,7 @@
               itemprop="author"
               itemtype="http://schema.org/Person"
             >
-              Jahid Anowar
+              {{ post.created_by.firstname + ' ' + post.created_by.lastname }}
             </h4>
             <p>{{ post.updated_at | formatDate }}</p>
             <p>{{ readTime }} Minutes Read</p>
@@ -45,9 +45,7 @@
           class="w-full md:w-2/3 mt-4 md:mt-0 inline-flex items-center justify-end"
         >
           <p class="font-medium">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s
+            {{ post.Summary }}
           </p>
         </div>
       </div>

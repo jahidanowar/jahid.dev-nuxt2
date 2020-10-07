@@ -1,20 +1,16 @@
 <template>
-  <div class="shadow-xl border rounded py-16 px-20">
-    <div class="flex flex-wrap align-middle">
-      <div class="w-full md:w-1/2">
-        <h2 class="text-4xl font-medium">Let's work together!</h2>
-        <p>
-          You have an idea in your mind and looking for execution with pixel
-          perfect designs. Let’s build your idea and give your brand an
-          exposure.
+  <div class="">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="lg:w-2/3 items-center mx-auto text-center">
+        <h1 class="text-3xl font-medium title-font text-gray-900 mb-3">
+          Let's start something amazing together!
+        </h1>
+        <p class="mb-8">
+          Tell us about your project or an idea, I would love to hear that.
         </p>
-      </div>
-      <div
-        class="w-full md:w-1/2 self-center text-center md:text-right mt-5 md:mt-0"
-      >
         <nuxt-link
           to="/contact"
-          class="btn bg-primary hover:bg-secondary text-white w-full"
+          class="btn bg-primary hover:bg-secondary text-white"
           >Contact Me</nuxt-link
         >
       </div>
