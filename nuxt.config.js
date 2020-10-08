@@ -19,21 +19,20 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || '',
-      },
+        content: process.env.npm_package_description || ''
+      }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      {rel: 'stylesheet', href: 'https://rsms.me/inter/inter.css'},
-    ],
+      { rel: 'stylesheet', href: 'https://rsms.me/inter/inter.css' }
+    ]
   },
   /*
-  ** Loading Progress Bar
-  */
-  loading:{
+   ** Loading Progress Bar
+   */
+  loading: {
     color: '#4DC0B5',
-    height: '5px',
-
+    height: '5px'
   },
   /*
    ** Global CSS
@@ -43,10 +42,7 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: [
-    '~/plugins/prism',
-    '~/plugins/filters'
-  ],
+  plugins: ['~/plugins/prism', '~/plugins/filters'],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components
@@ -59,7 +55,7 @@ export default {
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
-    '@nuxtjs/tailwindcss',
+    '@nuxtjs/tailwindcss'
   ],
   /*
    ** Nuxt.js modules
@@ -76,8 +72,8 @@ export default {
    */
   axios: {},
   /*
-  * Apollo module configuration
-  */
+   * Apollo module configuration
+   */
   apollo: {
     clientConfigs: {
       default: {
@@ -86,19 +82,22 @@ export default {
     }
   },
   /*
-  * Markdown Config
-  */
- markdownit: {
-  preset: 'default',
-  linkify: true,
-  breaks: true,
-  injected: true
-},
+   * Markdown Config
+   */
+  markdownit: {
+    preset: 'default',
+    linkify: true,
+    breaks: true,
+    injected: true
+  },
   /*
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
    */
   build: {},
 
-
+  generate: {
+    devtools: false,
+    fallback: '404.html'
+  }
 }

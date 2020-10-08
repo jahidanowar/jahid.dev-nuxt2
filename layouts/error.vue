@@ -29,7 +29,8 @@ export default {
   head() {
     return {
       title:
-        this.error.statusCode === 404 ? 'Page not found' : 'An error occured'
+        this.error.statusCode === 404 ? 'Page not found' : 'An error occured',
+      meta: [{ hid: 'robots', name: 'robots', content: 'noindex' }]
     }
   }
 }
