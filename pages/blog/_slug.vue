@@ -113,7 +113,7 @@ export default {
 /* eslint-enable */
 </script>
 
-<style scoped>
+<style>
 :not(pre) > code[class*='language-'],
 pre[class*='language-'] {
   background: #1a202c !important;
@@ -128,7 +128,7 @@ pre[class*='language-'] {
 .content ul {
   list-style: disc;
 }
-.content > fieldset,
+.content fieldset,
 .content ol,
 .content ul {
   margin: revert;
