@@ -8,12 +8,12 @@
     </p>
     <div class="flex justify-center">
       <img
-        src="~/assets/img/clientele.png"
+        src="https://res.cloudinary.com/jahiddev/image/upload/v1602132651/clientele_wopnza.png"
         alt="Work Experience"
         class="w-3/4 hidden md:block"
       />
       <img
-        src="~/assets/img/clientele-mobile.png"
+        src="https://res.cloudinary.com/jahiddev/image/upload/v1602132651/clientele-mobile_msimxa.png"
         alt="Work Experience"
         class="w-3/4 block md:hidden"
       />

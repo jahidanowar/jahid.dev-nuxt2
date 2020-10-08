@@ -32,7 +32,7 @@
       </div>
       <div class="w-full md:w-1/2 self-center align-bottom feature-image-box">
         <img
-          src="~/assets/img/jahid-anowar.png"
+          src="https://res.cloudinary.com/jahiddev/image/upload/v1602133965/jahid-anowar_znwpug.png"
           alt="Jahid Anowar"
           class="w-full feature-image"
         />
@@ -297,7 +297,7 @@ export default {
   margin: 0 auto;
 }
 .feature-image-box {
-  background-image: url('https://jahid.dev/wp-content/uploads/2020/04/pattern-two.svg');
+  background-image: url('~assets/img/pattern-two.svg');
   background-position: center;
   background-size: container;
   background-repeat: no-repeat;

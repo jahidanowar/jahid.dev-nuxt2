@@ -3,7 +3,7 @@
     <page-hero
       heading="Website Design, WordPress and Digital Marketing Articles."
       leading="Get Website Design, Development , Digital Marketing and WordPress Related Articles, Tips , Web Hosting deals coupons and more."
-      :image="require('~/assets/img/full-stack-blog.png')"
+      image="https://res.cloudinary.com/jahiddev/image/upload/v1602132651/full-stack-blog_rhbggo.png"
     ></page-hero>
     <div class="section">
       <div class="container mx-auto">
