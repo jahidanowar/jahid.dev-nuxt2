@@ -134,7 +134,7 @@ pre[class*='language-'] {
   margin: revert;
   padding: revert;
 }
-.content table {
+table {
   width: 100%;
   border-collapse: collapse;
   border-radius: 0.5rem;
@@ -142,25 +142,25 @@ pre[class*='language-'] {
   margin: 2rem 0;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 }
-.content thead {
+thead {
   border-radius: 0.5rem 0.5rem 0 0;
 }
-.content tbody {
+tbody {
   border-radius: 0 0 0.5rem 0.5rem;
 }
 /* Zebra striping */
-.content tr:nth-of-type(odd) {
+tr:nth-of-type(odd) {
   background: #edf2f7;
 }
 
-.content th {
+th {
   background: #4dc0b5;
   color: white;
   font-weight: bold;
 }
 
-.content td,
-.content th {
+td,
+th {
   padding: 10px;
   text-align: left;
 }
