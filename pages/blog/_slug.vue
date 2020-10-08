@@ -71,6 +71,7 @@
 import single from '~/apollo/queries/posts/single'
 import Prism from '~/plugins/prism'
 export default {
+  scrollToTop: true,
   async asyncData(context) {
     let posts = await context.app.apolloProvider.defaultClient
       .query({
@@ -112,7 +113,7 @@ export default {
 /* eslint-enable */
 </script>
 
-<style>
+<style scoped>
 :not(pre) > code[class*='language-'],
 pre[class*='language-'] {
   background: #1a202c !important;
@@ -123,17 +124,17 @@ pre[class*='language-'] {
   box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.1);
   margin: 2rem auto;
 }
-.content > ol,
-ul {
+.content ol,
+.content ul {
   list-style: disc;
 }
 .content > fieldset,
-ol,
-ul {
+.content ol,
+.content ul {
   margin: revert;
   padding: revert;
 }
-table {
+.content table {
   width: 100%;
   border-collapse: collapse;
   border-radius: 0.5rem;
@@ -141,25 +142,25 @@ table {
   margin: 2rem 0;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 }
-thead {
+.content thead {
   border-radius: 0.5rem 0.5rem 0 0;
 }
-tbody {
+.content tbody {
   border-radius: 0 0 0.5rem 0.5rem;
 }
 /* Zebra striping */
-tr:nth-of-type(odd) {
+.content tr:nth-of-type(odd) {
   background: #edf2f7;
 }
 
-th {
+.content th {
   background: #4dc0b5;
   color: white;
   font-weight: bold;
 }
 
-td,
-th {
+.content td,
+.content th {
   padding: 10px;
   text-align: left;
 }
