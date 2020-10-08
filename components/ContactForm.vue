@@ -1,12 +1,5 @@
 <template>
-  <form
-    name="contact"
-    method="POST"
-    data-netlify="true"
-    data-netlify-honeypot="bot-field"
-    action="/thankyou"
-    class="text-center flex flex-col w-full"
-  >
+  <form name="contact" class="text-center flex flex-col w-full">
     <div class="flex flex-col md:flex-row gap-2">
       <div class="w-full">
         <input
