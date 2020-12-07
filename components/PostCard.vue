@@ -85,9 +85,6 @@ export default {
   /* eslint-disable */
   props: ['post'],
   /* eslint-enable */
-  created() {
-    console.log(this.post)
-  }
 }
 </script>
 
