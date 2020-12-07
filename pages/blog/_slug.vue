@@ -1,5 +1,5 @@
 <template>
-  <div v-if="posts">
+  <div>
     <article
       v-for="post in posts"
       :key="post.id"
@@ -10,13 +10,12 @@
         <h1
           class="text-gray-900 text-4xl md:text-6xl tracking-tight font-bold leading-tight"
         >
-          {{ post.Title }}
+          {{ post.title.rendered }}
         </h1>
       </div>
       <div class="mt-5 md:mt-10">
         <img
-          v-if="post.Image"
-          :src="post.Image.url"
+          :src="post._embedded['wp:featuredmedia']['0'].source_url"
           :alt="post.title.rendred"
           class="rounded-lg shadow-lg w-full content-center object-cover"
         />
@@ -24,8 +23,8 @@
       <div class="mt-8 flex flex-wrap px-0 md:px-6">
         <div class="w-full md:w-1/3 inline-flex items-center">
           <img
-            src="https://secure.gravatar.com/avatar/06973051ae1000ce76854211a57b12f1?s=96&d=mm&r=g"
-            alt=""
+            :src="post._embedded['author']['0'].avatar_urls['96']"
+            :alt="post._embedded['author']['0'].name"
             class="rounded-full border"
           />
           <div class="ml-4">
@@ -34,14 +33,14 @@
               itemprop="author"
               itemtype="http://schema.org/Person"
             >
-              {{ post.created_by.firstname + ' ' + post.created_by.lastname }}
+              {{ post._embedded['author']['0'].name }}
             </h4>
             <p>
               <time
                 class="entry-date published"
-                :datetime="post.updated_at"
+                :datetime="post.date"
                 itemprop="datePublished"
-                >{{ post.updated_at | formatDate }}</time
+                >{{ post.date | formatDate }}</time
               >
             </p>
             <p>{{ readTime }} Minutes Read</p>
@@ -50,9 +49,7 @@
         <div
           class="w-full md:w-2/3 mt-4 md:mt-0 inline-flex items-center justify-end"
         >
-          <p class="font-medium">
-            {{ post.Summary }}
-          </p>
+          <p class="font-medium" v-html="post.excerpt.rendered"></p>
         </div>
       </div>
       <div class="py-6 px-0 md:py-8 md:px-8">
@@ -70,11 +67,13 @@
 /* eslint-disable */
 import Prism from '~/plugins/prism'
 export default {
-  scrollToTop: true,
-  async asyncData(context) {},
+  async asyncData({ $axios, params }) {
+    const posts = await $axios.$get('/posts/?slug=' + params.slug + '&_embed=1')
+    return { posts }
+  },
   head() {
     return {
-      title: this.posts.length > 0 ? this.posts[0].Title : '404 Page Not Found'
+      title: this.posts[0].title.rendered
     }
   },
   mounted() {
@@ -83,7 +82,7 @@ export default {
   computed: {
     readTime() {
       let minutes = 0
-      const contentString = JSON.stringify(this.posts[0].content)
+      const contentString = JSON.stringify(this.posts[0].content.rendered)
       const words = contentString.split(' ').length
       const wordsPerMinute = 200
       minutes = Math.ceil(words / wordsPerMinute)

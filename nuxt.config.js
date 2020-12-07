@@ -73,13 +73,13 @@ export default {
     
     publicRuntimeConfig: {
       axios: {
-        browserBaseURL: process.env.BROWSER_BASE_URL
+        browserBaseURL: process.env.BROWSER_BASE_URL || "https://jahid.dev/wp-json/wp/v2"
       }
     },
   
     privateRuntimeConfig: {
       axios: {
-        baseURL: process.env.BASE_URL
+        baseURL: process.env.BASE_URL || "https://jahid.dev/wp-json/wp/v2"
       }
     },
   },
