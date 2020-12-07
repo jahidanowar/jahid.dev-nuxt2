@@ -63,26 +63,39 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
+    '@nuxtjs/recaptcha'
   ],
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
    */
   axios: {
-    baseURL: process.env.BASE_URL || "https://jahid.dev/wp-json/wp/v2",
-    
+    baseURL: process.env.BASE_URL || 'https://jahid.dev/wp-json/wp/v2',
+
     publicRuntimeConfig: {
       axios: {
-        browserBaseURL: process.env.BROWSER_BASE_URL || "https://jahid.dev/wp-json/wp/v2"
+        browserBaseURL:
+          process.env.BROWSER_BASE_URL || 'https://jahid.dev/wp-json/wp/v2'
       }
     },
-  
+
     privateRuntimeConfig: {
       axios: {
-        baseURL: process.env.BASE_URL || "https://jahid.dev/wp-json/wp/v2"
+        baseURL: process.env.BASE_URL || 'https://jahid.dev/wp-json/wp/v2'
       }
-    },
+    }
   },
+  /*
+   ** Recaptcha Config
+   */
+  recaptcha: {
+    /* reCAPTCHA options */
+    siteKey: '6LcZ2fUUAAAAAMUw7ufw06Dhs07yFdwYdxld9D7w',
+    secretKey: '6LcZ2fUUAAAAAERcLZDth1k3rsyiUEJh2B66Sy6C',
+    size: 'compact',
+    version: 3
+  },
+
   /*
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/

@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.12.0",
+    "@nuxtjs/recaptcha": "^0.6.2",
     "moment": "^2.29.1",
     "nuxt": "^2.14.0",
     "prismjs": "^1.21.0"
