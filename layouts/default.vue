@@ -13,6 +13,10 @@ export default {
   components: {
     Appbar,
     PageFooter
+  },
+  mounted() {
+    console.log('Fetch Posts')
+    this.$store.dispatch('fetchPosts')
   }
 }
 </script>

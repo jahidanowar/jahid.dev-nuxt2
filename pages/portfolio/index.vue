@@ -19,7 +19,6 @@
 </template>
 
 <script>
-import portfoliosQuery from '~/apollo/queries/portfolios/portfoliosQuery'
 import PageHero from '~/components/PageHero'
 import PortfolioCard from '~/components/PortfolioCard'
 
@@ -27,16 +26,16 @@ export default {
   components: { PageHero, PortfolioCard },
   /* eslint-disable */
   async asyncData(context) {
-    let portfolios = await context.app.apolloProvider.defaultClient
-      .query({
-        query: portfoliosQuery
-      })
-      .then(({ data }) => {
-        return data.portfolios
-      })
-    return {
-      portfolios
-    }
+    // let portfolios = await context.app.apolloProvider.defaultClient
+    //   .query({
+    //     query: portfoliosQuery
+    //   })
+    //   .then(({ data }) => {
+    //     return data.portfolios
+    //   })
+    // return {
+    //   portfolios
+    // }
   },
   /* eslint-enable */
   head() {

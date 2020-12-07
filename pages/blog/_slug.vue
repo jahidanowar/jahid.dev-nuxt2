@@ -68,28 +68,27 @@
 
 <script>
 /* eslint-disable */
-import single from '~/apollo/queries/posts/single'
 import Prism from '~/plugins/prism'
 export default {
   scrollToTop: true,
   async asyncData(context) {
-    let posts = await context.app.apolloProvider.defaultClient
-      .query({
-        query: single,
-        variables: {
-          slug: context.params.slug
-        }
-      })
-      .then(({ data }) => {
-        return data.posts
-      })
-      .catch((e) => {
-        return posts
-        console.log(e)
-      })
-    return {
-      posts
-    }
+    // let posts = await context.app.apolloProvider.defaultClient
+    //   .query({
+    //     query: single,
+    //     variables: {
+    //       slug: context.params.slug
+    //     }
+    //   })
+    //   .then(({ data }) => {
+    //     return data.posts
+    //   })
+    //   .catch((e) => {
+    //     return posts
+    //     console.log(e)
+    //   })
+    // return {
+    //   posts
+    // }
   },
   head() {
     return {

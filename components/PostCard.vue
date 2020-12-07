@@ -1,18 +1,18 @@
 <template>
   <div class="p-4">
     <div class="h-full border-2 border-gray-200 rounded-lg overflow-hidden">
-      <img
+      <!-- <img
         v-if="post.Image"
         class="lg:h-48 md:h-36 w-full object-cover object-center"
         :src="post.Image.url"
-        :alt="post.Title"
-      />
+        :alt="post.title.rendered"
+      /> -->
       <div class="p-6">
         <h2
           class="tracking-widest text-xs title-font font-medium text-gray-500 mb-1"
         >
           <p class="uppercase text-xs">
-            <span class="inline-flex pr-2"
+            <!-- <span class="inline-flex pr-2"
               ><svg
                 class="w-4 h-4 mr-2"
                 fill="none"
@@ -27,7 +27,7 @@
                   d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
                 ></path></svg
               >{{ post.updated_at | formatDate }}</span
-            >
+            > -->
             <span class="inline-flex">
               <svg
                 class="w-4 h-4 mr-2"
@@ -43,21 +43,19 @@
                   d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"
                 ></path>
               </svg>
-              <span
+              <!-- <span
                 v-for="(category, i) in post.categories"
                 :key="i"
                 class="mr-2"
                 >{{ category.Name }}
-              </span>
+              </span> -->
             </span>
           </p>
         </h2>
         <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
-          {{ post.Title }}
+          {{ post.title.rendered }}
         </h1>
-        <p class="leading-relaxed mb-3">
-          {{ post.content.substring(0, 100) + '...' }}
-        </p>
+        <p class="leading-relaxed mb-3" v-html="post.excerpt.rendered"></p>
         <div class="flex items-center flex-wrap">
           <nuxt-link
             :to="{ name: 'blog-slug', params: { slug: post.slug } }"
@@ -85,8 +83,11 @@
 <script>
 export default {
   /* eslint-disable */
-  props: ['post']
+  props: ['post'],
   /* eslint-enable */
+  created() {
+    console.log(this.post)
+  }
 }
 </script>
 

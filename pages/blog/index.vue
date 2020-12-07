@@ -9,9 +9,9 @@
       <div class="container mx-auto">
         <div class="flex flex-row flex-wrap">
           <div class="w-full">
-            <div v-if="posts" class="flex flex-wrap">
+            <div v-if="$store.state.posts" class="flex flex-wrap">
               <post-card
-                v-for="(post, i) in posts"
+                v-for="(post, i) in $store.state.posts"
                 :key="i"
                 class="w-full md:w-1/3"
                 :post="post"
@@ -27,23 +27,22 @@
 
 <script>
 import PageHero from '~/components/PageHero'
-import PostCard from '~/components/PostCard'
-import postsQuery from '~/apollo/queries/posts/postsQuery'
+// import PostCard from '~/components/PostCard'
 
 export default {
-  components: { PageHero, PostCard },
+  components: { PageHero },
   /* eslint-disable */
   async asyncData(context) {
-    let posts = await context.app.apolloProvider.defaultClient
-      .query({
-        query: postsQuery
-      })
-      .then(({ data }) => {
-        return data.posts
-      })
-    return {
-      posts
-    }
+    // let posts = await context.app.apolloProvider.defaultClient
+    //   .query({
+    //     query: postsQuery
+    //   })
+    //   .then(({ data }) => {
+    //     return data.posts
+    //   })
+    // return {
+    //   posts
+    // }
   },
   /* eslint-enable */
   head() {

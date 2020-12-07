@@ -63,32 +63,25 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    '@nuxtjs/apollo',
-    '@nuxtjs/markdownit'
   ],
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
    */
-  axios: {},
-  /*
-   * Apollo module configuration
-   */
-  apollo: {
-    clientConfigs: {
-      default: {
-        httpEndpoint: process.env.STRAPI_URL || 'http://localhost:1337/graphql'
+  axios: {
+    baseURL: "https://jahid.dev/wp-json/wp/v2",
+    
+    publicRuntimeConfig: {
+      axios: {
+        browserBaseURL: process.env.BROWSER_BASE_URL
       }
-    }
-  },
-  /*
-   * Markdown Config
-   */
-  markdownit: {
-    preset: 'default',
-    linkify: true,
-    breaks: true,
-    injected: true
+    },
+  
+    privateRuntimeConfig: {
+      axios: {
+        baseURL: process.env.BASE_URL
+      }
+    },
   },
   /*
    ** Build configuration

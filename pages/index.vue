@@ -7,7 +7,7 @@
         class="w-full md:w-1/2 px-6 text-left max-w-2xl md:max-w-3xl mx-auto"
       >
         <h2
-          class="text-gray-900 text-4xl md:text-5xl font-medium leading-tight tracking-tight"
+          class="text-gray-900 dark:text-gray-100 text-4xl md:text-5xl font-medium leading-tight tracking-tight"
         >
           Creating Kickass website for businesses.<br />
           <span class="text-primary">One at a Time.</span>
@@ -217,7 +217,6 @@
 </template>
 
 <script>
-import portfoliosQuery from '~/apollo/queries/portfolios/portfoliosQuery'
 import Brands from '~/components/Brands'
 import PortfolioCard from '~/components/PortfolioCard'
 import ServiceCard from '~/components/ServiceCard'
@@ -234,6 +233,7 @@ export default {
   },
   data() {
     return {
+      portfolios: null,
       testimonials: [
         {
           review:
@@ -264,14 +264,14 @@ export default {
   },
   /* eslint-disable */
   async asyncData(context) {
-    let portfolios = await context.app.apolloProvider.defaultClient
-      .query({ query: portfoliosQuery })
-      .then(({ data }) => {
-        return data.portfolios
-      })
-    return {
-      portfolios
-    }
+    // let portfolios = await context.app.apolloProvider.defaultClient
+    //   .query({ query: portfoliosQuery })
+    //   .then(({ data }) => {
+    //     return data.portfolios
+    //   })
+    // return {
+    //   portfolios
+    // }
   },
   /* eslint-enable */
   head() {
