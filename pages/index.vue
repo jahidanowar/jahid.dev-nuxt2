@@ -165,7 +165,7 @@
         <p class="text-center mb-4">Take a look at some of my recent works.</p>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-8">
           <portfolio-card
-            v-for="(portfolio, i) in portfolios"
+            v-for="(portfolio, i) in projects"
             :key="i"
             :portfolio="portfolio"
           ></portfolio-card>
@@ -231,9 +231,14 @@ export default {
     ContactForm,
     Brands
   },
+  /* eslint-disable */
+  async asyncData({ $axios }) {
+    const projects = await $axios.$get('/project?_embed=1&page=1&per_page=3')
+    return { projects }
+  },
+  /* eslint-enable */
   data() {
     return {
-      portfolios: null,
       testimonials: [
         {
           review:
@@ -261,12 +266,6 @@ export default {
         }
       ]
     }
-  },
-  /* eslint-disable */
-  async asyncData(context) {},
-  /* eslint-enable */
-  mounted() {
-    this.$store.dispatch('fetchPosts')
   },
   head() {
     return {

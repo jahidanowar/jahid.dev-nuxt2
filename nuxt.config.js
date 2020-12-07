@@ -69,7 +69,7 @@ export default {
    ** See https://axios.nuxtjs.org/options
    */
   axios: {
-    baseURL: "https://jahid.dev/wp-json/wp/v2",
+    baseURL: process.env.BASE_URL || "https://jahid.dev/wp-json/wp/v2",
     
     publicRuntimeConfig: {
       axios: {

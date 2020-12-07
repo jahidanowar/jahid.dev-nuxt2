@@ -2,16 +2,17 @@
   <div class="rounded-lg shadow-lg overflow-hidden border bg-white">
     <div class="relative h-64">
       <img
-        :src="portfolio.Image.url"
-        :alt="portfolio.Title"
+        :src="portfolio._embedded['wp:featuredmedia']['0'].source_url"
+        :alt="portfolio.title"
         class="absolute w-full h-full object-cover"
       />
     </div>
     <div class="p-6">
-      <h4 class="font-semibold text-lg">{{ portfolio.Title }}</h4>
-      <p class="text-gray-600 text-sm mt-3">
-        {{ portfolio.Description.substring(0, 100) + '...' }}
-      </p>
+      <h4 class="font-semibold text-lg">{{ portfolio.title.rendered }}</h4>
+      <p
+        class="text-gray-600 text-sm mt-3"
+        v-html="portfolio.excerpt.rendered"
+      ></p>
       <nuxt-link to="/" class="mt-5 text-primary inline-flex items-center"
         >View Porject
         <svg
