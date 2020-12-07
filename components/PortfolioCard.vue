@@ -9,10 +9,10 @@
     </div>
     <div class="p-6">
       <h4 class="font-semibold text-lg">{{ portfolio.title.rendered }}</h4>
-      <p
+      <div
         class="text-gray-600 text-sm mt-3"
         v-html="portfolio.excerpt.rendered"
-      ></p>
+      ></div>
       <nuxt-link to="/" class="mt-5 text-primary inline-flex items-center"
         >View Porject
         <svg
