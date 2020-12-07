@@ -263,17 +263,11 @@ export default {
     }
   },
   /* eslint-disable */
-  async asyncData(context) {
-    // let portfolios = await context.app.apolloProvider.defaultClient
-    //   .query({ query: portfoliosQuery })
-    //   .then(({ data }) => {
-    //     return data.portfolios
-    //   })
-    // return {
-    //   portfolios
-    // }
-  },
+  async asyncData(context) {},
   /* eslint-enable */
+  mounted() {
+    this.$store.dispatch('fetchPosts')
+  },
   head() {
     return {
       title: 'Jahid Anowar - Full Stack Web Developer',

@@ -17,7 +17,7 @@
         <img
           v-if="post.Image"
           :src="post.Image.url"
-          :alt="post.Title"
+          :alt="post.title.rendred"
           class="rounded-lg shadow-lg w-full content-center object-cover"
         />
       </div>
@@ -59,7 +59,7 @@
         <div
           v-if="post.content"
           class="mt-5 content"
-          v-html="$md.render(post.content)"
+          v-html="post.content.rendered"
         ></div>
       </div>
     </article>
@@ -71,25 +71,7 @@
 import Prism from '~/plugins/prism'
 export default {
   scrollToTop: true,
-  async asyncData(context) {
-    // let posts = await context.app.apolloProvider.defaultClient
-    //   .query({
-    //     query: single,
-    //     variables: {
-    //       slug: context.params.slug
-    //     }
-    //   })
-    //   .then(({ data }) => {
-    //     return data.posts
-    //   })
-    //   .catch((e) => {
-    //     return posts
-    //     console.log(e)
-    //   })
-    // return {
-    //   posts
-    // }
-  },
+  async asyncData(context) {},
   head() {
     return {
       title: this.posts.length > 0 ? this.posts[0].Title : '404 Page Not Found'

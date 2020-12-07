@@ -32,19 +32,11 @@ import PageHero from '~/components/PageHero'
 export default {
   components: { PageHero },
   /* eslint-disable */
-  async asyncData(context) {
-    // let posts = await context.app.apolloProvider.defaultClient
-    //   .query({
-    //     query: postsQuery
-    //   })
-    //   .then(({ data }) => {
-    //     return data.posts
-    //   })
-    // return {
-    //   posts
-    // }
-  },
+  async asyncData(context) {},
   /* eslint-enable */
+  mounted() {
+    this.$store.dispatch('fetchPosts')
+  },
   head() {
     return {
       title: 'Website Design, WordPress and Digital Marketing Article',
