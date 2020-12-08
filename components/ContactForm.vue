@@ -127,7 +127,7 @@ export default {
         }
         this.$axios
           .post(
-            'https://jahid.dev/wp-json/contact-form-7/v1/contact-forms/1191/feedback',
+            'https://api.jahid.dev/wp-json/contact-form-7/v1/contact-forms/1191/feedback',
             formData
           )
           .then((response) => {
