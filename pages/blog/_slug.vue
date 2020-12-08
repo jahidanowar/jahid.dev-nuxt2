@@ -60,7 +60,7 @@
         ></div>
       </div>
       <!-- Social Share  -->
-      <div class="entry-sticky-shares">
+      <div class="entry-sticky-shares hidden md:block">
         <ul class="entry-shares">
           <li class="share-sum">
             <span>Share</span>
@@ -211,7 +211,6 @@ th {
   text-align: left;
 }
 .entry-sticky-shares {
-  display: block;
   position: fixed;
   z-index: 1;
   background-color: rgb(255, 255, 255);
