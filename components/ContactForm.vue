@@ -122,37 +122,30 @@ export default {
       try {
         const token = await this.$recaptcha.execute('login')
         console.log('ReCaptcha token:', token)
-        await this.$recaptcha.reset()
+        // eslint-disable-next-line
+        let formData = new FormData()
+        for (const [key, value] of Object.entries(this.contactForm)) {
+          console.log(`${key}: ${value}`)
+          formData.append(key, value)
+        }
+        this.$axios
+          .post(
+            'https://api.jahid.dev/wp-json/contact-form-7/v1/contact-forms/1191/feedback',
+            formData
+          )
+          .then((response) => {
+            this.contactForm.fname = ''
+            this.contactForm.email = ''
+            this.contactForm.subject = 0
+            this.contactForm.message = ''
+            this.message = response.data.message
+            setTimeout(() => {
+              this.message = ''
+            }, 3000)
+          })
       } catch (error) {
         console.log('Login error:', error)
       }
-    },
-    onSuccess(token) {
-      console.log('Succeed:', token)
-      // eslint-disable-next-line
-      let formData = new FormData()
-      for (const [key, value] of Object.entries(this.contactForm)) {
-        console.log(`${key}: ${value}`)
-        formData.append(key, value)
-      }
-      this.$axios
-        .post(
-          'https://api.jahid.dev/wp-json/contact-form-7/v1/contact-forms/1191/feedback',
-          formData
-        )
-        .then((response) => {
-          this.contactForm.fname = ''
-          this.contactForm.email = ''
-          this.contactForm.subject = 0
-          this.contactForm.message = ''
-          this.message = response.data.message
-          setTimeout(() => {
-            this.message = ''
-          }, 3000)
-        })
-    },
-    onExpired() {
-      console.log('Expired')
     }
   }
 }

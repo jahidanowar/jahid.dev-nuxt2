@@ -13,14 +13,14 @@
           {{ post.title.rendered }}
         </h1>
       </div>
-      <div class="mt-5 md:mt-10">
+      <div class="max-w-5xl mx-auto mt-5 md:mt-10">
         <img
           :src="post._embedded['wp:featuredmedia']['0'].source_url"
           :alt="post.title.rendred"
           class="rounded-lg shadow-lg w-full content-center object-cover"
         />
       </div>
-      <div class="mt-8 flex flex-wrap px-0 md:px-6">
+      <div class="max-w-5xl mx-auto mt-8 flex flex-wrap px-0 md:px-6">
         <div class="w-full md:w-1/3 inline-flex items-center">
           <img
             :src="post._embedded['author']['0'].avatar_urls['96']"
@@ -52,7 +52,7 @@
           <div class="font-medium" v-html="post.excerpt.rendered"></div>
         </div>
       </div>
-      <div class="py-6 px-0 md:py-8 md:px-8">
+      <div class="max-w-5xl mx-auto py-6 px-0 md:py-8 md:px-8">
         <div
           v-if="post.content"
           class="mt-5 content"
@@ -68,7 +68,9 @@
           <li>
             <a
               :href="
-                'https://twitter.com/share?text=How to update Laravel installer to 4.x or Up&url=' +
+                'https://twitter.com/share?text=' +
+                post.title.rendered +
+                '&url=' +
                 post.link
               "
               title="Share on Twitter"
@@ -226,7 +228,7 @@ th {
   padding: 15px 2px 10px;
   text-align: center;
   top: 140px;
-  left: 60px;
+  left: 250px;
   width: 72px;
 }
 .entry-sticky-shares ul li.share-sum {
