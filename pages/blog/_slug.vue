@@ -138,7 +138,14 @@ export default {
   },
   head() {
     return {
-      title: this.posts[0].title.rendered
+      title: this.posts[0].title.rendered,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.posts[0].excerpt.rendered
+        }
+      ]
     }
   },
   mounted() {
