@@ -70,18 +70,18 @@ export default {
    ** See https://axios.nuxtjs.org/options
    */
   axios: {
-    baseURL: process.env.BASE_URL || 'https://jahid.dev/wp-json/wp/v2',
+    baseURL: process.env.BASE_URL || 'https://api.jahid.dev/wp-json/wp/v2',
 
     publicRuntimeConfig: {
       axios: {
         browserBaseURL:
-          process.env.BROWSER_BASE_URL || 'https://jahid.dev/wp-json/wp/v2'
+          process.env.BROWSER_BASE_URL || 'https://api.jahid.dev/wp-json/wp/v2'
       }
     },
 
     privateRuntimeConfig: {
       axios: {
-        baseURL: process.env.BASE_URL || 'https://jahid.dev/wp-json/wp/v2'
+        baseURL: process.env.BASE_URL || 'https://api.jahid.dev/wp-json/wp/v2'
       }
     }
   },
