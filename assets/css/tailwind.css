@@ -31,8 +31,10 @@
   .section-heading {
     @apply text-3xl;
   }
+  
 }
 @screen sm {
+
 }
 
 .bg-pattern {

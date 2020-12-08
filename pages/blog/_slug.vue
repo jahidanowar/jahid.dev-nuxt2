@@ -49,7 +49,7 @@
         <div
           class="w-full md:w-2/3 mt-4 md:mt-0 inline-flex items-center justify-end"
         >
-          <p class="font-medium" v-html="post.excerpt.rendered"></p>
+          <div class="font-medium" v-html="post.excerpt.rendered"></div>
         </div>
       </div>
       <div class="py-6 px-0 md:py-8 md:px-8">
@@ -59,6 +59,71 @@
           v-html="post.content.rendered"
         ></div>
       </div>
+      <!-- Social Share  -->
+      <div class="entry-sticky-shares">
+        <ul class="entry-shares">
+          <li class="share-sum">
+            <span>Share</span>
+          </li>
+          <li>
+            <a
+              :href="
+                'https://twitter.com/share?text=How to update Laravel installer to 4.x or Up&url=' +
+                post.link
+              "
+              title="Share on Twitter"
+              rel="nofollow"
+              target="_blank"
+              class="share-btn"
+            >
+              <svg viewBox="0 0 512 512" class="icon-twitter">
+                <path
+                  d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              :href="
+                'https://www.facebook.com/sharer/sharer.php?u=' + post.link
+              "
+              title="Share on Facebook"
+              rel="nofollow"
+              target="_blank"
+              class="share-btn"
+              ><svg viewBox="0 0 320 512" class="icon-facebook">
+                <path
+                  d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                ></path></svg
+            ></a>
+          </li>
+          <li>
+            <a
+              :href="
+                'https://www.linkedin.com/shareArticle?mini=true&url=' +
+                post.link
+              "
+              title="Share on Linkedin"
+              rel="nofollow"
+              target="_blank"
+              class="share-btn"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="909.333"
+                viewBox="-21 -35 682.667 682"
+                class="icon-linkedin"
+                width="909.333"
+                xmlns:v="https://vecta.io/nano"
+              >
+                <path
+                  d="M77.613-.668C30.684-.668 0 30.148 0 70.652c0 39.6 29.77 71.305 75.813 71.305h.9c47.848 0 77.625-31.695 77.625-71.305-.895-40.504-29.777-71.32-76.715-71.32zM8.1 198.313h137.195V611.07H8.1zm473.945-9.688c-74.012 0-123.64 69.547-123.64 69.547v-59.86h-137.2V611.07h137.2v-230.5c0-12.34.895-24.66 4.52-33.484 9.918-24.64 32.488-50.168 70.4-50.168 49.645 0 69.5 37.852 69.5 93.34V611.07H640V374.402c0-126.78-67.687-185.777-157.945-185.777zm0 0"
+                ></path></svg
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <!-- ./ Social Share  -->
     </article>
   </div>
 </template>
@@ -78,6 +143,7 @@ export default {
   },
   mounted() {
     Prism.highlightAll()
+    console.log('Mounted State')
   },
   computed: {
     readTime() {
@@ -143,5 +209,48 @@ td,
 th {
   padding: 10px;
   text-align: left;
+}
+.entry-sticky-shares {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #e2e8f0;
+  border-radius: 5px;
+  padding: 15px 2px 10px;
+  text-align: center;
+  top: 140px;
+  left: 60px;
+  width: 72px;
+}
+.entry-sticky-shares ul li.share-sum {
+  font-size: 18px;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+.entry-sticky-shares ul li a {
+  font-size: 26px;
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  -moz-box-align: center;
+  align-items: center;
+  -moz-box-pack: center;
+  justify-content: center;
+}
+.entry-sticky-shares ul li a svg {
+  max-width: 26px;
+  height: 100%;
+  max-height: 26px;
+  pointer-events: none;
+}
+.entry-sticky-shares .icon-twitter {
+  fill: #1da1f2;
+}
+.entry-sticky-shares .icon-facebook {
+  fill: #1778f2;
+}
+.entry-sticky-shares .icon-linkedin {
+  fill: #0077b5;
 }
 </style>
