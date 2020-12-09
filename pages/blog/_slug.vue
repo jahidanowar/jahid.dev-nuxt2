@@ -228,7 +228,7 @@ th {
   padding: 15px 2px 10px;
   text-align: center;
   top: 140px;
-  left: 250px;
+  left: 8%;
   width: 72px;
 }
 .entry-sticky-shares ul li.share-sum {
