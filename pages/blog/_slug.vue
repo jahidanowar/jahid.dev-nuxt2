@@ -126,6 +126,56 @@
         </ul>
       </div>
       <!-- ./ Social Share  -->
+      <!-- Author Box -->
+      <div
+        class="max-w-5xl mx-auto author-box p-8 md:p-12 rounded-xl flex flex-wrap md:flex-no-wrap"
+      >
+        <div class="avatar w-64 mr-5 mb-5 md:mb-0">
+          <img
+            alt=""
+            src="https://secure.gravatar.com/avatar/06973051ae1000ce76854211a57b12f1?s=96&amp;d=mm&amp;r=g"
+            srcset="
+              https://secure.gravatar.com/avatar/06973051ae1000ce76854211a57b12f1?s=192&amp;d=mm&amp;r=g 2x
+            "
+            class="avatar rounded-full border"
+            loading="lazy"
+            width="96"
+            height="96"
+          />
+        </div>
+        <div class="author-box__content">
+          <div class="flex flex-wrap justify-between">
+            <div class="mb-5 md:mb-0">
+              <p class="text-primary uppercase text-xs">About Me</p>
+              <h4
+                class="text-3xl font-semibold"
+                itemprop="author"
+                itemscope=""
+                itemtype="http://schema.org/Person"
+              >
+                Jahid Anowar
+              </h4>
+            </div>
+            <div class="justify-self-end">
+              <social-buttons></social-buttons>
+            </div>
+          </div>
+          <div class="author-summery mt-5 mb-8">
+            <p class="author-description transform-none text-lg">
+              Hi, I’m Jahid Anowar, a Website designer with programming
+              expertise. I’ve been designing and programming for the last four
+              years and have built various human-centered websites and web apps
+              for small and medium-sized businesses.
+            </p>
+          </div>
+          <nuxt-link
+            to="/contact"
+            class="block md:inline text-center btn bg-primary hover:bg-secondary text-white"
+            >Get in touch!</nuxt-link
+          >
+        </div>
+      </div>
+      <!-- ./ Author Box  -->
     </article>
   </div>
 </template>
@@ -133,7 +183,9 @@
 <script>
 /* eslint-disable */
 import Prism from '~/plugins/prism'
+import SocialButtons from '~/components/SocialButtons'
 export default {
+  components: { SocialButtons },
   async asyncData({ $axios, params }) {
     const posts = await $axios.$get('/posts/?slug=' + params.slug + '&_embed=1')
     return { posts }
@@ -260,5 +312,9 @@ th {
 }
 .entry-sticky-shares .icon-linkedin {
   fill: #0077b5;
+}
+.author-box {
+  box-shadow: 0 0 5px 0 rgba(25, 77, 66, 0.02),
+    0 3px 20px 0 rgba(81, 239, 199, 0.04), 0 10px 28px 0 rgba(39, 25, 77, 0.03);
 }
 </style>

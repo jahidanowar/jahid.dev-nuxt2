@@ -47,7 +47,7 @@
       >
         <nuxt-link
           to="/service"
-          class="mt-1 px-4 py-1 rounded text-lg hover:bg-gray-200 sm:mt-0 sm:ml-2 flex items-center"
+          class="mt-1 px-4 py-2 rounded text-lg hover:bg-gray-200 sm:mt-0 sm:ml-2 flex items-center"
           >Service
           <!-- <svg class="h-5" viewBox="0 0 20 20" fill="currentColor">
             <path
@@ -59,17 +59,17 @@
         </nuxt-link>
         <nuxt-link
           to="/portfolio"
-          class="mt-1 block px-4 py-1 rounded text-lg hover:bg-gray-200 sm:mt-0 sm:ml-2"
+          class="mt-1 block px-4 py-2 rounded text-lg hover:bg-gray-200 sm:mt-0 sm:ml-2"
           >Portfolio</nuxt-link
         >
         <nuxt-link
           to="/blog"
-          class="mt-1 block px-4 py-1 rounded text-lg hover:bg-gray-200 sm:mt-0 sm:ml-2"
+          class="mt-1 block px-4 py-2 rounded text-lg hover:bg-gray-200 sm:mt-0 sm:ml-2"
           >Blog</nuxt-link
         >
         <nuxt-link
           to="/contact"
-          class="mt-1 block px-4 py-1 rounded text-lg hover:bg-gray-200 sm:mt-0 sm:ml-2"
+          class="mt-1 block px-4 py-2 rounded text-lg hover:bg-gray-200 sm:mt-0 sm:ml-2"
           >Contact</nuxt-link
         >
       </nav>

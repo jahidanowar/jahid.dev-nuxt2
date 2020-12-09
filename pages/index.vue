@@ -167,6 +167,7 @@
             v-for="(portfolio, i) in projects"
             :key="i"
             :portfolio="portfolio"
+            :noText="true"
           ></portfolio-card>
         </div>
         <div class="mt-12 text-center">
