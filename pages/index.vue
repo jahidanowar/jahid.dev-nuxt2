@@ -7,12 +7,14 @@
         class="w-full md:w-1/2 px-6 text-left max-w-2xl md:max-w-3xl mx-auto"
       >
         <h2
-          class="text-gray-900 dark:text-gray-100 text-4xl md:text-5xl font-medium leading-tight tracking-tight"
+          class="text-gray-900 dark:text-gray-100 text-3xl md:text-5xl font-medium leading-tight tracking-tight"
         >
           Creating Kickass website for businesses.<br />
           <span class="text-primary">One at a Time.</span>
         </h2>
-        <p class="leading-relaxed mt-6 sm:text-lg md:text-xl xl:text-lg">
+        <p
+          class="leading-relaxed mt-6 sm:text-lg md:text-xl xl:text-lg md:pr-10"
+        >
           When users interact with your product, it should tell them an amazing
           story, driving your business forward. I can help you create that
           story.
@@ -20,12 +22,14 @@
         <div class="flex my-6">
           <nuxt-link
             to="/contact"
-            class="btn bg-primary hover:bg-secondary text-white"
-            >Contact Me</nuxt-link
+            class="md:text-xl px-6 py-3 rounded-md bg-primary hover:bg-secondary text-white"
+            >Get in touch!</nuxt-link
           >
         </div>
       </div>
-      <div class="w-full md:w-1/2 self-center align-bottom feature-image-box">
+      <div
+        class="w-full md:w-1/2 self-center align-bottom feature-image-box mt-5"
+      >
         <img
           src="https://res.cloudinary.com/jahiddev/image/upload/v1602133965/jahid-anowar_znwpug.png"
           alt="Jahid Anowar"
@@ -209,7 +213,7 @@
           <div class="self-center justify-self-end">
             <nuxt-link
               to="/contact"
-              class="mt-5 bg-primary text-white md:text-xl px-8 py-4 rounded-md"
+              class="mt-5 bg-primary hover:bg-secondary text-white md:text-xl px-8 py-4 rounded-md"
               >Get in touch!</nuxt-link
             >
           </div>
