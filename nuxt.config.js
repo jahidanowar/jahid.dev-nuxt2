@@ -55,8 +55,20 @@ export default {
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/google-analytics'
   ],
+
+  //Google Analytis Config
+  googleAnalytics: {
+    id: process.env.GOOGLE_ANALYTICS_ID || UA-166805413-1,  // Use as fallback if no runtime config is provided
+  },
+  publicRuntimeConfig: {
+    googleAnalytics: {
+      id: process.env.GOOGLE_ANALYTICS_ID
+    }
+  }
+
   /*
    ** Nuxt.js modules
    */
