@@ -61,13 +61,13 @@ export default {
 
   //Google Analytis Config
   googleAnalytics: {
-    id: process.env.GOOGLE_ANALYTICS_ID || UA-166805413-1,  // Use as fallback if no runtime config is provided
+    id: process.env.GOOGLE_ANALYTICS_ID || 'UA-166805413-1' // Use as fallback if no runtime config is provided
   },
   publicRuntimeConfig: {
     googleAnalytics: {
       id: process.env.GOOGLE_ANALYTICS_ID
     }
-  }
+  },
 
   /*
    ** Nuxt.js modules
@@ -75,7 +75,8 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    '@nuxtjs/recaptcha'
+    '@nuxtjs/recaptcha',
+    '@nuxtjs/sitemap'
   ],
   /*
    ** Axios module configuration
@@ -107,6 +108,13 @@ export default {
     secretKey: '6LcZ2fUUAAAAAERcLZDth1k3rsyiUEJh2B66Sy6C',
     size: 'invisible',
     version: 3
+  },
+
+  /*
+   ** Sitemap Config
+   */
+  sitemap: {
+    // options
   },
 
   /*

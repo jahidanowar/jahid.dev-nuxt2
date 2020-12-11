@@ -78,6 +78,61 @@ h3 {
   scrollbar-width: none;
 }
 
+/* Social Share Button */
+.entry-sticky-shares {
+  position: relative;
+  z-index: 1;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #e2e8f0;
+  border-radius: 5px;
+  padding: 15px;
+  text-align: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 2rem;
+}
+.entry-shares {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-items: end;
+  flex-wrap: wrap;
+  flex-grow: inherit;
+  width: 100%;
+}
+.entry-sticky-shares ul li.share-sum {
+  font-size: 18px;
+  margin-bottom: 0;
+  line-height: 1.2;
+  display: inline-block;
+}
+.entry-sticky-shares ul li a {
+  font-size: 26px;
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  -moz-box-align: center;
+  align-items: center;
+  -moz-box-pack: center;
+  justify-content: center;
+}
+.entry-sticky-shares ul li a svg {
+  max-width: 26px;
+  height: 100%;
+  max-height: 26px;
+  pointer-events: none;
+}
+.entry-sticky-shares .icon-twitter {
+  fill: #1da1f2;
+}
+.entry-sticky-shares .icon-facebook {
+  fill: #1778f2;
+}
+.entry-sticky-shares .icon-linkedin {
+  fill: #0077b5;
+}
+
 /* Reponsive Design */
 @screen md {
   .section-heading {
@@ -96,6 +151,22 @@ h3 {
   }
   .content > h3 {
     @apply text-4xl;
+  }
+
+  /* Social Share Button */
+  .entry-sticky-shares {
+    position: fixed;
+    padding: 15px 2px 10px;
+    text-align: center;
+    top: 140px;
+    left: 8%;
+    width: 72px;
+  }
+  .entry-shares {
+    display: block;
+  }
+  .entry-sticky-shares ul li.share-sum {
+    margin-bottom: 10px;
   }
 }
 @screen sm {

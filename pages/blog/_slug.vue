@@ -6,6 +6,7 @@
       class="container mx-auto py-16 px-6"
       itemtype="https://schema.org/CreativeWork"
     >
+      <!-- Post Heading -->
       <div class="text-center px-0 md:px-10">
         <h1
           class="text-gray-900 text-4xl md:text-6xl tracking-tight font-bold leading-tight"
@@ -13,6 +14,8 @@
           {{ post.title.rendered }}
         </h1>
       </div>
+      <!-- ./ Post Heading -->
+      <!-- Post Thumbnails -->
       <div class="max-w-5xl mx-auto mt-5 md:mt-10">
         <img
           :src="post._embedded['wp:featuredmedia']['0'].source_url"
@@ -20,6 +23,8 @@
           class="rounded-lg shadow-lg w-full content-center object-cover"
         />
       </div>
+      <!-- ./ Post Thumbnails -->
+      <!-- Post Meta  -->
       <div class="max-w-5xl mx-auto mt-8 flex flex-wrap px-0 md:px-6">
         <div class="w-full md:w-1/3 inline-flex items-center">
           <img
@@ -52,15 +57,9 @@
           <div class="font-medium" v-html="post.excerpt.rendered"></div>
         </div>
       </div>
-      <div class="max-w-5xl mx-auto py-6 px-0 md:py-8 md:px-8">
-        <div
-          v-if="post.content"
-          class="mt-5 content"
-          v-html="post.content.rendered"
-        ></div>
-      </div>
+      <!-- ./ Post Meta -->
       <!-- Social Share  -->
-      <div class="entry-sticky-shares hidden md:block">
+      <div class="entry-sticky-shares">
         <ul class="entry-shares">
           <li class="share-sum">
             <span>Share</span>
@@ -126,6 +125,15 @@
         </ul>
       </div>
       <!-- ./ Social Share  -->
+      <!-- Post Content -->
+      <div class="max-w-5xl mx-auto py-6 px-0 md:py-8 md:px-8">
+        <div
+          v-if="post.content"
+          class="mt-5 content"
+          v-html="post.content.rendered"
+        ></div>
+      </div>
+      <!-- ./ Post Content -->
       <!-- Author Box -->
       <div
         class="max-w-5xl mx-auto author-box p-8 md:p-12 rounded-xl flex flex-wrap md:flex-no-wrap"
@@ -270,48 +278,6 @@ td,
 th {
   padding: 10px;
   text-align: left;
-}
-.entry-sticky-shares {
-  position: fixed;
-  z-index: 1;
-  background-color: rgb(255, 255, 255);
-  border: 1px solid #e2e8f0;
-  border-radius: 5px;
-  padding: 15px 2px 10px;
-  text-align: center;
-  top: 140px;
-  left: 8%;
-  width: 72px;
-}
-.entry-sticky-shares ul li.share-sum {
-  font-size: 18px;
-  margin-bottom: 10px;
-  line-height: 1.2;
-}
-.entry-sticky-shares ul li a {
-  font-size: 26px;
-  width: 50px;
-  height: 50px;
-  display: inline-flex;
-  -moz-box-align: center;
-  align-items: center;
-  -moz-box-pack: center;
-  justify-content: center;
-}
-.entry-sticky-shares ul li a svg {
-  max-width: 26px;
-  height: 100%;
-  max-height: 26px;
-  pointer-events: none;
-}
-.entry-sticky-shares .icon-twitter {
-  fill: #1da1f2;
-}
-.entry-sticky-shares .icon-facebook {
-  fill: #1778f2;
-}
-.entry-sticky-shares .icon-linkedin {
-  fill: #0077b5;
 }
 .author-box {
   box-shadow: 0 0 5px 0 rgba(25, 77, 66, 0.02),
