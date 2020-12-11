@@ -116,6 +116,8 @@ export default {
    */
   sitemap: {
     // options
+    hostname: 'https://jahid.dev',
+    gzip: true
   },
 
   /*
