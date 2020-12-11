@@ -77,7 +77,6 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/recaptcha',
     '@nuxtjs/sitemap',
-    '@nuxtjs/component-cache'
   ],
   /*
    ** Axios module configuration
