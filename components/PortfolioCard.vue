@@ -1,13 +1,13 @@
 <template>
   <div class="rounded-lg shadow-lg overflow-hidden border bg-white">
-    <div class="relative h-64">
+    <div class="relative h-72">
       <img
         :src="portfolio._embedded['wp:featuredmedia']['0'].source_url"
         :alt="portfolio.title"
         class="absolute w-full h-full object-cover"
       />
     </div>
-    <div class="p-6">
+    <div v-if="!noText" class="p-6">
       <h4 class="font-semibold text-lg">{{ portfolio.title.rendered }}</h4>
       <div
         class="text-gray-600 text-sm mt-3"
@@ -34,9 +34,19 @@
 <script>
 export default {
   /* eslint-disable */
-  props: ['portfolio']
+  props: {
+    portfolio: Object,
+    noText: {
+      type: Boolean,
+      default: false
+    }
+  }
   /* eslint-enable */
 }
 </script>
 
-<style></style>
+<style scoped>
+.h-72 {
+  height: 18rem;
+}
+</style>
