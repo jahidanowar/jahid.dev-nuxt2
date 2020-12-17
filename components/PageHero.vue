@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-100 py-16">
+  <div class="bg-gray-100 py-8">
     <div class="container mx-auto">
       <div class="grid grid-cols-1 items-center md:grid-cols-2">
         <div class="px-6">
@@ -43,7 +43,7 @@ export default {
 
 <style>
 .feture-image {
-  max-width: 400px;
+  max-width: 300px;
   max-height: 343px;
 }
 </style>
