@@ -25,6 +25,11 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://rsms.me/inter/inter.css' }
+    ],
+    script: [
+      {
+        src: '//code.tidio.co/udunhgztvraa9n4fvkphtc4sqxbzugxt.js'
+      }
     ]
   },
   /*
@@ -76,7 +81,7 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/recaptcha',
-    '@nuxtjs/sitemap',
+    '@nuxtjs/sitemap'
   ],
   /*
    ** Axios module configuration
