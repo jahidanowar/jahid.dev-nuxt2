@@ -210,14 +210,28 @@ export default {
         {
           hid: 'og:image',
           property: 'og:image',
-          content: post._embedded['wp:featuredmedia']['0'].source_url
+          content: this.post._embedded['wp:featuredmedia']['0'].source_url
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: this.posts[0].title.rendered
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: this.posts[0].excerpt.rendered
+        },
+        {
+          hid: 'og:type',
+          property: 'og:type',
+          content: 'blog'
         }
       ]
     }
   },
   mounted() {
     Prism.highlightAll()
-    console.log('Mounted State')
   },
   computed: {
     readTime() {
