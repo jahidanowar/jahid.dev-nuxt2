@@ -123,7 +123,7 @@ export default {
     // options
     hostname: 'https://jahid.dev',
     gzip: true,
-    exclude:['/thankyou'],
+    exclude: ['/thankyou'],
     defaults: {
       changefreq: 'daily',
       priority: 1,
