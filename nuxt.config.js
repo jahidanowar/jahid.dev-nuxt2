@@ -61,7 +61,8 @@ export default {
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/google-analytics'
+    '@nuxtjs/google-analytics',
+    '@/modules/generator'
   ],
 
   //Google Analytis Config
@@ -121,7 +122,13 @@ export default {
   sitemap: {
     // options
     hostname: 'https://jahid.dev',
-    gzip: true
+    gzip: true,
+    exclude:['/thankyou'],
+    defaults: {
+      changefreq: 'daily',
+      priority: 1,
+      lastmod: new Date()
+    }
   },
 
   /*
