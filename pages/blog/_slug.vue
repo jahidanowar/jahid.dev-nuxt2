@@ -70,7 +70,7 @@
                 'https://twitter.com/share?text=' +
                 post.title.rendered +
                 '&url=' +
-                post.link
+                currentUrl
               "
               title="Share on Twitter"
               rel="nofollow"
@@ -87,7 +87,7 @@
           <li>
             <a
               :href="
-                'https://www.facebook.com/sharer/sharer.php?u=' + post.link
+                'https://www.facebook.com/sharer/sharer.php?u=' + currentUrl
               "
               title="Share on Facebook"
               rel="nofollow"
@@ -103,7 +103,7 @@
             <a
               :href="
                 'https://www.linkedin.com/shareArticle?mini=true&url=' +
-                post.link
+                currentUrl
               "
               title="Share on Linkedin"
               rel="nofollow"
@@ -210,7 +210,7 @@ export default {
         {
           hid: 'og:image',
           property: 'og:image',
-          content: this.post._embedded['wp:featuredmedia']['0'].source_url
+          content: this.posts[0]._embedded['wp:featuredmedia']['0'].source_url
         },
         {
           hid: 'og:title',
@@ -241,6 +241,9 @@ export default {
       const wordsPerMinute = 200
       minutes = Math.ceil(words / wordsPerMinute)
       return minutes
+    },
+    currentUrl() {
+      return window.location.href
     }
   }
 }
