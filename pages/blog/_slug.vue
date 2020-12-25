@@ -243,7 +243,7 @@ export default {
       return minutes
     },
     currentUrl() {
-      return window.location.href
+      return 'https://jahid.dev' + this.$route.fullPath
     }
   }
 }
