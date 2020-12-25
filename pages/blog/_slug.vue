@@ -206,6 +206,11 @@ export default {
           hid: 'description',
           name: 'description',
           content: this.posts[0].excerpt.rendered
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: post._embedded['wp:featuredmedia']['0'].source_url
         }
       ]
     }
