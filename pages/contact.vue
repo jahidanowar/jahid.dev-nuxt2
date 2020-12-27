@@ -10,7 +10,7 @@
         <h1
           class="font-bold leading-tight text-4xl md:text-5xl text-gray-900 mb-5"
         >
-          Let's start making your perfect website 🐱‍🏍
+          Let's start making your perfect website 🚀
         </h1>
         <p class="text-sm md:text-base md:px-12">
           You have an idea in your mind and looking for execution with pixel
