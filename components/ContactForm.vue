@@ -125,7 +125,7 @@ export default {
         // eslint-disable-next-line
         let formData = new FormData()
         for (const [key, value] of Object.entries(this.contactForm)) {
-          console.log(`${key}: ${value}`)
+          // console.log(`${key}: ${value}`)
           formData.append(key, value)
         }
         this.$axios
@@ -141,7 +141,7 @@ export default {
             this.message = response.data.message
             setTimeout(() => {
               this.message = ''
-            }, 3000)
+            }, 8000)
           })
       } catch (error) {
         console.log('Login error:', error)
