@@ -7,7 +7,7 @@
         class="w-full md:w-1/2 px-6 text-left max-w-2xl md:max-w-3xl mx-auto"
       >
         <h2
-          class="text-gray-900 dark:text-gray-100 text-3xl md:text-5xl font-medium leading-tight tracking-tight"
+          class="text-gray-900 dark:text-gray-100 text-3xl md:text-5xl font-bold leading-tight tracking-tight"
         >
           Creating Kickass website for businesses.<br />
           <span class="text-primary">One at a Time.</span>

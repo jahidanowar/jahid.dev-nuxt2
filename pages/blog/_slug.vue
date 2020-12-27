@@ -7,7 +7,7 @@
       itemtype="https://schema.org/CreativeWork"
     >
       <!-- Post Heading -->
-      <div class="text-center px-0 md:px-10">
+      <div class="max-w-4xl mx-auto text-center px-0 md:px-10">
         <h1
           class="text-gray-900 text-4xl md:text-6xl tracking-tight font-bold leading-tight"
         >
@@ -16,7 +16,7 @@
       </div>
       <!-- ./ Post Heading -->
       <!-- Post Thumbnails -->
-      <div class="max-w-5xl mx-auto mt-5 md:mt-10">
+      <div class="max-w-4xl mx-auto mt-5 md:mt-10">
         <img
           :src="post._embedded['wp:featuredmedia']['0'].source_url"
           :alt="post.title.rendred"
@@ -25,7 +25,7 @@
       </div>
       <!-- ./ Post Thumbnails -->
       <!-- Post Meta  -->
-      <div class="max-w-5xl mx-auto mt-8 flex flex-wrap px-0 md:px-6">
+      <div class="max-w-4xl mx-auto mt-8 flex flex-wrap px-0 md:px-6">
         <div class="w-full md:w-1/3 inline-flex items-center">
           <img
             :src="post._embedded['author']['0'].avatar_urls['96']"
@@ -126,7 +126,7 @@
       </div>
       <!-- ./ Social Share  -->
       <!-- Post Content -->
-      <div class="max-w-5xl mx-auto py-6 px-0 md:py-8 md:px-8">
+      <div class="max-w-4xl mx-auto py-6 px-0 md:py-8 md:px-8">
         <div
           v-if="post.content"
           class="mt-5 content"
@@ -136,7 +136,7 @@
       <!-- ./ Post Content -->
       <!-- Author Box -->
       <div
-        class="max-w-5xl mx-auto author-box p-8 md:p-12 rounded-xl flex flex-wrap md:flex-no-wrap"
+        class="max-w-4xl mx-auto author-box p-8 md:p-12 rounded-xl flex flex-wrap md:flex-no-wrap"
       >
         <div class="avatar w-64 mr-5 mb-5 md:mb-0">
           <img
