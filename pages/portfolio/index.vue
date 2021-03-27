@@ -6,11 +6,11 @@
       image="https://res.cloudinary.com/jahiddev/image/upload/v1602132651/full-stack-development-services_mgomjz.png"
     ></page-hero>
     <div
-      v-if="portfolios"
+      v-if="projects"
       class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 my-10 px-6"
     >
       <portfolio-card
-        v-for="(portfolio, i) in portfolios"
+        v-for="(portfolio, i) in projects"
         :key="i"
         :portfolio="portfolio"
       />
@@ -19,24 +19,15 @@
 </template>
 
 <script>
-import portfoliosQuery from '~/apollo/queries/portfolios/portfoliosQuery'
 import PageHero from '~/components/PageHero'
 import PortfolioCard from '~/components/PortfolioCard'
 
 export default {
   components: { PageHero, PortfolioCard },
   /* eslint-disable */
-  async asyncData(context) {
-    let portfolios = await context.app.apolloProvider.defaultClient
-      .query({
-        query: portfoliosQuery
-      })
-      .then(({ data }) => {
-        return data.portfolios
-      })
-    return {
-      portfolios
-    }
+  async asyncData({ $axios }) {
+    const projects = await $axios.$get('/project?_embed=1')
+    return { projects }
   },
   /* eslint-enable */
   head() {

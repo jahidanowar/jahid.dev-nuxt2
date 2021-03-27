@@ -25,6 +25,11 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://rsms.me/inter/inter.css' }
+    ],
+    script: [
+      {
+        src: '//code.tidio.co/udunhgztvraa9n4fvkphtc4sqxbzugxt.js'
+      }
     ]
   },
   /*
@@ -55,41 +60,76 @@ export default {
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/google-analytics',
+    '@/modules/generator'
   ],
+
+  //Google Analytis Config
+  googleAnalytics: {
+    id: process.env.GOOGLE_ANALYTICS_ID || 'UA-166805413-1' // Use as fallback if no runtime config is provided
+  },
+  publicRuntimeConfig: {
+    googleAnalytics: {
+      id: process.env.GOOGLE_ANALYTICS_ID
+    }
+  },
+
   /*
    ** Nuxt.js modules
    */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    '@nuxtjs/apollo',
-    '@nuxtjs/markdownit'
+    '@nuxtjs/recaptcha',
+    '@nuxtjs/sitemap'
   ],
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
    */
-  axios: {},
-  /*
-   * Apollo module configuration
-   */
-  apollo: {
-    clientConfigs: {
-      default: {
-        httpEndpoint: process.env.STRAPI_URL || 'http://localhost:1337/graphql'
+  axios: {
+    baseURL: process.env.BASE_URL || 'https://api.jahid.dev/wp-json/wp/v2',
+
+    publicRuntimeConfig: {
+      axios: {
+        browserBaseURL:
+          process.env.BROWSER_BASE_URL || 'https://api.jahid.dev/wp-json/wp/v2'
+      }
+    },
+
+    privateRuntimeConfig: {
+      axios: {
+        baseURL: process.env.BASE_URL || 'https://api.jahid.dev/wp-json/wp/v2'
       }
     }
   },
   /*
-   * Markdown Config
+   ** Recaptcha Config
    */
-  markdownit: {
-    preset: 'default',
-    linkify: true,
-    breaks: true,
-    injected: true
+  recaptcha: {
+    /* reCAPTCHA options */
+    hideBadge: true,
+    siteKey: '6LcZ2fUUAAAAAMUw7ufw06Dhs07yFdwYdxld9D7w',
+    secretKey: '6LcZ2fUUAAAAAERcLZDth1k3rsyiUEJh2B66Sy6C',
+    size: 'invisible',
+    version: 3
   },
+
+  /*
+   ** Sitemap Config
+   */
+  sitemap: {
+    // options
+    hostname: 'https://jahid.dev',
+    gzip: true,
+    defaults: {
+      changefreq: 'daily',
+      priority: 1,
+      lastmod: new Date()
+    }
+  },
+
   /*
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/

@@ -28,22 +28,26 @@
 <script>
 import PageHero from '~/components/PageHero'
 import PostCard from '~/components/PostCard'
-import postsQuery from '~/apollo/queries/posts/postsQuery'
 
 export default {
   components: { PageHero, PostCard },
   /* eslint-disable */
-  async asyncData(context) {
-    let posts = await context.app.apolloProvider.defaultClient
-      .query({
-        query: postsQuery
-      })
-      .then(({ data }) => {
-        return data.posts
-      })
-    return {
-      posts
-    }
+  async asyncData({ $axios }) {
+    let posts = await $axios.$get('/posts?page=1&per_page=20&_embed=1')
+    posts = posts
+      .filter((el) => el.status === 'publish')
+      .map(({ id, slug, title, excerpt, date, _embedded }) => ({
+        id,
+        slug,
+        title,
+        excerpt,
+        date,
+        categories: _embedded['wp:term']['0']
+          .filter((el) => el.taxonomy === 'category')
+          .map(({ name, slug }) => ({ name, slug })),
+        image: _embedded['wp:featuredmedia']['0'].source_url
+      }))
+    return { posts }
   },
   /* eslint-enable */
   head() {
