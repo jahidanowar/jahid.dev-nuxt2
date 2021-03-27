@@ -24,11 +24,12 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://rsms.me/inter/inter.css' }
+      { rel: 'preload', href: 'https://rsms.me/inter/inter.css', as="style" }
     ],
     script: [
       {
-        src: '//code.tidio.co/udunhgztvraa9n4fvkphtc4sqxbzugxt.js'
+        src: '//code.tidio.co/udunhgztvraa9n4fvkphtc4sqxbzugxt.js',
+        defer: true
       }
     ]
   },
