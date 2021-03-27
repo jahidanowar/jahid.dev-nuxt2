@@ -1,24 +1,28 @@
 <template>
-  <div class="rounded-lg shadow-lg overflow-hidden border bg-white">
-    <div class="relative h-64">
+  <nuxt-link
+    to="/contact"
+    class="group portfolio flex flex-wrap mb-16 align-middle hover:no-underline focus:no-underline"
+  >
+    <div class="w-full md:w-6/12 relative h-64 md:h-96">
       <img
         :src="portfolio._embedded['wp:featuredmedia']['0'].source_url"
         :alt="portfolio.title"
-        class="absolute w-full h-full object-cover"
+        class="absolute object-cover w-full h-full rounded-lg transform duration-200 group-hover:-translate-y-2 group-hover:shadow-xl"
       />
     </div>
-    <div v-if="!noText" class="p-6 h-56 flex flex-col justify-between">
-      <h4 class="font-semibold text-lg">{{ portfolio.title.rendered }}</h4>
-      <div
-        class="text-gray-600 text-sm mt-3"
-        v-html="portfolio.excerpt.rendered"
-      ></div>
-      <nuxt-link
-        to="/contact"
-        class="mt-5 text-primary inline-flex items-center"
-        >View Porject
+    <div class="w-full md:w-5/12 mt-5 md:mt-0 md:ml-10 self-center">
+      <h3
+        class="text-2xl md:text-4xl font-normal leading-tight group-hover:underline"
+      >
+        {{ portfolio.title.rendered }}
+      </h3>
+      <p v-html="portfolio.excerpt.rendered" class="mt-5"></p>
+      <p
+        class="mt-5 text-primary inline-flex items-center group-hover:underline duration-200"
+      >
+        View Porject
         <svg
-          class="w-4 h-4 ml-2"
+          class="w-4 h-4 ml-2 transform group-hover:translate-x-2 duration-200"
           viewBox="0 0 24 24"
           stroke="currentColor"
           stroke-width="2"
@@ -27,10 +31,11 @@
           stroke-linejoin="round"
         >
           <path d="M5 12h14"></path>
-          <path d="M12 5l7 7-7 7"></path></svg
-      ></nuxt-link>
+          <path d="M12 5l7 7-7 7"></path>
+        </svg>
+      </p>
     </div>
-  </div>
+  </nuxt-link>
 </template>
 
 <script>
@@ -50,5 +55,8 @@ export default {
 <style scoped>
 .h-72 {
   height: 18rem;
+}
+.h-96 {
+  height: 23rem;
 }
 </style>

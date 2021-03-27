@@ -1,8 +1,8 @@
 <template>
   <main class="contact">
     <page-hero
-      heading="Website Design, WordPress and Digital Marketing Articles."
-      leading="Get Website Design, Development , Digital Marketing and WordPress Related Articles, Tips , Web Hosting deals coupons and more."
+      heading="Website Design, and Full Stack Development Articles."
+      leading="Get Website Design, Development , Laravel, Vue and WordPress Related Articles, Tips , Web Hosting deals coupons and more."
       image="https://res.cloudinary.com/jahiddev/image/upload/v1602132651/full-stack-blog_rhbggo.png"
     ></page-hero>
     <div class="section">
