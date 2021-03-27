@@ -56,7 +56,4 @@ export default {
 .h-72 {
   height: 18rem;
 }
-.h-96 {
-  height: 23rem;
-}
 </style>

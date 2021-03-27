@@ -19,7 +19,11 @@ module.exports = {
         dark: '#de3618',
         text: '#4a5568'
       },
+      spacing: {
+        96: '23rem',
+      }
     },
+
   },
   variants: {
     translate: ['group-hover'],
