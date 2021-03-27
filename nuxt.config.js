@@ -24,7 +24,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'preload', href: 'https://rsms.me/inter/inter.css', as="style" }
+      { rel: 'preload', href: 'https://rsms.me/inter/inter.css', as:'style' }
     ],
     script: [
       {
