@@ -52,6 +52,7 @@ h3 {
   @apply text-gray-900;
   @apply mt-3;
   @apply mb-1;
+  @apply leading-tight;
 }
 
 .content > h1 {
