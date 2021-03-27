@@ -163,12 +163,12 @@
         <h2 class="section-heading mb-4 text-gray-900">My Recent Works</h2>
         <p class="text-center mb-4">Take a look at some of my recent works.</p>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-8">
-          <portfolio-card
+          <portfolio-grid-card
             v-for="(portfolio, i) in projects"
             :key="i"
             :portfolio="portfolio"
             :noText="true"
-          ></portfolio-card>
+          ></portfolio-grid-card>
         </div>
         <div class="mt-12 text-center">
           <nuxt-link
@@ -226,13 +226,13 @@
 
 <script>
 import Brands from '~/components/Brands'
-import PortfolioCard from '~/components/PortfolioCard'
+import PortfolioGridCard from '~/components/PortfolioGridCard'
 import ServiceCard from '~/components/ServiceCard'
 import TestimonialCard from '~/components/TestimonialCard'
 
 export default {
   components: {
-    PortfolioCard,
+    PortfolioGridCard,
     ServiceCard,
     TestimonialCard,
     Brands
