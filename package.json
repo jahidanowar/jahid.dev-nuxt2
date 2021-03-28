@@ -16,7 +16,8 @@
     "@nuxtjs/sitemap": "^2.4.0",
     "moment": "^2.29.1",
     "nuxt": "^2.14.0",
-    "prismjs": "^1.22.0"
+    "prismjs": "^1.22.0",
+    "vue-lottie": "^0.2.1"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^3.1.0",
