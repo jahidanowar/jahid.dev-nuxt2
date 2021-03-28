@@ -13,6 +13,16 @@ export default {
   components: {
     Appbar,
     PageFooter
+  },
+  head() {
+    return {
+      link: [
+        {
+          rel: 'canonical',
+          href: 'https://jahid.dev' + this.$route.path
+        }
+      ]
+    }
   }
 }
 </script>
