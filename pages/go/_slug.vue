@@ -21,9 +21,10 @@ export default {
     const links = await $axios.$get('/thirstylink/?slug=' + params.slug)
     return { links }
   },
-  data() {
+  head() {
     return {
-      lottieOptions: { animationData: loadingAnimation.default }
+      title: this.links[0].title.rendered,
+      meta: [{ hid: 'robots', name: 'robots', content: 'noindex' }]
     }
   },
   mounted() {
@@ -31,10 +32,9 @@ export default {
       window.location.replace(this.links[0]._ta_destination_url)
     }, 3000)
   },
-  head() {
+  data() {
     return {
-      title: this.links[0].title.rendered,
-      meta: [{ hid: 'robots', name: 'robots', content: 'noindex' }]
+      lottieOptions: { animationData: loadingAnimation.default }
     }
   }
 }
