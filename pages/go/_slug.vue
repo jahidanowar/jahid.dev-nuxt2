@@ -17,25 +17,31 @@ export default {
   components: {
     lottie
   },
+  async asyncData({ $axios, params }) {
+    // eslint-disable-next-line
+    if (params.slug == undefined) {
+      // eslint-disable-next-line
+      throw { statusCode: 404, message: 'Page not found' }
+    } else {
+      const links = await $axios.$get('/thirstylink/?slug=' + params.slug)
+      return { links }
+    }
+  },
   data() {
     return {
       lottieOptions: { animationData: loadingAnimation.default }
-    }
-  },
-  async asyncData({ $axios, params }) {
-    const links = await $axios.$get('/thirstylink/?slug=' + params.slug)
-    return { links }
-  },
-  head() {
-    return {
-      title: this.links[0].title.rendered,
-      meta: [{ hid: 'robots', name: 'robots', content: 'noindex' }]
     }
   },
   mounted() {
     setTimeout(() => {
       window.location.replace(this.links[0]._ta_destination_url)
     }, 3000)
+  },
+  head() {
+    return {
+      title: this.links[0].title.rendered,
+      meta: [{ hid: 'robots', name: 'robots', content: 'noindex' }]
+    }
   }
 }
 </script>
