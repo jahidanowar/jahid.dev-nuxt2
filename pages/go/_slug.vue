@@ -18,14 +18,8 @@ export default {
     lottie
   },
   async asyncData({ $axios, params }) {
-    // eslint-disable-next-line
-    if (params.slug == undefined) {
-      // eslint-disable-next-line
-      throw { statusCode: 404, message: 'Page not found' }
-    } else {
-      const links = await $axios.$get('/thirstylink/?slug=' + params.slug)
-      return { links }
-    }
+    const links = await $axios.$get('/thirstylink/?slug=' + params.slug)
+    return { links }
   },
   data() {
     return {
