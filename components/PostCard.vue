@@ -10,7 +10,7 @@
         />
         <div class="p-6">
           <h2
-            class="tracking-widest text-xs title-font font-medium text-gray-500 mb-1"
+            class="tracking-widest text-xs title-font text-gray-500 mb-1"
           >
             <p class="uppercase text-xs">
               <span class="inline-flex pr-2"
@@ -53,7 +53,7 @@
               </span>
             </p>
           </h2>
-          <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
+          <h1 class="title-font text-lg text-gray-900 mb-3">
             {{ post.title.rendered }}
           </h1>
           <div
