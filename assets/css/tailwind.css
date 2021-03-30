@@ -2,6 +2,12 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+body{
+  @apply font-body;
+}
+h1,h2,h3,h4{
+  @apply font-display;
+}
 .btn {
   @apply rounded;
   @apply px-4;

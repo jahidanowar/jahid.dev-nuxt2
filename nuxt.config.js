@@ -24,7 +24,9 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'preload', href: 'https://rsms.me/inter/inter.css', as:'style' }
+      // { rel: 'preload', href: 'https://rsms.me/inter/inter.css', as: 'style' },
+      { rel: 'preconnect', href: 'https://fonts.gstatic.com' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Inter&family=Space+Grotesk:wght@500&display=swap' }
     ],
     script: [
       {

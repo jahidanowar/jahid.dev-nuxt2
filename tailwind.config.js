@@ -11,7 +11,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+        // sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+        display: ['Space Grotesk', 'sans-serif'],
+        body: ['Inter var', 'sans-serif']
       },
       colors: {
         primary: '#4DC0B5',

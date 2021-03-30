@@ -3,9 +3,7 @@
     <div class="container mx-auto">
       <div class="grid grid-cols-1 items-center md:grid-cols-2">
         <div class="px-6">
-          <h1
-            class="text-gray-900 font-bold text-4xl md:text-5xl mb-5 leading-tight"
-          >
+          <h1 class="text-gray-900 text-4xl md:text-5xl mb-5 leading-tight">
             {{ heading }}
           </h1>
           <p>{{ leading }}</p>
