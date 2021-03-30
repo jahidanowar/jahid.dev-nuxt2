@@ -1,7 +1,12 @@
 <template>
   <div class="p-4">
-    <nuxt-link :to="{ name: 'blog-slug', params: { slug: post.slug } }">
-      <div class="h-full border-2 border-gray-200 rounded-lg overflow-hidden">
+    <nuxt-link
+      :to="{ name: 'blog-slug', params: { slug: post.slug } }"
+      class="group"
+    >
+      <div
+        class="h-full border-2 border-gray-200 rounded-lg overflow-hidden transform group-hover:-translate-y-2 duration-300"
+      >
         <img
           v-if="post.image"
           class="lg:h-48 md:h-36 w-full object-cover object-center"
@@ -61,10 +66,10 @@
           <div class="flex items-center flex-wrap">
             <nuxt-link
               :to="{ name: 'blog-slug', params: { slug: post.slug } }"
-              class="text-primary inline-flex items-center md:mb-2 lg:mb-0"
-              >Learn More
+              class="text-primary inline-flex items-center md:mb-2 lg:mb-0 group-hover:underline duration-300"
+              >Read more
               <svg
-                class="w-4 h-4 ml-2"
+                class="w-4 h-4 ml-2 transform group-hover:translate-x-2 duration-300"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
                 stroke-width="2"
