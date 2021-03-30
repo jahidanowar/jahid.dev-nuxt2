@@ -9,9 +9,7 @@
           :alt="post.title.rendered"
         />
         <div class="p-6">
-          <h2
-            class="tracking-widest text-xs title-font text-gray-500 mb-1"
-          >
+          <h2 class="tracking-widest text-xs title-font text-gray-500 mb-1">
             <p class="uppercase text-xs">
               <span class="inline-flex pr-2"
                 ><svg

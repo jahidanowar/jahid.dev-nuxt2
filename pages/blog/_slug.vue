@@ -9,7 +9,7 @@
       <!-- Post Heading -->
       <div class="max-w-4xl mx-auto text-center px-0 md:px-10">
         <h1
-          class="text-gray-900 text-4xl md:text-6xl tracking-tight font-bold leading-tight"
+          class="text-gray-900 text-4xl md:text-6xl tracking-tight leading-tight"
         >
           {{ post.title.rendered }}
         </h1>
@@ -156,7 +156,7 @@
             <div class="mb-5 md:mb-0">
               <p class="text-primary uppercase text-xs">About Me</p>
               <h4
-                class="text-3xl font-semibold"
+                class="text-3xl"
                 itemprop="author"
                 itemscope=""
                 itemtype="http://schema.org/Person"
