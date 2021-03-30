@@ -7,7 +7,7 @@
         class="w-full md:w-1/2 px-6 text-left max-w-2xl md:max-w-3xl mx-auto"
       >
         <h2
-          class="text-gray-900 dark:text-gray-100 text-3xl md:text-5xl font-bold leading-tight tracking-tight"
+          class="text-gray-900 dark:text-gray-100 text-3xl md:text-5xl leading-tight tracking-tight"
         >
           Creating Kickass website for businesses.<br />
           <span class="text-primary">One at a Time.</span>
@@ -204,7 +204,7 @@
       <div class="container mx-auto cta-bg p-12 md:p-16 rounded-md">
         <div class="flex flex-wrap align-middle justify-between">
           <div class="text">
-            <h2 class="font-semibold text-3xl md:text-4xl">
+            <h2 class="text-3xl md:text-4xl">
               Need a next level website for your business?
             </h2>
             <p class="md:text-xl mb-8 md:mb-0">

@@ -24,7 +24,6 @@ h1,h2,h3,h4{
 
 .section-heading {
   @apply text-2xl;
-  @apply font-medium;
   @apply text-center;
   @apply leading-tight;
 }
@@ -54,7 +53,6 @@ nav .nuxt-link-active {
 .content > h1,
 h2,
 h3 {
-  @apply font-medium;
   @apply text-gray-900;
   @apply mt-3;
   @apply mb-1;
@@ -144,11 +142,6 @@ h3 {
 @screen md {
   .section-heading {
     @apply text-3xl;
-  }
-  .content > h1,
-  h2,
-  h3 {
-    @apply font-semibold;
   }
   .content > h1 {
     @apply text-6xl;
