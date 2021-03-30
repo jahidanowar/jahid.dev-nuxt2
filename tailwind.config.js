@@ -13,7 +13,7 @@ module.exports = {
       fontFamily: {
         // sans: ['Inter var', ...defaultTheme.fontFamily.sans],
         display: ['Space Grotesk', 'sans-serif'],
-        body: ['Inter var', 'sans-serif']
+        body: ['Inter', 'sans-serif']
       },
       colors: {
         primary: '#4DC0B5',
