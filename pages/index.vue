@@ -97,11 +97,8 @@
             </svg>
           </service-card>
           <service-card
-            title="Web Apps"
-            description="I am ready to meet your budget and provide you with a high-quality
-              website which will surely satisfy your business needs. You will
-              love the web apps because we never compromise on less than the
-              best."
+            title="Progressive Webapp"
+            description="A progressive web app behaves like and often outperforms native application. As a PWA developer, I can build futuristic web applications, which have the transformational capacity for your business."
             ><svg
               id="bold"
               class="h-16"
@@ -125,10 +122,7 @@
           </service-card>
           <service-card
             title="Mobile Application"
-            description="In the time of Startup era, having a apps is always keeps you one
-              step ahead of your competitors, But Creating one could not be so
-              easy. I can help you to create Industry Standard Mobile Apps which
-              doesn't hurt your pocket."
+            description="In the time of Startup era, having an app is always keeps you one step ahead of your competitors, But Creating one could not be so easy. I can help you to create Industry Standard Mobile Apps which doesn't hurt your pocket."
             ><svg
               id="bold"
               class="h-16"
