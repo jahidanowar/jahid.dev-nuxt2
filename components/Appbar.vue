@@ -1,5 +1,5 @@
 <template>
-  <div class="shadow-xs">
+  <div class="shadow-xs bg-white fixed bottom-0 w-full z-50 sm:static">
     <header
       class="sm:flex sm:justify-between sm:items-center sm:px-4 container mx-auto"
     >
@@ -47,12 +47,12 @@
       >
         <nuxt-link
           to="/service"
-          class="mt-1 px-4 py-5 text-lg hover:bg-gray-200 sm:mt-0 sm:ml-2 inline-flex items-center"
+          class="mt-1 px-4 py-5 text-lg hover:bg-gray-200 sm:mt-0 sm:ml-2 w-full sm:w-auto inline-flex sm:flex-row items-center flex-row-reverse"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
-            class="w-5 mr-2 icon-trending-up"
+            class="w-5 ml-2 sm:mr-2 icon-trending-up"
           >
             <path
               class="text-gray-500 fill-current"
@@ -67,12 +67,12 @@
         </nuxt-link>
         <nuxt-link
           to="/portfolio"
-          class="mt-1 px-4 py-5 text-lg hover:bg-gray-200 sm:mt-0 sm:ml-2 inline-flex items-center"
+          class="mt-1 px-4 py-5 text-lg hover:bg-gray-200 sm:mt-0 sm:ml-2 w-full sm:w-auto inline-flex sm:flex-row items-center flex-row-reverse"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
-            class="w-5 mr-2 icon-target"
+            class="w-5 ml-2 sm:mr-2 icon-target"
           >
             <path
               class="text-gray-500 fill-current"
@@ -87,12 +87,12 @@
         >
         <nuxt-link
           to="/blog"
-          class="mt-1 px-4 py-5 text-lg hover:bg-gray-200 sm:mt-0 sm:ml-2 inline-flex items-center"
+          class="mt-1 px-4 py-5 text-lg hover:bg-gray-200 sm:mt-0 sm:ml-2 w-full sm:w-auto inline-flex sm:flex-row items-center flex-row-reverse"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
-            class="w-5 mr-2 icon-announcement"
+            class="w-5 ml-2 sm:mr-2 icon-announcement"
           >
             <path
               class="text-gray-500 fill-current"
@@ -111,12 +111,12 @@
         >
         <nuxt-link
           to="/contact"
-          class="mt-1 px-4 py-5 text-lg hover:bg-gray-200 sm:mt-0 sm:ml-2 inline-flex items-center"
+          class="mt-1 px-4 py-5 text-lg hover:bg-gray-200 sm:mt-0 sm:ml-2 w-full sm:w-auto inline-flex sm:flex-row items-center flex-row-reverse"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
-            class="w-5 mr-2 icon-launch"
+            class="w-5 ml-2 sm:mr-2 icon-launch"
           >
             <path
               class="secondary"
