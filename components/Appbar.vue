@@ -45,7 +45,7 @@
       </div>
       <transition name="slide-fade">
         <nav
-          v-if="isOpen"
+          :class="isOpen ? 'block' : 'hidden'"
           class="px-2 pt-2 pb-4 sm:flex sm:p-0 bg-gray-100 sm:bg-transparent"
         >
           <nuxt-link
