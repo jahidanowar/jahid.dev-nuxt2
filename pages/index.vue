@@ -277,6 +277,12 @@ export default {
           content:
             'I’m Jahid Anowar, a Full Stack Web Developer, Programming for the last 4 years and have built 200+ human-centered websites and apps for businesses.'
         }
+      ],
+      link: [
+        {
+          rel: 'canonical',
+          href: 'https://jahid.dev' + this.$route.path
+        }
       ]
     }
   }

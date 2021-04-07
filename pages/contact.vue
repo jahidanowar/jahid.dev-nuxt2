@@ -48,6 +48,12 @@ export default {
           content:
             'Contact Jahid if you are looking for a website that is built for conversion, speed, accessibility and mobile performance.'
         }
+      ],
+      link: [
+        {
+          rel: 'canonical',
+          href: 'https://jahid.dev' + this.$route.path
+        }
       ]
     }
   }

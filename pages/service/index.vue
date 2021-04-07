@@ -141,6 +141,12 @@ export default {
           content:
             'From standard business websites to advanced e-commerce sites. I create awesome looking websites that meet your business objectives.'
         }
+      ],
+      link: [
+        {
+          rel: 'canonical',
+          href: 'https://jahid.dev' + this.$route.path
+        }
       ]
     }
   }

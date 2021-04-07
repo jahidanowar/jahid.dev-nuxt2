@@ -29,7 +29,13 @@ export default {
   /* eslint-enable */
   head() {
     return {
-      title: 'Portfolio - Jahid Anowar'
+      title: 'Portfolio - Jahid Anowar',
+      link: [
+        {
+          rel: 'canonical',
+          href: 'https://jahid.dev' + this.$route.path
+        }
+      ]
     }
   }
 }

@@ -60,6 +60,12 @@ export default {
           content:
             'Visit my Blog for Website Design, Development , Digital Marketing and WordPress Related Articles, Tips , Web Hosting deals coupons and more.'
         }
+      ],
+      link: [
+        {
+          rel: 'canonical',
+          href: 'https://jahid.dev' + this.$route.path
+        }
       ]
     }
   }
