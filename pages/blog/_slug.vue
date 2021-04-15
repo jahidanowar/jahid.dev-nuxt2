@@ -228,12 +228,6 @@ export default {
           content: 'blog'
         }
       ],
-      link: [
-        {
-          rel: 'canonical',
-          href: 'https://jahid.dev' + this.$route.path
-        }
-      ]
     }
   },
   mounted() {
