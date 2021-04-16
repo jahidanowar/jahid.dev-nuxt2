@@ -28,10 +28,8 @@ export default {
     }
   },
   mounted() {
-    setTimeout(() => {
       // window.location.replace(this.links[0]._ta_destination_url)
       window.location = this.links[0]._ta_destination_url
-    }, 3000)
   },
   data() {
     return {
