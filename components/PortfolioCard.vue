@@ -20,7 +20,7 @@
       <p
         class="mt-5 text-primary inline-flex items-center group-hover:underline duration-200"
       >
-        View Porject
+        View Project
         <svg
           class="w-4 h-4 ml-2 transform group-hover:translate-x-2 duration-200"
           viewBox="0 0 24 24"
