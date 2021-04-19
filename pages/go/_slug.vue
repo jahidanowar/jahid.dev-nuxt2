@@ -21,19 +21,19 @@ export default {
     const links = await $axios.$get('/thirstylink/?slug=' + params.slug)
     return { links }
   },
+  data() {
+    return {
+      lottieOptions: { animationData: loadingAnimation.default }
+    }
+  },
+  mounted() {
+    // window.location.replace(this.links[0]._ta_destination_url)
+    window.location = this.links[0]._ta_destination_url
+  },
   head() {
     return {
       title: this.links[0].title.rendered,
       meta: [{ hid: 'robots', name: 'robots', content: 'noindex' }]
-    }
-  },
-  mounted() {
-      // window.location.replace(this.links[0]._ta_destination_url)
-      window.location = this.links[0]._ta_destination_url
-  },
-  data() {
-    return {
-      lottieOptions: { animationData: loadingAnimation.default }
     }
   }
 }
