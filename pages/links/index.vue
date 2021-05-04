@@ -13,6 +13,11 @@
         </p>
       </header>
       <div class="links my-10">
+        <a
+          href="https://www.covidwb.in"
+          class="flex p-2 bg-white rounded-lg shadow transform hover:-translate-y-2 justify-center mb-5"
+          >🌍 Covid Resources</a
+        >
         <nuxt-link
           to="/"
           class="flex p-2 bg-white rounded-lg shadow transform hover:-translate-y-2 justify-center mb-5"
