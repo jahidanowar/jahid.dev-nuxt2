@@ -1,6 +1,6 @@
 <template>
   <div class="p-4">
-    <div class="h-full bg-gray-200 p-8 rounded">
+    <div class="h-full bg-gray-200 p-8 rounded-lg">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="currentColor"
@@ -16,7 +16,13 @@
         <img
           alt="testimonial"
           :src="testimonial.avatar"
-          class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
+          class="
+            w-12
+            h-12
+            rounded-full
+            flex-shrink-0
+            object-cover object-center
+          "
         />
         <span class="flex-grow flex flex-col pl-4">
           <span class="title-font font-medium text-gray-900">{{

@@ -29,7 +29,14 @@
           <a
             href="https://www.linkedin.com/in/jahidanowar/"
             target="_blank"
-            class="p-3 bg-gray-900 hover:bg-primary text-white rounded-full ml-2"
+            class="
+              p-3
+              bg-gray-900
+              hover:bg-primary
+              text-white
+              rounded-full
+              ml-2
+            "
             ><svg
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
@@ -42,7 +49,14 @@
           ></a>
           <a
             href="https://facebook.com/jahid500k"
-            class="p-3 bg-gray-900 hover:bg-primary text-white rounded-full ml-2"
+            class="
+              p-3
+              bg-gray-900
+              hover:bg-primary
+              text-white
+              rounded-full
+              ml-2
+            "
             ><svg
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +70,14 @@
           ></a>
           <a
             href="https://www.youtube.com/channel/UCeLvns7Gwo_aq18-GKT-yww"
-            class="p-3 bg-gray-900 hover:bg-primary text-white rounded-full ml-2"
+            class="
+              p-3
+              bg-gray-900
+              hover:bg-primary
+              text-white
+              rounded-full
+              ml-2
+            "
             ><svg
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
@@ -90,13 +111,13 @@
             <form action="/">
               <input
                 id="email"
-                class="mt-3 border shadow-sm w-full py-2 rounded px-3 focus:shadow-lg"
+                class="mt-3 border w-full py-2 rounded-lg px-3 focus:shadow-lg"
                 type="email"
                 name="email"
                 placeholder="Enter your email"
               />
               <button
-                class="btn w-full bg-primary hover:bg-secondary text-white mt-3 shadow"
+                class="btn w-full bg-primary hover:bg-secondary text-white mt-3"
               >
                 Subscribe
               </button>

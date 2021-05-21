@@ -1,9 +1,26 @@
 <template>
   <div
-    class="shadow-xs bg-white fixed bottom-0 w-full z-50 sm:static transition-all duration-300"
+    class="
+      shadow-xs
+      bg-white
+      fixed
+      bottom-0
+      w-full
+      z-50
+      sm:static
+      transition-all
+      duration-300
+    "
   >
     <header
-      class="sm:flex sm:justify-between sm:items-center sm:px-4 container mx-auto"
+      class="
+        sm:flex
+        sm:justify-between
+        sm:items-center
+        sm:px-4
+        container
+        mx-auto
+      "
     >
       <div class="flex items-center justify-between px-4 py-3 sm:p-0">
         <nuxt-link to="/">
@@ -16,7 +33,16 @@
         <div class="sm:hidden">
           <button
             type="button"
-            class="block foxus:text-primary focus:outline-none focus:bg-gray-200 p-2 rounded-md transition-all duration-300"
+            class="
+              block
+              foxus:text-primary
+              focus:outline-none
+              focus:bg-gray-200
+              p-2
+              rounded-md
+              transition-all
+              duration-300
+            "
             @click="isOpen = !isOpen"
           >
             <svg v-if="isOpen" class="h-6 w-6 fill-current" viewBox="0 0 24 24">
@@ -45,11 +71,24 @@
       </div>
       <nav
         :class="isOpen ? 'block' : 'hidden'"
-        class="px-2 pt-2 pb-4 sm:flex sm:p-0 bg-gray-100 sm:bg-transparent"
+        class="px-2 pt-3 pb-4 sm:flex bg-gray-100 sm:bg-transparent"
       >
         <nuxt-link
           to="/service"
-          class="mt-1 px-4 py-5 text-lg hover:bg-gray-200 sm:mt-0 sm:ml-2 w-full sm:w-auto inline-flex sm:flex-row items-center flex-row-reverse"
+          class="
+            px-4
+            py-2
+            rounded-lg
+            hover:bg-gray-200
+            sm:mt-0
+            sm:ml-2
+            w-full
+            sm:w-auto
+            inline-flex
+            sm:flex-row
+            items-center
+            flex-row-reverse
+          "
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -69,7 +108,20 @@
         </nuxt-link>
         <nuxt-link
           to="/portfolio"
-          class="mt-1 px-4 py-5 text-lg hover:bg-gray-200 sm:mt-0 sm:ml-2 w-full sm:w-auto inline-flex sm:flex-row items-center flex-row-reverse"
+          class="
+            px-4
+            py-2
+            rounded-lg
+            hover:bg-gray-200
+            sm:mt-0
+            sm:ml-2
+            w-full
+            sm:w-auto
+            inline-flex
+            sm:flex-row
+            items-center
+            flex-row-reverse
+          "
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -89,7 +141,20 @@
         >
         <nuxt-link
           to="/blog"
-          class="mt-1 px-4 py-5 text-lg hover:bg-gray-200 sm:mt-0 sm:ml-2 w-full sm:w-auto inline-flex sm:flex-row items-center flex-row-reverse"
+          class="
+            px-4
+            py-2
+            rounded-lg
+            hover:bg-gray-200
+            sm:mt-0
+            sm:ml-2
+            w-full
+            sm:w-auto
+            inline-flex
+            sm:flex-row
+            items-center
+            flex-row-reverse
+          "
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -113,7 +178,20 @@
         >
         <nuxt-link
           to="/contact"
-          class="mt-1 px-4 py-5 text-lg hover:bg-gray-200 sm:mt-0 sm:ml-2 w-full sm:w-auto inline-flex sm:flex-row items-center flex-row-reverse"
+          class="
+            px-4
+            py-2
+            rounded-lg
+            hover:bg-gray-200
+            sm:mt-0
+            sm:ml-2
+            w-full
+            sm:w-auto
+            inline-flex
+            sm:flex-row
+            items-center
+            flex-row-reverse
+          "
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

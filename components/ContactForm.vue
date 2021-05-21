@@ -9,7 +9,18 @@
       <div class="w-full">
         <input
           v-model="contactForm.fname"
-          class="bg-white shadow-sm rounded border border-gray-400 focus:outline-none focus:border-primary text-base px-4 py-2 mb-4 w-full"
+          class="
+            bg-white
+            rounded-lg
+            border
+            focus:outline-none
+            focus:border-primary
+            text-base
+            px-4
+            py-2
+            mb-4
+            w-full
+          "
           type="text"
           name="name"
           placeholder="Name"
@@ -19,7 +30,18 @@
       <div class="w-full">
         <input
           v-model="contactForm.email"
-          class="bg-white shadow-sm rounded border border-gray-400 focus:outline-none focus:border-primary text-base px-4 py-2 mb-4 w-full"
+          class="
+            bg-white
+            rounded-lg
+            border
+            focus:outline-none
+            focus:border-primary
+            text-base
+            px-4
+            py-2
+            mb-4
+            w-full
+          "
           type="email"
           name="email"
           placeholder="Email"
@@ -32,7 +54,19 @@
         <select
           v-model="contactForm.subject"
           name="projectType"
-          class="block bg-white shadow-sm rounded border border-gray-400 focus:outline-none focus:border-primary text-base px-4 py-2 appearance-none w-full"
+          class="
+            block
+            bg-white
+            rounded-lg
+            border
+            focus:outline-none
+            focus:border-primary
+            text-base
+            px-4
+            py-2
+            appearance-none
+            w-full
+          "
         >
           <option value="0" class="text-gray-400">Interested In</option>
           <option value="Projects" class="text-gray-400">Projects</option>
@@ -41,7 +75,16 @@
           <option value="Other" class="text-gray-400">Other</option>
         </select>
         <div
-          class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
+          class="
+            pointer-events-none
+            absolute
+            inset-y-0
+            right-0
+            flex
+            items-center
+            px-2
+            text-gray-700
+          "
         >
           <svg
             class="fill-current h-4 w-4"
@@ -57,7 +100,7 @@
       <!-- <div class="relative w-full mb-4">
         <select
           name="budgetRange"
-          class="block bg-white shadow-sm rounded border border-gray-400 focus:outline-none focus:border-primary text-base px-4 py-2 appearance-none w-full"
+          class="block bg-white rounded-lg border focus:outline-none focus:border-primary text-base px-4 py-2 appearance-none w-full"
         >
           <option value="0" class="text-gray-400">Budget Range</option>
         </select>
@@ -79,11 +122,30 @@
     <textarea
       v-model="contactForm.message"
       name="description"
-      class="bg-white shadow-sm rounded border border-gray-400 focus:outline-none focus:border-primary text-base px-4 py-2 mb-4 h-32"
+      class="
+        bg-white
+        rounded-lg
+        border
+        focus:outline-none
+        focus:border-primary
+        text-base
+        px-4
+        py-2
+        mb-4
+        h-32
+      "
       placeholder="Description"
     ></textarea>
     <button
-      class="btn w-full bg-primary hover:bg-secondary text-white inline-flex justify-center"
+      class="
+        btn
+        w-full
+        bg-primary
+        hover:bg-secondary
+        text-white
+        inline-flex
+        justify-center
+      "
       :disabled="loading"
       type="submit"
     >
@@ -137,9 +199,7 @@ export default {
   async mounted() {
     try {
       await this.$recaptcha.init()
-    } catch (e) {
-      console.log(e)
-    }
+    } catch (e) {}
   },
   methods: {
     async onSubmit() {
@@ -168,7 +228,6 @@ export default {
             }, 8000)
           })
       } catch (error) {
-        console.log('Login error:', error)
       } finally {
         this.loading = false
       }

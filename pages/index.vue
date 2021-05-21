@@ -1,13 +1,28 @@
 <template>
   <main class="pt-10">
     <div
-      class="container mx-auto flex flex-col sm:flex-row justify-between items-center md:py-16"
+      class="
+        container
+        mx-auto
+        flex flex-col
+        sm:flex-row
+        justify-between
+        items-center
+        md:py-16
+      "
     >
       <div
         class="w-full md:w-1/2 px-6 text-left max-w-2xl md:max-w-3xl mx-auto"
       >
         <h2
-          class="text-gray-900 dark:text-gray-100 text-3xl md:text-5xl leading-tight tracking-tight"
+          class="
+            text-gray-900
+            dark:text-gray-100
+            text-3xl
+            md:text-5xl
+            leading-tight
+            tracking-tight
+          "
         >
           Creating Kickass website for businesses.<br />
           <span class="text-primary">One at a Time.</span>
@@ -22,7 +37,15 @@
         <div class="flex my-6">
           <nuxt-link
             to="/contact"
-            class="md:text-xl px-6 py-3 rounded-md bg-primary hover:bg-secondary text-white"
+            class="
+              md:text-xl
+              px-6
+              py-3
+              rounded-lg
+              bg-primary
+              hover:bg-secondary
+              text-white
+            "
             >Get in touch!</nuxt-link
           >
         </div>
@@ -195,7 +218,7 @@
     </div>
     <!-- CTA  -->
     <div class="section">
-      <div class="container mx-auto cta-bg p-12 md:p-16 rounded-md">
+      <div class="container mx-auto cta-bg p-12 md:p-16 rounded-lg">
         <div class="flex flex-wrap align-middle justify-between">
           <div class="text">
             <h2 class="text-3xl md:text-4xl">
@@ -208,7 +231,16 @@
           <div class="self-center justify-self-end">
             <nuxt-link
               to="/contact"
-              class="mt-5 bg-primary hover:bg-secondary text-white md:text-xl px-8 py-4 rounded-md"
+              class="
+                mt-5
+                bg-primary
+                hover:bg-secondary
+                text-white
+                md:text-xl
+                px-8
+                py-4
+                rounded-lg
+              "
               >Get in touch!</nuxt-link
             >
           </div>
