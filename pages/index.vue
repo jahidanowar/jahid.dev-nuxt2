@@ -12,7 +12,16 @@
       "
     >
       <div
-        class="w-full md:w-1/2 px-6 text-left max-w-2xl md:max-w-3xl mx-auto"
+        class="
+          w-full
+          md:w-1/2
+          px-6
+          md:pr-20
+          text-left
+          max-w-2xl
+          md:max-w-3xl
+          mx-auto
+        "
       >
         <h2
           class="
