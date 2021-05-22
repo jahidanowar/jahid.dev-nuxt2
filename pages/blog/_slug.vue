@@ -9,7 +9,12 @@
       <!-- Post Heading -->
       <div class="max-w-4xl mx-auto text-center px-0 md:px-10">
         <h1
-          class="text-gray-900 text-4xl md:text-6xl tracking-tight leading-tight"
+          class="
+            text-gray-900 text-4xl
+            md:text-6xl
+            tracking-tight
+            leading-tight
+          "
         >
           {{ post.title.rendered }}
         </h1>
@@ -20,7 +25,7 @@
         <img
           :src="post._embedded['wp:featuredmedia']['0'].source_url"
           :alt="post.title.rendred"
-          class="rounded-lg shadow-lg w-full content-center object-cover"
+          class="rounded-2xl shadow-lg w-full content-center object-cover"
         />
       </div>
       <!-- ./ Post Thumbnails -->
@@ -52,7 +57,15 @@
           </div>
         </div>
         <div
-          class="w-full md:w-2/3 mt-4 md:mt-0 inline-flex items-center justify-end"
+          class="
+            w-full
+            md:w-2/3
+            mt-4
+            md:mt-0
+            inline-flex
+            items-center
+            justify-end
+          "
         >
           <div class="font-medium" v-html="post.excerpt.rendered"></div>
         </div>
@@ -134,56 +147,6 @@
         ></div>
       </div>
       <!-- ./ Post Content -->
-      <!-- Author Box -->
-      <div
-        class="max-w-4xl mx-auto author-box p-8 md:p-12 rounded-xl flex flex-wrap md:flex-no-wrap"
-      >
-        <div class="avatar w-64 mr-5 mb-5 md:mb-0">
-          <img
-            alt=""
-            src="https://secure.gravatar.com/avatar/06973051ae1000ce76854211a57b12f1?s=96&amp;d=mm&amp;r=g"
-            srcset="
-              https://secure.gravatar.com/avatar/06973051ae1000ce76854211a57b12f1?s=192&amp;d=mm&amp;r=g 2x
-            "
-            class="avatar rounded-full border"
-            loading="lazy"
-            width="96"
-            height="96"
-          />
-        </div>
-        <div class="author-box__content">
-          <div class="flex flex-wrap justify-between">
-            <div class="mb-5 md:mb-0">
-              <p class="text-primary uppercase text-xs">About Me</p>
-              <h4
-                class="text-3xl"
-                itemprop="author"
-                itemscope=""
-                itemtype="http://schema.org/Person"
-              >
-                Jahid Anowar
-              </h4>
-            </div>
-            <div class="justify-self-end">
-              <social-buttons></social-buttons>
-            </div>
-          </div>
-          <div class="author-summery mt-5 mb-8">
-            <p class="author-description transform-none text-lg">
-              Hi, I’m Jahid Anowar, a Website designer with programming
-              expertise. I’ve been designing and programming for the last four
-              years and have built various human-centered websites and web apps
-              for small and medium-sized businesses.
-            </p>
-          </div>
-          <nuxt-link
-            to="/contact"
-            class="block md:inline text-center btn bg-primary hover:bg-secondary text-white"
-            >Get in touch!</nuxt-link
-          >
-        </div>
-      </div>
-      <!-- ./ Author Box  -->
     </article>
   </div>
 </template>
@@ -227,7 +190,7 @@ export default {
           property: 'og:type',
           content: 'blog'
         }
-      ],
+      ]
     }
   },
   mounted() {

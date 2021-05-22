@@ -9,18 +9,7 @@
       <div class="w-full">
         <input
           v-model="contactForm.fname"
-          class="
-            bg-white
-            rounded-lg
-            border
-            focus:outline-none
-            focus:border-primary
-            text-base
-            px-4
-            py-2
-            mb-4
-            w-full
-          "
+          class="form-control"
           type="text"
           name="name"
           placeholder="Name"
@@ -30,18 +19,7 @@
       <div class="w-full">
         <input
           v-model="contactForm.email"
-          class="
-            bg-white
-            rounded-lg
-            border
-            focus:outline-none
-            focus:border-primary
-            text-base
-            px-4
-            py-2
-            mb-4
-            w-full
-          "
+          class="form-control"
           type="email"
           name="email"
           placeholder="Email"
@@ -50,23 +28,11 @@
       </div>
     </div>
     <div class="flex flex-col md:flex-row gap-2">
-      <div class="relative w-full mb-4">
+      <div class="relative w-full my-4">
         <select
           v-model="contactForm.subject"
           name="projectType"
-          class="
-            block
-            bg-white
-            rounded-lg
-            border
-            focus:outline-none
-            focus:border-primary
-            text-base
-            px-4
-            py-2
-            appearance-none
-            w-full
-          "
+          class="block form-control appearance-none"
         >
           <option value="0" class="text-gray-400">Interested In</option>
           <option value="Projects" class="text-gray-400">Projects</option>
@@ -100,7 +66,7 @@
       <!-- <div class="relative w-full mb-4">
         <select
           name="budgetRange"
-          class="block bg-white rounded-lg border focus:outline-none focus:border-primary text-base px-4 py-2 appearance-none w-full"
+          class="block bg-white rounded-lg border focus:outline-none focus:border-gray-400 text-base px-4 py-2 appearance-none w-full"
         >
           <option value="0" class="text-gray-400">Budget Range</option>
         </select>
@@ -122,30 +88,11 @@
     <textarea
       v-model="contactForm.message"
       name="description"
-      class="
-        bg-white
-        rounded-lg
-        border
-        focus:outline-none
-        focus:border-primary
-        text-base
-        px-4
-        py-2
-        mb-4
-        h-32
-      "
+      class="form-control mb-4 h-32"
       placeholder="Description"
     ></textarea>
     <button
-      class="
-        btn
-        w-full
-        bg-primary
-        hover:bg-secondary
-        text-white
-        inline-flex
-        justify-center
-      "
+      class="btn btn-primary inline-flex justify-center"
       :disabled="loading"
       type="submit"
     >

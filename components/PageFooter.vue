@@ -15,9 +15,10 @@
         <div class="flex mt-3">
           <a
             href="https://twitter.com/@jahidDev"
-            class="p-3 bg-gray-900 hover:bg-primary text-white rounded-full"
+            class="p-3 bg-gray-100 hover:bg-gray-200 text-gray-800 rounded-lg"
             ><svg
               viewBox="0 0 24 24"
+              6
               xmlns="http://www.w3.org/2000/svg"
               class="h-4"
               fill="currentColor"
@@ -31,10 +32,10 @@
             target="_blank"
             class="
               p-3
-              bg-gray-900
-              hover:bg-primary
-              text-white
-              rounded-full
+              bg-gray-100
+              hover:bg-gray-200
+              text-gray-800
+              rounded-lg
               ml-2
             "
             ><svg
@@ -51,10 +52,10 @@
             href="https://facebook.com/jahid500k"
             class="
               p-3
-              bg-gray-900
-              hover:bg-primary
-              text-white
-              rounded-full
+              bg-gray-100
+              hover:bg-gray-200
+              text-gray-800
+              rounded-lg
               ml-2
             "
             ><svg
@@ -72,10 +73,10 @@
             href="https://www.youtube.com/channel/UCeLvns7Gwo_aq18-GKT-yww"
             class="
               p-3
-              bg-gray-900
-              hover:bg-primary
-              text-white
-              rounded-full
+              bg-gray-100
+              hover:bg-gray-200
+              text-gray-800
+              rounded-lg
               ml-2
             "
             ><svg
@@ -111,16 +112,12 @@
             <form action="/">
               <input
                 id="email"
-                class="mt-3 border w-full py-2 rounded-lg px-3 focus:shadow-lg"
+                class="mt-3 form-control"
                 type="email"
                 name="email"
                 placeholder="Enter your email"
               />
-              <button
-                class="btn w-full bg-primary hover:bg-secondary text-white mt-3"
-              >
-                Subscribe
-              </button>
+              <button class="btn w-full btn-secondary mt-3">Subscribe</button>
             </form>
           </div>
         </div>

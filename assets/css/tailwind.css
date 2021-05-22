@@ -24,6 +24,10 @@ h4 {
   @apply bg-gray-800 hover:bg-gray-900 text-white;
 }
 
+.form-control {
+  @apply bg-white rounded-lg border focus:outline-none focus:border-gray-400 text-base px-4 py-2 w-full;
+}
+
 .section {
   @apply py-20;
   @apply px-6;
