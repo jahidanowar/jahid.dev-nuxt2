@@ -7,21 +7,23 @@
       <div
         class="
           h-full
-          rounded-2xl
+          rounded-3xl
           overflow-hidden
-          border
+          shadow-xl
+          border-t
           transform
           group-hover:-translate-y-2
           duration-300
+          p-5
         "
       >
         <img
           v-if="post.image"
-          class="lg:h-48 md:h-36 w-full object-cover object-center"
+          class="lg:h-48 md:h-36 w-full object-cover object-center rounded-2xl"
           :src="post.image"
           :alt="post.title.rendered"
         />
-        <div class="p-6">
+        <div class="mt-5">
           <h2 class="tracking-widest text-xs title-font text-gray-500 mb-1">
             <p class="uppercase text-xs">
               <span class="inline-flex pr-2"
