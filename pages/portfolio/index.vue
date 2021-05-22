@@ -1,7 +1,7 @@
 <template>
   <main class="portfolio">
     <page-hero
-      heading="Few projects I have worked on so far."
+      heading="Shaping world class websites, designs and experiences"
       leading="Designed Website for Small and Medium Sized Business and did UI/UX enhancements to bring more customers to the business."
       image="https://res.cloudinary.com/jahiddev/image/upload/v1602132651/full-stack-development-services_mgomjz.png"
     ></page-hero>
