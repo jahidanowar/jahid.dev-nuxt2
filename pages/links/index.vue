@@ -11,7 +11,7 @@
   >
     <div class="bio container mx-auto sm:max-w-md">
       <header class="">
-        <h1 class="text-5xl mb-4">
+        <h1 class="text-4xl md:text-5xl mb-4">
           <span class="text-primary">hello</span>👋 i'm jahid
         </h1>
         <p>
@@ -69,7 +69,7 @@
             justify-center
             mb-5
           "
-          >🧑‍💻 blog</nuxt-link
+          >🐱‍🏍 blog</nuxt-link
         >
         <nuxt-link
           to="/contact"
