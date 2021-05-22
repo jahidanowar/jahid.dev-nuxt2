@@ -11,7 +11,7 @@ h3,
 h4 {
   @apply font-display;
 }
-.container{
+.container {
   @apply lg:max-w-7xl;
 }
 .btn {
@@ -92,7 +92,7 @@ h3 {
 }
 
 .content > pre {
-  @apply rounded-lg;
+  @apply rounded-2xl;
   overflow: auto;
   scrollbar-width: none;
 }
@@ -153,6 +153,9 @@ h3 {
 }
 
 /* Reponsive Design */
+@screen sm {
+}
+
 @screen md {
   .section-heading {
     @apply text-3xl;
@@ -183,9 +186,11 @@ h3 {
     margin-bottom: 10px;
   }
 }
-@screen sm {
+@screen xl {
+  .entry-sticky-shares {
+    left: 20%;
+  }
 }
-
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   #tidio-chat-iframe {
