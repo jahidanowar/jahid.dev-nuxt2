@@ -186,7 +186,7 @@ h3 {
     margin-bottom: 10px;
   }
 }
-@screen xl {
+@screen 2xl {
   .entry-sticky-shares {
     left: 20%;
   }
