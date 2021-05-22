@@ -11,6 +11,9 @@ h3,
 h4 {
   @apply font-display;
 }
+.container{
+  @apply lg:max-w-7xl;
+}
 .btn {
   @apply rounded-lg;
   @apply px-8;
