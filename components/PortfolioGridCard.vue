@@ -1,5 +1,5 @@
 <template>
-  <div class="rounded-lg shadow-lg overflow-hidden border bg-white">
+  <div class="rounded-2xl overflow-hidden">
     <div class="relative h-64">
       <img
         :src="portfolio._embedded['wp:featuredmedia']['0'].source_url"

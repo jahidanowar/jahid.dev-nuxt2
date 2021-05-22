@@ -1,5 +1,5 @@
 <template>
-  <div class="p-6 rounded-lg shadow-lg border-t-2">
+  <div class="p-6 rounded-lg">
     <div class="inline-flex items-center justify-center rounded-full mb-4">
       <slot></slot>
     </div>

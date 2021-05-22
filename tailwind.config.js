@@ -4,7 +4,7 @@
  ** Docs: https://tailwindcss.com/docs/configuration
  ** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
  */
-const defaultTheme = require('tailwindcss/defaultTheme')
+// const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
   darkMode: 'class',
@@ -18,7 +18,7 @@ module.exports = {
       },
       colors: {
         primary: '#4DC0B5',
-        secondary: '#6bdbd0',
+        secondary: '#3da69c',
         dark: '#de3618',
         text: '#4a5568'
       },

@@ -1,24 +1,54 @@
 <template>
   <nuxt-link
     to="/contact"
-    class="group portfolio flex flex-wrap mb-16 align-middle hover:no-underline focus:no-underline"
+    class="
+      group
+      portfolio
+      flex flex-wrap
+      mb-16
+      align-middle
+      hover:no-underline
+      focus:no-underline
+    "
   >
     <div class="w-full md:w-6/12 relative h-64 md:h-96">
       <img
         :src="portfolio._embedded['wp:featuredmedia']['0'].source_url"
         :alt="portfolio.title"
-        class="absolute object-cover w-full h-full rounded-lg transform duration-200 group-hover:-translate-y-2 group-hover:shadow-xl"
+        class="
+          absolute
+          object-cover
+          w-full
+          h-full
+          rounded-2xl
+          transform
+          duration-200
+          group-hover:-translate-y-2 group-hover:shadow-xl
+        "
       />
     </div>
     <div class="w-full md:w-5/12 mt-5 md:mt-0 md:ml-10 self-center">
       <h3
-        class="text-2xl md:text-4xl font-normal leading-tight group-hover:underline"
+        class="
+          text-2xl
+          md:text-4xl
+          font-normal
+          leading-tight
+          group-hover:underline
+        "
       >
         {{ portfolio.title.rendered }}
       </h3>
       <p v-html="portfolio.excerpt.rendered" class="mt-5"></p>
       <p
-        class="mt-5 text-primary inline-flex items-center group-hover:underline duration-200"
+        class="
+          mt-5
+          text-primary
+          inline-flex
+          items-center
+          group-hover:underline
+          duration-200
+        "
       >
         View Project
         <svg

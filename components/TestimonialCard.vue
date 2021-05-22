@@ -1,6 +1,6 @@
 <template>
   <div class="p-4">
-    <div class="h-full bg-gray-200 p-8 rounded-lg">
+    <div class="h-full bg-gray-100 p-8 rounded-2xl">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="currentColor"

@@ -182,6 +182,7 @@
             px-4
             py-2
             rounded-lg
+            border
             hover:bg-gray-200
             sm:mt-0
             sm:ml-2
