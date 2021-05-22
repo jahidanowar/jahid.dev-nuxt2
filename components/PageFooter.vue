@@ -109,14 +109,31 @@
               Be the first to know when are the new digital products coming out.
               Expect only 1 or 2 emails a month. I promise, I won’t spam you.
             </p>
-            <form action="/">
+            <form
+              id="mc-embedded-subscribe-form"
+              action="https://dev.us8.list-manage.com/subscribe/post?u=2df9d9dee856197c9cb3e0fac&amp;id=ac2908ee1e"
+              method="post"
+              name="mc-embedded-subscribe-form"
+              class="validate"
+              target="_blank"
+              novalidate
+            >
               <input
                 id="email"
                 class="mt-3 form-control"
                 type="email"
-                name="email"
+                name="EMAIL"
                 placeholder="Enter your email"
               />
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px" aria-hidden="true">
+                <input
+                  type="text"
+                  name="b_2df9d9dee856197c9cb3e0fac_ac2908ee1e"
+                  tabindex="-1"
+                  value=""
+                />
+              </div>
               <button class="btn w-full btn-secondary mt-3">Subscribe</button>
             </form>
           </div>
