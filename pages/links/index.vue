@@ -35,7 +35,7 @@
             justify-center
             mb-5
           "
-          >🌍 Covid Resources</a
+          >🌍 covid resources</a
         >
         <nuxt-link
           to="/"
