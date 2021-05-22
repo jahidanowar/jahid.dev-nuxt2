@@ -1,10 +1,17 @@
 <template>
   <div
-    class="bg-pattern p-5 h-screen grid place-items-center border-t-8 border-primary"
+    class="
+      bg-pattern
+      p-5
+      h-screen
+      grid
+      place-items-center
+      border-t-8 border-primary
+    "
   >
     <div class="bio container mx-auto sm:max-w-md">
       <header class="">
-        <h1 class="text-5xl">
+        <h1 class="text-5xl mb-4">
           <span class="text-primary">hello</span> i'm jahid
         </h1>
         <p>
@@ -15,27 +22,87 @@
       <div class="links my-10">
         <a
           href="https://www.covidwb.in"
-          class="flex p-2 bg-white rounded-lg shadow transform hover:-translate-y-2 justify-center mb-5"
+          class="
+            flex
+            py-3
+            bg-white
+            border
+            rounded-lg
+            transform
+            hover:-translate-y-2
+            transition-transform
+            duration-300
+            justify-center
+            mb-5
+          "
           >🌍 Covid Resources</a
         >
         <nuxt-link
           to="/"
-          class="flex p-2 bg-white rounded-lg shadow transform hover:-translate-y-2 justify-center mb-5"
+          class="
+            flex
+            py-3
+            bg-white
+            rounded-lg
+            border
+            transform
+            hover:-translate-y-2
+            transition-transform
+            duration-300
+            justify-center
+            mb-5
+          "
           >👉 website</nuxt-link
         >
         <nuxt-link
           to="/blog"
-          class="flex p-2 bg-white rounded-lg shadow transform hover:-translate-y-2 justify-center mb-5"
+          class="
+            flex
+            py-3
+            bg-white
+            rounded-lg
+            border
+            transform
+            hover:-translate-y-2
+            transition-transform
+            duration-300
+            justify-center
+            mb-5
+          "
           >🧑‍💻 blog</nuxt-link
         >
         <nuxt-link
           to="/contact"
-          class="flex p-2 bg-white rounded-lg shadow transform hover:-translate-y-2 justify-center mb-5"
+          class="
+            flex
+            py-3
+            bg-white
+            rounded-lg
+            border
+            transform
+            hover:-translate-y-2
+            transition-transform
+            duration-300
+            justify-center
+            mb-5
+          "
           >🤙 contact
         </nuxt-link>
         <a
           href="https://foxflue.com"
-          class="flex p-2 bg-white rounded-lg shadow transform hover:-translate-y-2 justify-center mb-5"
+          class="
+            flex
+            py-3
+            bg-white
+            rounded-lg
+            border
+            transform
+            hover:-translate-y-2
+            transition-transform
+            duration-300
+            justify-center
+            mb-5
+          "
           >🤝 company
         </a>
       </div>
@@ -63,11 +130,11 @@
 import SocialButtons from './../../components/SocialButtons'
 import SocialIcon from './../../components/SocialIcon'
 export default {
-  layout: 'empty',
   components: {
     SocialButtons,
     SocialIcon
   },
+  layout: 'empty',
   head() {
     return {
       title: 'Links - Jahid Anowar'

@@ -2,7 +2,7 @@
   <div class="flex">
     <a
       href="https://twitter.com/@jahidDev"
-      class="p-3 bg-gray-700 hover:bg-primary text-white rounded-full"
+      class="p-3 bg-gray-200 hover:bg-gray-300 text-gray-800 rounded-lg"
       ><svg
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
@@ -16,7 +16,7 @@
     <a
       href="https://www.linkedin.com/in/jahidanowar/"
       target="_blank"
-      class="p-3 bg-gray-700 hover:bg-primary text-white rounded-full ml-2"
+      class="p-3 bg-gray-200 hover:bg-gray-300 text-gray-800 rounded-lg ml-2"
       ><svg
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
@@ -29,7 +29,7 @@
     ></a>
     <a
       href="https://facebook.com/jahid500k"
-      class="p-3 bg-gray-700 hover:bg-primary text-white rounded-full ml-2"
+      class="p-3 bg-gray-200 hover:bg-gray-300 text-gray-800 rounded-lg ml-2"
       ><svg
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
@@ -43,7 +43,7 @@
     ></a>
     <a
       href="https://www.youtube.com/channel/UCeLvns7Gwo_aq18-GKT-yww"
-      class="p-3 bg-gray-700 hover:bg-primary text-white rounded-full ml-2"
+      class="p-3 bg-gray-200 hover:bg-gray-300 text-gray-800 rounded-lg ml-2"
       ><svg
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
