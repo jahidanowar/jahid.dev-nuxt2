@@ -12,7 +12,7 @@
     <div class="bio container mx-auto sm:max-w-md">
       <header class="">
         <h1 class="text-5xl mb-4">
-          <span class="text-primary">hello</span> i'm jahid
+          <span class="text-primary">hello</span>👋 i'm jahid
         </h1>
         <p>
           A full stack developer creating fun content with tips, tricks and
