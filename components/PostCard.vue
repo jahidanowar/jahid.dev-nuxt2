@@ -1,10 +1,9 @@
 <template>
-  <article class="p-4">
+  <article class="p-4 group">
     <nuxt-link
       :to="{ name: 'blog-slug', params: { slug: post.slug } }"
       class="
         block
-        group
         h-full
         rounded-3xl
         overflow-hidden
