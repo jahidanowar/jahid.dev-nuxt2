@@ -1,6 +1,5 @@
 <template>
-  <nuxt-link
-    to="/contact"
+  <div
     class="
       group
       portfolio
@@ -39,8 +38,9 @@
       >
         {{ portfolio.title.rendered }}
       </h3>
-      <p v-html="portfolio.excerpt.rendered" class="mt-5"></p>
-      <p
+      <div v-html="portfolio.excerpt.rendered" class="mt-5"></div>
+      <nuxt-link
+        to="/contact"
         class="
           mt-5
           text-primary
@@ -63,9 +63,9 @@
           <path d="M5 12h14"></path>
           <path d="M12 5l7 7-7 7"></path>
         </svg>
-      </p>
+      </nuxt-link>
     </div>
-  </nuxt-link>
+  </div>
 </template>
 
 <script>

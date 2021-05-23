@@ -1,10 +1,7 @@
 <template>
   <div class="p-4">
-    <nuxt-link
-      :to="{ name: 'blog-slug', params: { slug: post.slug } }"
-      class="group"
-    >
-      <div
+    <div class="group block">
+      <article
         class="
           h-full
           rounded-3xl
@@ -108,8 +105,8 @@
             </nuxt-link>
           </div>
         </div>
-      </div>
-    </nuxt-link>
+      </article>
+    </div>
   </div>
 </template>
 
