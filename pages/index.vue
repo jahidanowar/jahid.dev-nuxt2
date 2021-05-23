@@ -283,7 +283,7 @@ export default {
   },
   /* eslint-disable */
   async asyncData({ $axios }) {
-    const projects = await $axios.$get('/project?_embed=1&page=1&per_page=3')
+    const projects = await $axios.$get('/project?_embed=1&page=1&per_page=6')
     return { projects }
   },
   /* eslint-enable */
