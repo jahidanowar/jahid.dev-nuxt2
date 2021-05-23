@@ -30,6 +30,14 @@ export default {
   head() {
     return {
       title: 'Portfolio - Jahid Anowar',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'Jahid is a Jamstack developer from Kolkata, Designing Website for Small and Medium Sized Business and making UI/UX enhancements to bring more customers to the business.'
+        }
+      ],
       link: [
         {
           rel: 'canonical',
