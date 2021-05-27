@@ -43,13 +43,13 @@ export default {
   },
   head() {
     return {
-      // title: this.link[0].title.rendered,
+      title: this.link.title.rendered,
       meta: [{ hid: 'robots', name: 'robots', content: 'noindex' }]
     }
   },
   mounted() {
     // window.location.replace(this.links[0]._ta_destination_url)
-    // window.location = this.link._ta_destination_url
+    window.location = this.link._ta_destination_url
   }
 }
 </script>

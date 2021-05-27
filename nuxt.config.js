@@ -26,7 +26,10 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       // { rel: 'preload', href: 'https://rsms.me/inter/inter.css', as: 'style' },
       { rel: 'preconnect', href: 'https://fonts.gstatic.com' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Inter&family=Space+Grotesk:wght@500&display=swap' }
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Inter&family=Space+Grotesk:wght@500&display=swap'
+      }
     ],
     script: [
       {
@@ -68,7 +71,7 @@ export default {
     '@/modules/generator'
   ],
 
-  //Google Analytis Config
+  // Google Analytis Config
   googleAnalytics: {
     id: process.env.GOOGLE_ANALYTICS_ID || 'UA-166805413-1' // Use as fallback if no runtime config is provided
   },
@@ -141,6 +144,6 @@ export default {
 
   generate: {
     devtools: false,
-    fallback: '404.html'
+    fallback: true
   }
 }
