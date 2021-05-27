@@ -24,12 +24,9 @@
           href="https://jahid.dev/go/yt"
           target="_blank"
           class="
-            block
-            p-5
+            py-4
             w-full
-            bg-gradient-to-tr
-            from-red-500
-            to-red-500
+            bg-red-500
             mb-5
             rounded-lg
             text-white text-center
@@ -37,11 +34,31 @@
             hover:-translate-y-2
             transition-transform
             duration-300
+            relative
+            flex
+            justify-center
           "
         >
           <span class="font-medium"
             >Explore premium coding shorts for free</span
           >
+          <span class="flex absolute h-3 w-3 top-0 right-0 -mt-1 -mr-1">
+            <span
+              class="
+                animate-ping
+                absolute
+                inline-flex
+                h-full
+                w-full
+                rounded-full
+                bg-gray-600
+                opacity-75
+              "
+            ></span>
+            <span
+              class="relative inline-flex rounded-full h-3 w-3 bg-gray-900"
+            ></span>
+          </span>
         </a>
         <a
           href="https://www.covidwb.in"
