@@ -21,6 +21,29 @@
       </header>
       <div class="links my-10">
         <a
+          href="https://jahid.dev/go/yt"
+          target="_blank"
+          class="
+            block
+            p-5
+            w-full
+            bg-gradient-to-tr
+            from-red-500
+            to-red-500
+            mb-5
+            rounded-lg
+            text-white text-center
+            transform
+            hover:-translate-y-2
+            transition-transform
+            duration-300
+          "
+        >
+          <span class="font-medium"
+            >Explore premium coding shorts for free</span
+          >
+        </a>
+        <a
           href="https://www.covidwb.in"
           class="
             flex

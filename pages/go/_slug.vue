@@ -1,6 +1,15 @@
 <template>
   <div
-    class="link container mx-auto h-screen text-center flex items-center justify-center"
+    class="
+      link
+      container
+      mx-auto
+      h-screen
+      text-center
+      flex
+      items-center
+      justify-center
+    "
   >
     <div>
       <lottie :width="300" :height="300" :options="lottieOptions" />
@@ -13,10 +22,10 @@
 import lottie from 'vue-lottie/src/lottie.vue'
 import * as loadingAnimation from '~/assets/lottie/loading.json'
 export default {
-  layout: 'empty',
   components: {
     lottie
   },
+  layout: 'empty',
   async asyncData({ $axios, params }) {
     const links = await $axios.$get('/thirstylink/?slug=' + params.slug)
     return { links }
@@ -26,15 +35,15 @@ export default {
       lottieOptions: { animationData: loadingAnimation.default }
     }
   },
-  mounted() {
-    // window.location.replace(this.links[0]._ta_destination_url)
-    window.location = this.links[0]._ta_destination_url
-  },
   head() {
     return {
       title: this.links[0].title.rendered,
       meta: [{ hid: 'robots', name: 'robots', content: 'noindex' }]
     }
+  },
+  mounted() {
+    // window.location.replace(this.links[0]._ta_destination_url)
+    window.location = this.links[0]._ta_destination_url
   }
 }
 </script>
