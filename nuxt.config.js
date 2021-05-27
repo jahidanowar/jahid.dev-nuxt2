@@ -144,6 +144,6 @@ export default {
 
   generate: {
     devtools: false,
-    fallback: true
+    fallback: '404.html'
   }
 }
