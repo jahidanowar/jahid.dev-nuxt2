@@ -28,7 +28,7 @@ export default {
   layout: 'empty',
   async asyncData({ $axios, params }) {
     const links = await $axios.$get('/thirstylink/?slug=' + params.slug)
-    return { links }
+    return { link: links[0] }
   },
   data() {
     return {
@@ -37,13 +37,13 @@ export default {
   },
   head() {
     return {
-      title: this.links[0].title.rendered,
+      title: this.link.title.rendered,
       meta: [{ hid: 'robots', name: 'robots', content: 'noindex' }]
     }
   },
   mounted() {
     // window.location.replace(this.links[0]._ta_destination_url)
-    window.location = this.links[0]._ta_destination_url
+    window.location = this.link._ta_destination_url
   }
 }
 </script>
