@@ -67,6 +67,7 @@ export default {
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/pwa',
     '@nuxtjs/google-analytics',
     '@/modules/generator'
   ],
@@ -133,6 +134,22 @@ export default {
       changefreq: 'daily',
       priority: 1,
       lastmod: new Date()
+    }
+  },
+
+  /**
+   * PWA Module Config
+   */
+  pwa: {
+    meta: {
+      name: 'Jahid',
+      theme_color: '#4DC0B5',
+      description: 'Full Stack Developer'
+    },
+    manifest: {
+      lang: 'en',
+      name: 'Jahid',
+      short_name: 'Jahid'
     }
   },
 
