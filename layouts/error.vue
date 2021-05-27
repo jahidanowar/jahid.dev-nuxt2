@@ -16,7 +16,14 @@
 
       <nuxt-link
         to="/"
-        class="btn bg-primary hover:bg-secondary text-white text-center mt-5 md:w-1/4"
+        class="
+          btn
+          bg-primary
+          hover:bg-secondary
+          text-white text-center
+          mt-5
+          md:w-1/4
+        "
         >Go to Home Page</nuxt-link
       >
     </div>
@@ -25,6 +32,7 @@
 
 <script>
 export default {
+  layout: 'empty',
   props: ['error'],
   head() {
     return {
