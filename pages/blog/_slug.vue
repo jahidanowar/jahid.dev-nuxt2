@@ -195,7 +195,6 @@ export default {
   },
   mounted() {
     Prism.highlightAll()
-    console.log(this.$route.path)
   },
   computed: {
     readTime() {

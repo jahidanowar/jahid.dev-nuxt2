@@ -27,7 +27,7 @@
           <img
             class="h-10"
             src="~/assets/img/jahid-anowar-logo.svg"
-            alt="Workcation"
+            alt="Jahid"
           />
         </nuxt-link>
         <div class="sm:hidden">

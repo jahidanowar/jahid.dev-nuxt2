@@ -143,7 +143,6 @@ export default {
   build: {},
 
   generate: {
-    devtools: false,
-    fallback: '404.html'
+    fallback: true
   }
 }
