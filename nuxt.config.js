@@ -12,17 +12,14 @@ export default {
     htmlAttrs: {
       lang: 'en-US'
     },
-    title:
-      process.env.npm_package_name || 'Jahid Anowar - Full Stack Web Developer',
+    title: 'Jahid Anowar',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
         name: 'description',
-        content:
-          process.env.npm_package_description ||
-          `Jahid Anowar is a Full Stack Web Developer. He's Programming for the last 4 years and have built 200+ human-centered websites and apps for businesses.`
+        content: `Jahid Anowar is a Full Stack Web Developer. He's Programming for the last 4 years and have built 200+ human-centered websites and apps for businesses.`
       }
     ],
     link: [
@@ -46,7 +43,7 @@ export default {
    */
   loading: {
     color: '#4DC0B5',
-    height: '5px'
+    height: '3px'
   },
   /*
    ** Global CSS
@@ -77,7 +74,7 @@ export default {
 
   // Google Analytis Config
   googleAnalytics: {
-    id: process.env.GOOGLE_ANALYTICS_ID || 'UA-166805413-1' // Use as fallback if no runtime config is provided
+    id: process.env.GOOGLE_ANALYTICS_ID || 'UA-000000000-1' // Use as fallback if no runtime config is provided
   },
   publicRuntimeConfig: {
     googleAnalytics: {
@@ -99,18 +96,17 @@ export default {
    ** See https://axios.nuxtjs.org/options
    */
   axios: {
-    baseURL: process.env.BASE_URL || 'https://api.jahid.dev/wp-json/wp/v2',
+    baseURL: process.env.BASE_URL,
 
     publicRuntimeConfig: {
       axios: {
-        browserBaseURL:
-          process.env.BROWSER_BASE_URL || 'https://api.jahid.dev/wp-json/wp/v2'
+        browserBaseURL: process.env.BROWSER_BASE_URL
       }
     },
 
     privateRuntimeConfig: {
       axios: {
-        baseURL: process.env.BASE_URL || 'https://api.jahid.dev/wp-json/wp/v2'
+        baseURL: process.env.BASE_URL
       }
     }
   },
@@ -131,7 +127,7 @@ export default {
    */
   sitemap: {
     // options
-    hostname: 'https://jahid.dev',
+    hostname: process.env.DOMAIN,
     gzip: true,
     defaults: {
       changefreq: 'daily',
@@ -147,7 +143,7 @@ export default {
     meta: {
       name: 'Jahid',
       theme_color: '#4DC0B5',
-      description: 'Full Stack Developer'
+      description: 'Full Stack Development Tips'
     },
     manifest: {
       lang: 'en',

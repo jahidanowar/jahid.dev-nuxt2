@@ -1,4 +1,7 @@
-# jamapp
+# Jahid.dev
+My Personal Portfolio website & Blog. I write on full stack topic such as JS Design patterns, Vue.js, Nuxt.js, Node.js and Laravel. 
+
+[Take a look 🤓](https://jahid.dev)
 
 ## Build Setup
 
@@ -16,5 +19,3 @@ $ npm run start
 # generate static project
 $ npm run generate
 ```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).

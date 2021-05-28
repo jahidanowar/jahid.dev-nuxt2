@@ -52,13 +52,13 @@ export default {
   /* eslint-enable */
   head() {
     return {
-      title: 'Website Design, WordPress and Digital Marketing Article',
+      title: 'Full Stack Blog - Vue.js, Nuxt.js, Node.js & Laravel',
       meta: [
         {
           hid: 'description',
           name: 'description',
           content:
-            'Visit my Blog for Website Design, Development , Digital Marketing and WordPress Related Articles, Tips , Web Hosting deals coupons and more.'
+            'Visit my Blog for Website Design, Development , Laravel, Vue, Nuxt.js and WordPress Related Articles Related Articles, Tips , Web Hosting deals coupons and more.'
         }
       ],
       link: [
