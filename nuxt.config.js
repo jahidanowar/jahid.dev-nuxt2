@@ -116,8 +116,8 @@ export default {
   recaptcha: {
     /* reCAPTCHA options */
     hideBadge: true,
-    siteKey: '6LcZ2fUUAAAAAMUw7ufw06Dhs07yFdwYdxld9D7w',
-    secretKey: '6LcZ2fUUAAAAAERcLZDth1k3rsyiUEJh2B66Sy6C',
+    siteKey: process.env.RECAPTCHA_SITE_KEY,
+    secretKey: process.env.RECAPTCHA_SECRET_KEY,
     size: 'invisible',
     version: 3
   },
