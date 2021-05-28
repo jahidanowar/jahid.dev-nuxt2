@@ -157,8 +157,11 @@ import Prism from '~/plugins/prism'
 import SocialButtons from '~/components/SocialButtons'
 export default {
   components: { SocialButtons },
-  async asyncData({ $axios, params }) {
+  async asyncData({ $axios, params, error }) {
     const posts = await $axios.$get('/posts/?slug=' + params.slug + '&_embed=1')
+    if (posts.length <= 0) {
+      return error({ statusCode: 404, message: 'Page not found' })
+    }
     return { posts }
   },
   head() {
