@@ -69,7 +69,8 @@ export default {
     '@nuxtjs/tailwindcss',
     '@nuxtjs/pwa',
     '@nuxtjs/google-analytics',
-    '@/modules/generator'
+    '@/modules/generator',
+    '@nuxt/image'
   ],
 
   // Google Analytis Config

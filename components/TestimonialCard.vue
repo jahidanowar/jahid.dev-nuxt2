@@ -13,7 +13,7 @@
       </svg>
       <p class="leading-relaxed mb-6">{{ testimonial.review }}</p>
       <a class="inline-flex items-center">
-        <img
+        <nuxt-img
           alt="testimonial"
           :src="testimonial.avatar"
           class="

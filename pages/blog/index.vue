@@ -3,7 +3,7 @@
     <page-hero
       heading="Website Design, and Full Stack Development Articles."
       leading="Get Website Design, Development , Laravel, Vue and WordPress Related Articles, Tips , Web Hosting deals coupons and more."
-      image="https://res.cloudinary.com/jahiddev/image/upload/v1602132651/full-stack-blog_rhbggo.png"
+      image="/img/full-stack-blog.png"
     ></page-hero>
     <div class="section">
       <div class="container mx-auto">

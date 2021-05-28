@@ -9,7 +9,7 @@
           <p>{{ leading }}</p>
         </div>
         <div v-if="image" class="px-6 flex justify-center">
-          <img
+          <nuxt-img
             :src="image"
             :alt="heading"
             class="w-full feture-image mt-10 content-center"

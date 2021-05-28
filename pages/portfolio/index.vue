@@ -3,7 +3,7 @@
     <page-hero
       heading="Shaping world class websites, designs and experiences"
       leading="Designed Website for Small and Medium Sized Business and did UI/UX enhancements to bring more customers to the business."
-      image="https://res.cloudinary.com/jahiddev/image/upload/v1602132651/full-stack-development-services_mgomjz.png"
+      image="/img/full-stack-development-services.png"
     ></page-hero>
     <div v-if="projects" class="container mx-auto my-20 px-6">
       <portfolio-card

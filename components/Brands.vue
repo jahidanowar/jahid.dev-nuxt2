@@ -7,13 +7,13 @@
       {{ subheading }}
     </p>
     <div class="flex justify-center">
-      <img
-        src="https://res.cloudinary.com/jahiddev/image/upload/v1602132651/clientele_wopnza.png"
+      <nuxt-img
+        src="/img/clientele.png"
         alt="Work Experience"
         class="w-3/4 hidden md:block"
       />
-      <img
-        src="https://res.cloudinary.com/jahiddev/image/upload/v1602132651/clientele-mobile_msimxa.png"
+      <nuxt-img
+        src="/img/clientele-mobile.png"
         alt="Work Experience"
         class="w-3/4 block md:hidden"
       />

@@ -3,7 +3,7 @@
     <page-hero
       heading="How I bring value to your business."
       leading="Think of me as your remote Website Development and Marketing Agency. I help businesses connect with audiences, delivering greater brand engagement through designing engaging websites and web Apps."
-      image="https://res.cloudinary.com/jahiddev/image/upload/v1602132651/Portfolio-Full-Stack-Web-Development_yoxkqm.png"
+      image="/img/Portfolio-Full-Stack-Web-Development.png"
     ></page-hero>
     <div class="section mt-8">
       <div class="container mx-auto">
