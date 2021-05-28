@@ -36,7 +36,7 @@ Please feel free to raise an issue for suggestions or bugs. You can ,essage me o
 
 ## License
 
-> _The project is released under the wtfpl [Do What The F\*ck You Want To Public License](LICENSE)._
+> _The project is released under the WTFPL2 [Do What The F\*ck You Want To Public License](LICENSE)._
 
 <hr>
 
