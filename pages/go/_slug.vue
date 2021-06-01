@@ -43,7 +43,7 @@ export default {
       .get('/thirstylink/?slug=' + this.$route.params.slug)
       .then((res) => {
         this.links = res.data
-        window.location = res.data.links[0]._ta_destination_url
+        window.location = res.data[0]._ta_destination_url
       })
   }
 }
