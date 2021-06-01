@@ -26,24 +26,25 @@ export default {
     lottie
   },
   layout: 'empty',
-  async asyncData({ $axios, params }) {
-    const links = await $axios.$get('/thirstylink/?slug=' + params.slug)
-    return { links }
-  },
   data() {
     return {
+      links: null,
       lottieOptions: { animationData: loadingAnimation.default }
     }
   },
   head() {
     return {
-      title: this.links[0].title.rendered,
+      title: 'Redirecting to destination',
       meta: [{ hid: 'robots', name: 'robots', content: 'noindex' }]
     }
   },
   mounted() {
-    // window.location.replace(this.links[0]._ta_destination_url)
-    window.location = this.links[0]._ta_destination_url
+    this.$axios
+      .get('/thirstylink/?slug=' + this.$route.params.slug)
+      .then((res) => {
+        this.links = res.data
+        window.location = res.data.links[0]._ta_destination_url
+      })
   }
 }
 </script>
