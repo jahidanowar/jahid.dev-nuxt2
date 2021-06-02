@@ -47,7 +47,7 @@ export default {
   },
   mounted() {
     // window.location.replace(this.links[0]._ta_destination_url)
-    // window.location = this.links[0]._ta_destination_url
+    window.location = this.links[0]._ta_destination_url
   }
 }
 </script>
