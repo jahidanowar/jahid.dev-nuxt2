@@ -26,9 +26,13 @@ export default {
     lottie
   },
   layout: 'empty',
-  async asyncData({ $axios, params }) {
-    const links = await $axios.$get('/thirstylink/?slug=' + params.slug)
-    return { links }
+  async asyncData({ $axios, params, error }) {
+    try {
+      const links = await $axios.$get('/thirstylink/?slug=' + params.slug)
+      return { links }
+    } catch (err) {
+      error({ statusCode: 404, message: 'Data not found' })
+    }
   },
   data() {
     return {

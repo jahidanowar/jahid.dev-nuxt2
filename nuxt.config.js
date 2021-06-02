@@ -1,3 +1,5 @@
+import axios from 'axios'
+
 export default {
   /*
    ** Nuxt target
@@ -136,7 +138,6 @@ export default {
       lastmod: new Date()
     }
   },
-
   /**
    * PWA Module Config
    */
