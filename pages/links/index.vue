@@ -60,23 +60,6 @@
             ></span>
           </span>
         </a>
-        <a
-          href="https://www.covidwb.in"
-          class="
-            flex
-            py-3
-            bg-white
-            border
-            rounded-lg
-            transform
-            hover:-translate-y-2
-            transition-transform
-            duration-300
-            justify-center
-            mb-5
-          "
-          >🌍 covid resources</a
-        >
         <nuxt-link
           to="/"
           class="
@@ -109,7 +92,7 @@
             justify-center
             mb-5
           "
-          >🐱‍🏍 blog</nuxt-link
+          >👨‍💻 blog</nuxt-link
         >
         <nuxt-link
           to="/contact"
@@ -143,7 +126,7 @@
             justify-center
             mb-5
           "
-          >🤝 company
+          >🦊 company
         </a>
       </div>
       <div class="social mb-10">

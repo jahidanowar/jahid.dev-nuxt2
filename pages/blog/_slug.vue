@@ -148,6 +148,7 @@
       </div>
       <!-- ./ Post Content -->
     </article>
+    <comments />
   </div>
 </template>
 
@@ -155,8 +156,10 @@
 /* eslint-disable */
 import Prism from '~/plugins/prism'
 import SocialButtons from '~/components/SocialButtons'
+import Comments from '../../components/Comments.vue'
 export default {
-  components: { SocialButtons },
+  components: { SocialButtons, Comments },
+
   async asyncData({ $axios, params, error }) {
     const posts = await $axios.$get('/posts/?slug=' + params.slug + '&_embed=1')
     if (posts.length <= 0) {
