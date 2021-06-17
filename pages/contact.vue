@@ -24,8 +24,8 @@
         </div>
         <div class="text-center">
           <p class="mt-8">Or email me here</p>
-          <a href="mailto:contact@jahid.dev" class="text-xl mt-5"
-            >contact[at]jahid.dev</a
+          <a href="mailto:hello@jahid.dev" class="text-xl mt-5"
+            >hello[at]jahid.dev</a
           >
         </div>
       </div>
