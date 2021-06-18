@@ -11,9 +11,9 @@
     "
   >
     <div class="w-full md:w-6/12 relative h-64 md:h-96">
-      <img
+      <nuxt-img
         :src="portfolio._embedded['wp:featuredmedia']['0'].source_url"
-        :alt="portfolio.title"
+        :alt="portfolio.title.rendered"
         class="
           absolute
           object-cover

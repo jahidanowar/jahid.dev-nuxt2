@@ -83,6 +83,11 @@ export default {
     }
   },
 
+  // Nuxt Image cinfig
+  image: {
+    cloudinary: {}
+  },
+
   /*
    ** Nuxt.js modules
    */
