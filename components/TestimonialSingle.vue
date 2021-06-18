@@ -15,9 +15,16 @@
     </p>
     <span class="inline-block h-1 w-10 rounded bg-primary mt-8 mb-6"></span>
     <div>
-      <img
+      <nuxt-img
         alt="testimonial"
-        class="w-20 h-20 mb-5 object-cover object-center rounded-full inline-block"
+        class="
+          w-20
+          h-20
+          mb-5
+          object-cover object-center
+          rounded-full
+          inline-block
+        "
         :src="avatar"
       />
       <h2 class="text-gray-900 font-medium title-font tracking-wider">
