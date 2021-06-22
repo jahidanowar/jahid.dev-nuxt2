@@ -68,6 +68,10 @@ nav .nuxt-link-active {
   @apply bg-gray-200;
 }
 
+.content a{
+  @apply text-primary;
+  box-shadow: inset 0 -0.1666666667em 0 0 #fff, inset 0 -0.3333333333em 0 0 #b0f5ee;
+}
 .content > h1,
 h2,
 h3 {
