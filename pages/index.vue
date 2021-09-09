@@ -33,7 +33,7 @@
             tracking-tight
           "
         >
-          Creating Kickass website for businesses.<br />
+          Building Progressive Web Apps for businesses. <br />
           <span class="text-primary">One at a Time.</span>
         </h2>
         <p
