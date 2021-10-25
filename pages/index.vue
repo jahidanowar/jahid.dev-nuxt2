@@ -71,12 +71,12 @@
     <div class="services section">
       <div class="container mx-auto">
         <h2 class="section-heading text-gray-900 mb-4">
-          Services I can help you with
+          Things i do and brag about
         </h2>
         <p class="section-description mb-4">
           I help businesses connect with audiences, delivering greater brand
           engagement<br />
-          through designing engaging websites and web Apps.
+          through designing engaging web Apps.
         </p>
       </div>
       <div class="container mx-auto mt-8">
