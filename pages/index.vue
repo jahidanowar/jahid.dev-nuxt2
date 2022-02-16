@@ -11,45 +11,27 @@
         md:py-16
       "
     >
-      <div
-        class="
-          w-full
-          md:w-1/2
-          px-6
-          md:pr-20
-          text-left
-          max-w-2xl
-          md:max-w-3xl
-          mx-auto
-        "
-      >
-        <h2
-          class="
-            text-gray-900
-            dark:text-gray-100
-            text-3xl
-            md:text-5xl
-            leading-tight
-            tracking-tight
-          "
-        >
-          Building Progressive Web Apps for businesses. <br />
-          <span class="text-primary">One at a Time.</span>
+      <div class="w-full text-center md:px-6 md:pr-20 mx-auto md:w-8/12">
+        <h2 class="text-gray-900 dark:text-gray-100 text-3xl md:text-5xl">
+          Building Progressive Web Apps for businesses.
+          <span class="text-primary font-bold">One at a Time.</span>
         </h2>
-        <p
-          class="leading-relaxed mt-6 sm:text-lg md:text-xl xl:text-lg md:pr-10"
-        >
-          When users interact with your product, it should tell them an amazing
-          story, driving your business forward. I can help you create that
-          story.
+        <p class="leading-relaxed mt-6 md:mx-5">
+          Hey this is Jahid, A Full stack developer I help businesses like yours
+          build and launch their next progressive web app.
         </p>
-        <div class="flex my-6">
+        <div class="flex my-6 justify-center">
           <nuxt-link to="/contact" class="btn btn-primary"
             >Get in touch</nuxt-link
           >
+          <nuxt-link
+            to="/blog"
+            class="ml-3 btn bg-gray-100 hover:bg-gray-200 dark:bg-gray-800"
+            >Check out the blog</nuxt-link
+          >
         </div>
       </div>
-      <div
+      <!-- <div
         class="w-full md:w-1/2 self-center align-bottom feature-image-box mt-5"
       >
         <nuxt-img
@@ -57,7 +39,7 @@
           alt="Jahid Anowar"
           class="w-full feature-image"
         />
-      </div>
+      </div> -->
     </div>
     <!-- Experience Section -->
     <div class="section bg-gray-100">
@@ -195,8 +177,7 @@
               items-center
               group
               transform
-              hover:text-primary
-              hover:-translate-y-1
+              hover:text-primary hover:-translate-y-1
               duration-200
             "
             >View All Projects

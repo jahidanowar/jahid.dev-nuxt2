@@ -1,7 +1,6 @@
 <template>
   <div
     class="
-      shadow-xs
       bg-white
       fixed
       bottom-0
@@ -10,14 +9,14 @@
       sm:static
       transition-all
       duration-300
+      border-t
+      md:border-b
+      py-2
     "
   >
     <header
       class="
-        sm:flex
-        sm:justify-between
-        sm:items-center
-        sm:px-4
+        sm:flex sm:justify-between sm:items-center sm:px-4
         container
         mx-auto
       "
@@ -36,8 +35,7 @@
             class="
               block
               foxus:text-primary
-              focus:outline-none
-              focus:bg-gray-200
+              focus:outline-none focus:bg-gray-200
               p-2
               rounded-md
               transition-all
@@ -71,7 +69,7 @@
       </div>
       <nav
         :class="isOpen ? 'block' : 'hidden'"
-        class="px-2 pt-3 pb-4 sm:flex bg-gray-100 sm:bg-transparent"
+        class="px-2 sm:flex bg-gray-100 sm:bg-transparent"
       >
         <nuxt-link
           to="/service"
@@ -80,8 +78,7 @@
             py-2
             rounded-lg
             hover:bg-gray-200
-            sm:mt-0
-            sm:ml-2
+            sm:mt-0 sm:ml-2
             w-full
             sm:w-auto
             inline-flex
@@ -93,7 +90,7 @@
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
-            class="w-5 ml-2 sm:mr-2 icon-trending-up"
+            class="w-4 ml-2 sm:mr-2 icon-trending-up"
           >
             <path
               class="text-gray-500 fill-current"
@@ -113,8 +110,7 @@
             py-2
             rounded-lg
             hover:bg-gray-200
-            sm:mt-0
-            sm:ml-2
+            sm:mt-0 sm:ml-2
             w-full
             sm:w-auto
             inline-flex
@@ -126,7 +122,7 @@
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
-            class="w-5 ml-2 sm:mr-2 icon-target"
+            class="w-4 ml-2 sm:mr-2 icon-target"
           >
             <path
               class="text-gray-500 fill-current"
@@ -146,8 +142,7 @@
             py-2
             rounded-lg
             hover:bg-gray-200
-            sm:mt-0
-            sm:ml-2
+            sm:mt-0 sm:ml-2
             w-full
             sm:w-auto
             inline-flex
@@ -159,7 +154,7 @@
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
-            class="w-5 ml-2 sm:mr-2 icon-announcement"
+            class="w-4 ml-2 sm:mr-2 icon-announcement"
           >
             <path
               class="text-gray-500 fill-current"
@@ -184,8 +179,7 @@
             rounded-lg
             border
             hover:bg-gray-200
-            sm:mt-0
-            sm:ml-2
+            sm:mt-0 sm:ml-2
             w-full
             sm:w-auto
             inline-flex
@@ -197,7 +191,7 @@
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
-            class="w-5 ml-2 sm:mr-2 icon-launch"
+            class="w-4 ml-2 sm:mr-2 icon-launch"
           >
             <path
               class="secondary"

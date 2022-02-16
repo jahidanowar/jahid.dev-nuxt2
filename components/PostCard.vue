@@ -7,8 +7,7 @@
         h-full
         rounded-3xl
         overflow-hidden
-        shadow-xl
-        border-t
+        border
         transform
         group-hover:-translate-y-2
         duration-300
@@ -17,7 +16,15 @@
     >
       <img
         v-if="post.image"
-        class="lg:h-48 md:h-36 w-full object-cover object-center rounded-2xl"
+        class="
+          lg:h-48
+          md:h-36
+          w-full
+          object-cover object-center
+          rounded-2xl
+          shadow-lg
+          group-hover:shadow-xl
+        "
         :src="post.image"
         :alt="post.title.rendered"
       />

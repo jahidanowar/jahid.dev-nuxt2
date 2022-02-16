@@ -9,7 +9,7 @@
         />
         <p class="text-gray-600 my-4">
           I’m Jahid Anowar, a Full Stack Web Developer, Programming for the last
-          5 years and have built 137+ human-centered websites and apps for
+          5 years and have built 150+ human-centered websites and apps for
           businesses.
         </p>
         <social-buttons> </social-buttons>
