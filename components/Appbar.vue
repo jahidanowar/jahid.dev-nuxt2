@@ -1,46 +1,18 @@
 <template>
   <div
-    class="
-      bg-white
-      fixed
-      bottom-0
-      w-full
-      z-50
-      sm:static
-      transition-all
-      duration-300
-      border-t
-      md:border-b
-      py-2
-    "
+    class="fixed bottom-0 w-full z-50 sm:static transition-all duration-300 border-t md:border-t-0 md:border-b md:py-2 dark:border-gray-700 bg-white/75 dark:bg-gray-900/75 backdrop-blur"
   >
     <header
-      class="
-        sm:flex sm:justify-between sm:items-center sm:px-4
-        container
-        mx-auto
-      "
+      class="sm:flex sm:justify-between sm:items-center sm:px-4 container mx-auto"
     >
       <div class="flex items-center justify-between px-4 py-3 sm:p-0">
         <nuxt-link to="/">
-          <img
-            class="h-10"
-            src="~/assets/img/jahid-anowar-logo.svg"
-            alt="Jahid"
-          />
+          <logo class="h-10"></logo>
         </nuxt-link>
         <div class="sm:hidden">
           <button
             type="button"
-            class="
-              block
-              foxus:text-primary
-              focus:outline-none focus:bg-gray-200
-              p-2
-              rounded-md
-              transition-all
-              duration-300
-            "
+            class="block focus:text-primary focus:outline-none focus:bg-gray-100 dark:focus:bg-gray-800 p-2 rounded-md transition-all duration-300"
             @click="isOpen = !isOpen"
           >
             <svg v-if="isOpen" class="h-6 w-6 fill-current" viewBox="0 0 24 24">
@@ -69,23 +41,11 @@
       </div>
       <nav
         :class="isOpen ? 'block' : 'hidden'"
-        class="px-2 sm:flex bg-gray-100 sm:bg-transparent"
+        class="px-2 sm:flex sm:bg-transparent"
       >
         <nuxt-link
           to="/service"
-          class="
-            px-4
-            py-2
-            rounded-lg
-            hover:bg-gray-200
-            sm:mt-0 sm:ml-2
-            w-full
-            sm:w-auto
-            inline-flex
-            sm:flex-row
-            items-center
-            flex-row-reverse
-          "
+          class="p-2 rounded-lg hover:text-primary-400 sm:mt-0 sm:ml-2 w-full sm:w-auto inline-flex sm:flex-row items-center flex-row-reverse"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -105,19 +65,7 @@
         </nuxt-link>
         <nuxt-link
           to="/portfolio"
-          class="
-            px-4
-            py-2
-            rounded-lg
-            hover:bg-gray-200
-            sm:mt-0 sm:ml-2
-            w-full
-            sm:w-auto
-            inline-flex
-            sm:flex-row
-            items-center
-            flex-row-reverse
-          "
+          class="p-2 rounded-lg hover:text-primary-400 sm:mt-0 sm:ml-2 w-full sm:w-auto inline-flex sm:flex-row items-center flex-row-reverse"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -137,19 +85,7 @@
         >
         <nuxt-link
           to="/blog"
-          class="
-            px-4
-            py-2
-            rounded-lg
-            hover:bg-gray-200
-            sm:mt-0 sm:ml-2
-            w-full
-            sm:w-auto
-            inline-flex
-            sm:flex-row
-            items-center
-            flex-row-reverse
-          "
+          class="p-2 rounded-lg hover:text-primary-400 sm:mt-0 sm:ml-2 w-full sm:w-auto inline-flex sm:flex-row items-center flex-row-reverse"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -171,42 +107,8 @@
           </svg>
           Blog</nuxt-link
         >
-        <nuxt-link
-          to="/contact"
-          class="
-            px-4
-            py-2
-            rounded-lg
-            border
-            hover:bg-gray-200
-            sm:mt-0 sm:ml-2
-            w-full
-            sm:w-auto
-            inline-flex
-            sm:flex-row
-            items-center
-            flex-row-reverse
-          "
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            class="w-4 ml-2 sm:mr-2 icon-launch"
-          >
-            <path
-              class="secondary"
-              d="M6.64 6.46h7.07a1 1 0 0 1 .7 1.71l-4.24 4.24a1 1 0 0 1-.7.3H2.38A1 1 0 0 1 1.7 11l4.24-4.24a1 1 0 0 1 .7-.3zm10.9 10.9a1 1 0 0 1-.3.71L13 22.31a1 1 0 0 1-1.7-.7v-7.07a1 1 0 0 1 .29-.71l4.24-4.24a1 1 0 0 1 1.7.7v7.07z"
-            ></path>
-            <path
-              class="text-gray-500 fill-current"
-              d="M5.78 13.19a15.94 15.94 0 0 1 14.39-10.4 1 1 0 0 1 1.04 1.04 15.94 15.94 0 0 1-10.4 14.39 1 1 0 0 1-1.17-.37 14.1 14.1 0 0 0-3.5-3.5 1 1 0 0 1-.36-1.16zm.59 2.57a16.2 16.2 0 0 1 1.87 1.87 1 1 0 0 1-.47 1.6c-.79.25-1.6.42-2.4.54a1 1 0 0 1-1.14-1.13c.12-.82.3-1.62.53-2.41a1 1 0 0 1 1.6-.47z"
-            ></path>
-            <path
-              class="text-gay-800 fill-current"
-              d="M7.23 10.26a19.04 19.04 0 0 1 6.5 6.51c-.92.58-1.9 1.07-2.92 1.45a1 1 0 0 1-1.17-.37 14.1 14.1 0 0 0-3.5-3.5 1 1 0 0 1-.36-1.16c.38-1.03.87-2 1.45-2.93zM17.62 3.1c.84-.17 1.7-.27 2.55-.3a1 1 0 0 1 1.04 1.04c-.03.86-.13 1.71-.3 2.55a19.2 19.2 0 0 0-3.29-3.29zm-3.91 7.2a2 2 0 1 1 2.83-2.83 2 2 0 0 1-2.83 2.83z"
-            ></path>
-          </svg>
-          Contact</nuxt-link
+        <nuxt-link to="/contact" class="btn btn-primary flex ml-2"
+          >Contact</nuxt-link
         >
       </nav>
     </header>
@@ -214,7 +116,9 @@
 </template>
 
 <script>
+import Logo from './atoms/Logo.vue'
 export default {
+  components: { Logo },
   data() {
     return {
       isOpen: false

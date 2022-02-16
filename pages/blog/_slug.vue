@@ -8,14 +8,7 @@
     >
       <!-- Post Heading -->
       <div class="max-w-4xl mx-auto text-center px-0 md:px-10">
-        <h1
-          class="
-            text-gray-900 text-4xl
-            md:text-6xl
-            tracking-tight
-            leading-tight
-          "
-        >
+        <h1 class="text-4xl md:text-6xl tracking-tight leading-tight">
           {{ post.title.rendered }}
         </h1>
       </div>
@@ -57,15 +50,7 @@
           </div>
         </div>
         <div
-          class="
-            w-full
-            md:w-2/3
-            mt-4
-            md:mt-0
-            inline-flex
-            items-center
-            justify-end
-          "
+          class="w-full md:w-2/3 mt-4 md:mt-0 inline-flex items-center justify-end"
         >
           <div class="font-medium" v-html="post.excerpt.rendered"></div>
         </div>

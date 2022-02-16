@@ -2,33 +2,15 @@
   <article class="p-4 group">
     <nuxt-link
       :to="{ name: 'blog-slug', params: { slug: post.slug } }"
-      class="
-        block
-        h-full
-        rounded-3xl
-        overflow-hidden
-        border
-        transform
-        group-hover:-translate-y-2
-        duration-300
-        p-5
-      "
+      class="block h-full rounded-3xl overflow-hidden border dark:border-gray-600 transform group-hover:-translate-y-2 duration-300 p-5"
     >
       <img
         v-if="post.image"
-        class="
-          lg:h-48
-          md:h-36
-          w-full
-          object-cover object-center
-          rounded-2xl
-          shadow-lg
-          group-hover:shadow-xl
-        "
+        class="lg:h-48 md:h-36 w-full object-cover object-center rounded-2xl shadow-lg group-hover:shadow-xl"
         :src="post.image"
         :alt="post.title.rendered"
       />
-      <h2 class="tracking-widest text-xs title-font text-gray-500 mb-1 mt-5">
+      <h2 class="tracking-widest text-xs title-font mb-1 mt-5">
         <p class="uppercase text-xs">
           <span class="inline-flex pr-2"
             ><svg
@@ -67,21 +49,12 @@
           </span>
         </p>
       </h2>
-      <h1 class="title-font text-lg text-gray-900 mb-3">
+      <h1 class="title-font text-lg mb-3">
         {{ post.title.rendered }}
       </h1>
       <span class="leading-relaxed mb-3" v-html="post.excerpt.rendered"></span>
       <span
-        class="
-          mt-3
-          text-primary
-          inline-flex
-          items-center
-          md:mb-2
-          lg:mb-0
-          group-hover:underline
-          duration-300
-        "
+        class="mt-3 text-primary-500 inline-flex items-center md:mb-2 lg:mb-0 group-hover:underline duration-300"
         >Read more
         <svg
           class="w-4 h-4 ml-2 transform group-hover:translate-x-2 duration-300"

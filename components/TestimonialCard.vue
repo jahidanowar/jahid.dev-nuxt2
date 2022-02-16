@@ -1,10 +1,10 @@
 <template>
   <div class="p-4">
-    <div class="h-full bg-gray-100 p-8 rounded-2xl">
+    <div class="h-full bg-gray-100 dark:bg-gray-800 p-8 rounded-2xl">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="currentColor"
-        class="block w-5 h-5 text-gray-400 mb-4"
+        class="block w-5 h-5 text-primary-500 mb-4"
         viewBox="0 0 975.036 975.036"
       >
         <path
@@ -16,18 +16,10 @@
         <nuxt-img
           alt="testimonial"
           :src="testimonial.avatar"
-          class="
-            w-12
-            h-12
-            rounded-full
-            flex-shrink-0
-            object-cover object-center
-          "
+          class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
         />
         <span class="flex-grow flex flex-col pl-4">
-          <span class="title-font font-medium text-gray-900">{{
-            testimonial.name
-          }}</span>
+          <h4 class="title-font font-medium">{{ testimonial.name }}</h4>
           <span class="text-gray-500 text-sm">{{ testimonial.job }}</span>
         </span>
       </a>

@@ -5,22 +5,22 @@
  ** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
  */
 // const defaultTheme = require('tailwindcss/defaultTheme')
+const colors = require('tailwindcss/colors')
 
 module.exports = {
-  darkMode: 'class',
+  darkMode: 'media',
   mode: 'jit',
   theme: {
     extend: {
+      colors: {
+        primary: colors.sky,
+        gray: colors.slate,
+        text: '#4a5568'
+      },
       fontFamily: {
         // sans: ['Inter var', ...defaultTheme.fontFamily.sans],
         display: ['Space Grotesk', 'sans-serif'],
         body: ['Inter', 'sans-serif']
-      },
-      colors: {
-        primary: '#4DC0B5',
-        secondary: '#3da69c',
-        dark: '#de3618',
-        text: '#4a5568'
       },
       spacing: {
         96: '23rem'

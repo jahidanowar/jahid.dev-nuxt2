@@ -42,8 +42,8 @@ export default {
    ** Loading Progress Bar
    */
   loading: {
-    color: '#4DC0B5',
-    height: '3px'
+    color: '#38bdf8',
+    height: '2px'
   },
   /*
    ** Global CSS
@@ -147,7 +147,7 @@ export default {
   pwa: {
     meta: {
       name: 'Jahid',
-      theme_color: '#4DC0B5',
+      theme_color: '#38bdf8',
       description: 'Full Stack Development Tips'
     },
     manifest: {

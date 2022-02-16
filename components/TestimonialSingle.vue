@@ -3,7 +3,7 @@
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="currentColor"
-      class="inline-block w-8 h-8 text-gray-400 mb-8"
+      class="inline-block w-8 h-8 text-primary-500 mb-8"
       viewBox="0 0 975.036 975.036"
     >
       <path
@@ -17,14 +17,7 @@
     <div>
       <nuxt-img
         alt="testimonial"
-        class="
-          w-20
-          h-20
-          mb-5
-          object-cover object-center
-          rounded-full
-          inline-block
-        "
+        class="w-20 h-20 mb-5 object-cover object-center rounded-full inline-block"
         :src="avatar"
       />
       <h2 class="text-gray-900 font-medium title-font tracking-wider">

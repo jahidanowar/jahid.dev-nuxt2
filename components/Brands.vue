@@ -1,6 +1,6 @@
 <template>
   <div class="container mx-auto text-center">
-    <h1 class="section-heading text-gray-900 mb-4">
+    <h1 class="section-heading mb-4">
       {{ heading }}
     </h1>
     <p class="section-description mb-4">

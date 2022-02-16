@@ -7,7 +7,7 @@
     ></page-hero> -->
     <div class="pt-16 px-5">
       <div class="cotainer mx-auto max-w-2xl text-center">
-        <h1 class="leading-tight text-4xl md:text-5xl text-gray-900 mb-5">
+        <h1 class="leading-tight text-4xl md:text-5xl mb-5">
           Let's start making your perfect website 🚀
         </h1>
         <p class="text-sm md:text-base md:px-12">

@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-white pt-16 pb-8 footer-border">
+  <footer class="pt-16 pb-8 border-t dark:border-gray-600">
     <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-10 gap-10">
       <div class="col-span-1 md:col-span-4">
         <img
@@ -7,7 +7,7 @@
           alt="Jahid Logo"
           class="h-16"
         />
-        <p class="text-gray-600 my-4">
+        <p class="my-4">
           I’m Jahid Anowar, a Full Stack Web Developer, Programming for the last
           5 years and have built 150+ human-centered websites and apps for
           businesses.
@@ -18,7 +18,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
           <div>
             <h3 class="font-medium text-lg">Quick Links</h3>
-            <ul class="text-gray-600 mt-4">
+            <ul class="mt-4">
               <li><nuxt-link to="/">Home</nuxt-link></li>
               <li><nuxt-link to="/service">Service</nuxt-link></li>
               <li><nuxt-link to="/portfolio">Portfolio</nuxt-link></li>
@@ -28,7 +28,7 @@
           </div>
           <div>
             <h3 class="font-medium text-lg">Connect</h3>
-            <p class="text-sm text-gray-600 mt-4">
+            <p class="text-sm mt-4">
               Be the first to know when are the new digital products coming out.
               Expect only 1 or 2 emails a month. I promise, I won’t spam you.
             </p>
@@ -57,7 +57,7 @@
                   value=""
                 />
               </div>
-              <button class="btn w-full btn-secondary mt-3">Subscribe</button>
+              <button class="btn w-full btn-primary mt-3">Subscribe</button>
             </form>
           </div>
         </div>
@@ -65,7 +65,7 @@
     </div>
 
     <div class="container mx-auto px-6">
-      <hr class="mt-10 mb-6" />
+      <hr class="mt-10 mb-6 dark:border-gray-600" />
       <div>
         &copy; 2020-2021 All Rights Reserved.
         <nuxt-link to="/">Jahid Anowar</nuxt-link>

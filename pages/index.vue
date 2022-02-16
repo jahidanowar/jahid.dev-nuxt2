@@ -1,18 +1,10 @@
 <template>
   <main class="pt-10">
     <div
-      class="
-        container
-        mx-auto
-        flex flex-col
-        sm:flex-row
-        justify-between
-        items-center
-        md:py-16
-      "
+      class="container mx-auto flex flex-col sm:flex-row justify-between items-center md:py-16"
     >
-      <div class="w-full text-center md:px-6 md:pr-20 mx-auto md:w-8/12">
-        <h2 class="text-gray-900 dark:text-gray-100 text-3xl md:text-5xl">
+      <div class="w-11/12 text-center md:px-6 md:pr-20 mx-auto md:w-8/12">
+        <h2 class="text-3xl md:text-5xl">
           Building Progressive Web Apps for businesses.
           <span class="text-primary font-bold">One at a Time.</span>
         </h2>
@@ -24,9 +16,7 @@
           <nuxt-link to="/contact" class="btn btn-primary"
             >Get in touch</nuxt-link
           >
-          <nuxt-link
-            to="/blog"
-            class="ml-3 btn bg-gray-100 hover:bg-gray-200 dark:bg-gray-800"
+          <nuxt-link to="/blog" class="ml-3 btn btn-secondary"
             >Check out the blog</nuxt-link
           >
         </div>
@@ -42,7 +32,7 @@
       </div> -->
     </div>
     <!-- Experience Section -->
-    <div class="section bg-gray-100">
+    <div class="section">
       <brands
         heading="Worked with Businesses Globally"
         subheading="Here are some organizations I had a pleasure to work with on their
@@ -52,9 +42,7 @@
     <!-- Service Section  -->
     <div class="services section">
       <div class="container mx-auto">
-        <h2 class="section-heading text-gray-900 mb-4">
-          Things i do and brag about
-        </h2>
+        <h2 class="section-heading mb-4">Things i do and brag about</h2>
         <p class="section-description mb-4">
           I help businesses connect with audiences, delivering greater brand
           engagement<br />
@@ -156,40 +144,25 @@
       </div>
     </div>
     <!-- Portfolio Section  -->
-    <div class="section bg-gray-100">
+    <div class="section">
       <div class="container mx-auto">
-        <h2 class="section-heading mb-4 text-gray-900">My Recent Works</h2>
+        <h2 class="section-heading mb-4">My Recent Works</h2>
         <p class="text-center mb-4">Take a look at some of my recent works.</p>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-8">
           <portfolio-grid-card
             v-for="(portfolio, i) in projects"
             :key="i"
             :portfolio="portfolio"
-            :noText="true"
+            :no-text="true"
           ></portfolio-grid-card>
         </div>
         <div class="mt-12 text-center">
           <nuxt-link
             to="/portfolio"
-            class="
-              btn btn-muted
-              inline-flex
-              items-center
-              group
-              transform
-              hover:text-primary hover:-translate-y-1
-              duration-200
-            "
+            class="btn btn-muted inline-flex items-center group transform hover:text-primary hover:-translate-y-1 duration-200"
             >View All Projects
             <svg
-              class="
-                w-4
-                h-4
-                ml-1
-                transform
-                group-hover:translate-x-2
-                duration-200
-              "
+              class="w-4 h-4 ml-1 transform group-hover:translate-x-2 duration-200"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -209,9 +182,7 @@
     <!-- Testimonial Section -->
     <div class="section">
       <div class="container mx-auto">
-        <h2 class="section-heading mb-4 text-gray-900">
-          What My Happy Clients Says
-        </h2>
+        <h2 class="section-heading mb-4">What My Happy Clients Says</h2>
         <p class="text-center mb-4">
           I love hearing from my clients. Here is a selection of reviews just
           in!
@@ -228,7 +199,9 @@
     </div>
     <!-- CTA  -->
     <div class="px-6 pb-20">
-      <div class="container mx-auto p-12 md:p-16 rounded-2xl border">
+      <div
+        class="container mx-auto p-12 rounded-2xl border dark:border-gray-600"
+      >
         <div class="flex flex-wrap align-middle justify-between">
           <div class="text">
             <h2 class="text-3xl md:text-4xl">
@@ -239,7 +212,7 @@
             </p>
           </div>
           <div class="self-center justify-self-end mt-4">
-            <nuxt-link to="/contact" class="btn btn-secondary"
+            <nuxt-link to="/contact" class="btn btn-primary"
               >Get in touch!</nuxt-link
             >
           </div>
