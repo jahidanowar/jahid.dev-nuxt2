@@ -24,9 +24,6 @@
   h3 {
     @apply text-lg sm:text-xl font-bold tracking-tight;
   }
-  nav .nuxt-link-active {
-    @apply text-primary-500;
-  }
   .container {
     @apply md:max-w-6xl lg:max-w-7xl;
   }
@@ -75,6 +72,9 @@
   .logo-circle {
     @apply fill-[#0ea5e9];
   }
+}
+nav .nuxt-link-active {
+  @apply text-primary-500;
 }
 .content > :first-child {
   margin-top: 0;
