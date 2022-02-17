@@ -48,7 +48,7 @@
         :class="
           isOpen
             ? 'visible opacity-100 translate-y-0 h-auto'
-            : 'opacity-0 invisible translate-y-10 h-0'
+            : 'opacity-0 sm:opacity-100 sm:visible sm:h-auto sm:translate-y-0 invisible translate-y-10 h-0'
         "
         class="px-2 transform sm:flex sm:bg-transparent transition-all duration-100 ease-linear"
       >
