@@ -3,8 +3,8 @@
     <div
       class="container mx-auto flex flex-col sm:flex-row justify-between items-center md:py-16"
     >
-      <div class="w-11/12 text-center md:px-6 md:pr-20 mx-auto md:w-8/12">
-        <h2 class="text-3xl md:text-5xl leading-relaxed">
+      <div class="w-11/12 text-center md:px-20 mx-auto md:w-8/12">
+        <h2 class="text-3xl md:text-5xl">
           Building
           <span class="text-primary-500">Progressive Web Apps</span> for
           businesses. One at a Time.

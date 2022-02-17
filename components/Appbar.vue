@@ -12,7 +12,7 @@
         <div class="sm:hidden">
           <button
             type="button"
-            class="block focus:text-primary focus:outline-none focus:bg-gray-100 dark:focus:bg-gray-800 p-2 rounded-md transition-all duration-300"
+            class="block dark:text-gray-100 focus:text-primary-500 focus:outline-none focus:bg-gray-100 dark:focus:bg-gray-800 p-2 rounded-md transition-all duration-300"
             @click="isOpen = !isOpen"
           >
             <svg v-if="isOpen" class="h-6 w-6 fill-current" viewBox="0 0 24 24">
@@ -107,9 +107,10 @@
           </svg>
           Blog</nuxt-link
         >
+        <color-switcher class="my-4 sm:my-0 sm:ml-4 py-2 flex justify-end" />
         <nuxt-link
           to="/contact"
-          class="btn btn-primary flex ml-2 border border-primary-400 py-2 shadow dark:shadow"
+          class="btn btn-primary flex sm:ml-4 border border-primary-400 py-2 shadow dark:shadow"
           >Contact</nuxt-link
         >
       </nav>
@@ -119,8 +120,9 @@
 
 <script>
 import Logo from './atoms/Logo.vue'
+import ColorSwitcher from './atoms/ColorSwitcher.vue'
 export default {
-  components: { Logo },
+  components: { Logo, ColorSwitcher },
   data() {
     return {
       isOpen: false
