@@ -1,5 +1,5 @@
 <template>
-  <footer class="pt-16 pb-8 border-t dark:border-gray-600">
+  <footer class="pt-16 pb-8 border-t dark:border-gray-600 mb-12 sm:mb-0">
     <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-10 gap-10">
       <div class="col-span-1 md:col-span-4">
         <logo class="h-16" />
@@ -62,8 +62,10 @@
 
     <div class="container mx-auto px-6">
       <hr class="mt-10 mb-6 dark:border-gray-600" />
-      <div>
-        &copy; 2020-2021 All Rights Reserved.
+      <div class="text-center">
+        &copy; 2020-2022 No Rights Reserved 🤣 Copy everything i don't care
+        <br class="sm:hidden" />
+
         <nuxt-link to="/">Jahid Anowar</nuxt-link>
       </div>
     </div>

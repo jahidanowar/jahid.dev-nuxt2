@@ -7,7 +7,7 @@
       itemtype="https://schema.org/CreativeWork"
     >
       <!-- Post Heading -->
-      <div class="max-w-4xl mx-auto text-center px-0 md:px-10 mt-14">
+      <div class="max-w-4xl mx-auto text-center px-0 md:px-10 sm:mt-14">
         <h1 class="text-4xl md:text-6xl tracking-tight leading-tight">
           {{ post.title.rendered }}
         </h1>

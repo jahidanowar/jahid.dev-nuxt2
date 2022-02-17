@@ -3,7 +3,7 @@
     class="fixed bottom-0 sm:bottom-auto w-full z-50 transition-all duration-300 border-t md:border-t-0 md:border-b md:py-2 dark:border-gray-700/75 bg-white/75 dark:bg-gray-900/75 backdrop-blur"
   >
     <header
-      class="sm:flex sm:justify-between sm:items-center sm:px-4 container mx-auto"
+      class="flex sm:justify-between sm:items-center sm:px-4 container mx-auto flex-col-reverse sm:flex-row"
     >
       <div class="flex items-center justify-between px-4 py-3 sm:p-0">
         <nuxt-link to="/">
@@ -15,7 +15,12 @@
             class="block dark:text-gray-100 focus:text-primary-500 focus:outline-none focus:bg-gray-100 dark:focus:bg-gray-800 p-2 rounded-md transition-all duration-300"
             @click="isOpen = !isOpen"
           >
-            <svg v-if="isOpen" class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+            <svg
+              v-if="isOpen"
+              :class="{ '': isOpen }"
+              class="h-6 w-6 fill-current"
+              viewBox="0 0 24 24"
+            >
               <path
                 fill-rule="evenodd"
                 d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
@@ -40,8 +45,12 @@
         </div>
       </div>
       <nav
-        :class="isOpen ? 'block' : 'hidden'"
-        class="px-2 sm:flex sm:bg-transparent"
+        :class="
+          isOpen
+            ? 'visible opacity-100 translate-y-0 h-auto'
+            : 'opacity-0 invisible translate-y-10 h-0'
+        "
+        class="px-2 transform sm:flex sm:bg-transparent transition-all duration-100 ease-linear"
       >
         <nuxt-link
           to="/service"
@@ -108,7 +117,7 @@
           Blog</nuxt-link
         >
         <color-switcher
-          class="my-4 sm:my-0 sm:ml-4 py-2 w-full text-right flex justify-end"
+          class="mb-2 sm:my-0 sm:ml-4 py-2 w-full text-right flex justify-end"
         />
         <nuxt-link
           to="/contact"
