@@ -107,10 +107,12 @@
           </svg>
           Blog</nuxt-link
         >
-        <color-switcher class="my-4 sm:my-0 sm:ml-4 py-2 flex justify-end" />
+        <color-switcher
+          class="my-4 sm:my-0 sm:ml-4 py-2 w-full text-right flex justify-end"
+        />
         <nuxt-link
           to="/contact"
-          class="btn btn-primary flex sm:ml-4 border border-primary-400 py-2 shadow dark:shadow"
+          class="btn btn-primary flex justify-center sm:ml-4 border border-primary-400 py-2 shadow dark:shadow mb-5 sm:mb-0"
           >Contact</nuxt-link
         >
       </nav>

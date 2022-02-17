@@ -25,7 +25,7 @@
     @apply text-lg sm:text-xl font-bold tracking-tight;
   }
   .container {
-    @apply lg:max-w-7xl;
+    @apply md:max-w-6xl lg:max-w-7xl;
   }
   .section {
     @apply py-12;

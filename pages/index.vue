@@ -7,7 +7,7 @@
         <h2 class="text-3xl md:text-5xl">
           Building
           <span class="text-primary-500">Progressive Web Apps</span> for
-          businesses. One at a Time.
+          businesses. <br class="md:hidden" />One at a Time.
         </h2>
         <p class="leading-relaxed sm:text-xl mt-6 md:mx-5">
           Hey this is Jahid, A Full stack developer I help businesses like yours

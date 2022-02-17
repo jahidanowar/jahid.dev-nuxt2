@@ -70,7 +70,8 @@ export default {
     '@nuxtjs/pwa',
     '@nuxtjs/google-analytics',
     '@/modules/generator',
-    '@nuxt/image'
+    '@nuxt/image',
+    '@nuxtjs/color-mode'
   ],
 
   // Google Analytis Config
@@ -155,6 +156,10 @@ export default {
       name: 'Jahid',
       short_name: 'Jahid'
     }
+  },
+  colorMode: {
+    preference: 'system',
+    classSuffix: ''
   },
 
   /*

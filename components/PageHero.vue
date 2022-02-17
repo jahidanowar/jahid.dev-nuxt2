@@ -1,6 +1,6 @@
 <template>
   <div class="py-8">
-    <div class="container mx-auto mt-14">
+    <div class="container mx-auto sm:mt-14">
       <div class="grid grid-cols-1 items-center md:grid-cols-2">
         <div class="px-6">
           <h1 class="text-4xl md:text-5xl mb-5 leading-tight">
