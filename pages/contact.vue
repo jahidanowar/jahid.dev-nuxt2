@@ -6,7 +6,7 @@
       image="https://res.cloudinary.com/jahiddev/image/upload/v1602132651/contact-jahid_ddm3c9.png"
     ></page-hero> -->
     <div class="pt-16 px-5">
-      <div class="cotainer mx-auto max-w-2xl text-center">
+      <div class="cotainer mt-14 mx-auto max-w-2xl text-center">
         <h1 class="leading-tight text-4xl md:text-5xl mb-5">
           Let's start making your perfect website 🚀
         </h1>
@@ -24,7 +24,7 @@
         </div>
         <div class="text-center">
           <p class="mt-8">Or email me here</p>
-          <a href="mailto:hello@jahid.dev" class="text-xl mt-5"
+          <a href="mailto:hello@jahid.dev" class="text-xl mt-5 text-primary-500"
             >hello[at]jahid.dev</a
           >
         </div>

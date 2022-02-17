@@ -1,7 +1,8 @@
 <template>
   <a
     :href="link"
-    class="p-3 bg-gray-200 hover:bg-gray-300 text-gray-800 rounded-lg ml-2"
+    target="_blank"
+    class="p-3 bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-800 dark:text-gray-100 text-gray-800 rounded-lg"
     ><slot></slot
   ></a>
 </template>

@@ -1,13 +1,13 @@
 <template>
   <div
-    class="fixed bottom-0 w-full z-50 sm:static transition-all duration-300 border-t md:border-t-0 md:border-b md:py-2 dark:border-gray-700 bg-white/75 dark:bg-gray-900/75 backdrop-blur"
+    class="fixed bottom-0 sm:bottom-auto w-full z-50 transition-all duration-300 border-t md:border-t-0 md:border-b md:py-2 dark:border-gray-700/75 bg-white/75 dark:bg-gray-900/75 backdrop-blur"
   >
     <header
       class="sm:flex sm:justify-between sm:items-center sm:px-4 container mx-auto"
     >
       <div class="flex items-center justify-between px-4 py-3 sm:p-0">
         <nuxt-link to="/">
-          <logo class="h-10"></logo>
+          <logo class="h-8"></logo>
         </nuxt-link>
         <div class="sm:hidden">
           <button
@@ -107,7 +107,9 @@
           </svg>
           Blog</nuxt-link
         >
-        <nuxt-link to="/contact" class="btn btn-primary flex ml-2"
+        <nuxt-link
+          to="/contact"
+          class="btn btn-primary flex ml-2 border border-primary-400 py-2 shadow dark:shadow"
           >Contact</nuxt-link
         >
       </nav>

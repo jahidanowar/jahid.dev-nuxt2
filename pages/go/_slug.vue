@@ -1,15 +1,6 @@
 <template>
   <div
-    class="
-      link
-      container
-      mx-auto
-      h-screen
-      text-center
-      flex
-      items-center
-      justify-center
-    "
+    class="link container mx-auto h-screen text-center flex items-center justify-center"
   >
     <div>
       <lottie :width="300" :height="300" :options="lottieOptions" />

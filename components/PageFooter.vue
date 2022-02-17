@@ -2,11 +2,7 @@
   <footer class="pt-16 pb-8 border-t dark:border-gray-600">
     <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-10 gap-10">
       <div class="col-span-1 md:col-span-4">
-        <img
-          src="~/assets/img/jahid-anowar-logo.svg"
-          alt="Jahid Logo"
-          class="h-16"
-        />
+        <logo class="h-16" />
         <p class="my-4">
           I’m Jahid Anowar, a Full Stack Web Developer, Programming for the last
           5 years and have built 150+ human-centered websites and apps for
@@ -75,10 +71,11 @@
 </template>
 
 <script>
+import Logo from './atoms/Logo.vue'
 import SocialButtons from './SocialButtons.vue'
 export default {
-  components: { SocialButtons },
-  name: 'PageFooter'
+  name: 'PageFooter',
+  components: { SocialButtons, Logo }
 }
 </script>
 

@@ -4,11 +4,12 @@
       class="container mx-auto flex flex-col sm:flex-row justify-between items-center md:py-16"
     >
       <div class="w-11/12 text-center md:px-6 md:pr-20 mx-auto md:w-8/12">
-        <h2 class="text-3xl md:text-5xl">
-          Building Progressive Web Apps for businesses.
-          <span class="text-primary font-bold">One at a Time.</span>
+        <h2 class="text-3xl md:text-5xl leading-relaxed">
+          Building
+          <span class="text-primary-500">Progressive Web Apps</span> for
+          businesses. One at a Time.
         </h2>
-        <p class="leading-relaxed mt-6 md:mx-5">
+        <p class="leading-relaxed sm:text-xl mt-6 md:mx-5">
           Hey this is Jahid, A Full stack developer I help businesses like yours
           build and launch their next progressive web app.
         </p>
@@ -32,7 +33,7 @@
       </div> -->
     </div>
     <!-- Experience Section -->
-    <div class="section">
+    <div class="section border-t border-b dark:border-gray-600">
       <brands
         heading="Worked with Businesses Globally"
         subheading="Here are some organizations I had a pleasure to work with on their

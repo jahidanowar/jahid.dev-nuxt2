@@ -28,7 +28,7 @@
     @apply lg:max-w-7xl;
   }
   .section {
-    @apply py-20;
+    @apply py-12;
     @apply px-6;
   }
   .section-heading {
@@ -45,10 +45,10 @@
     @apply leading-tight;
   }
   .btn-primary {
-    @apply bg-primary-500 hover:bg-primary-600  text-primary-50;
+    @apply bg-primary-500 hover:bg-primary-600 border border-primary-400  text-primary-50;
   }
   .btn-secondary {
-    @apply bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-800 text-gray-400;
+    @apply bg-gray-100 hover:bg-gray-200 border dark:border-gray-600 dark:bg-gray-700 dark:hover:bg-gray-800 text-gray-400;
   }
   .form-control {
     @apply bg-gray-100 dark:bg-gray-800 rounded-lg border dark:border-gray-700 focus:outline-none focus:border-gray-400 text-base px-4 py-2 w-full;
@@ -58,8 +58,13 @@
     box-shadow: inset 0 -0.1666666667em 0 0 #7dd3fc,
       inset 0 -0.3333333333em 0 0 #38bdf8;
   }
+  .content > pre {
+    @apply rounded-2xl;
+    overflow: auto;
+    scrollbar-width: none;
+  }
   .entry-sticky-shares {
-    @apply border dark:border-gray-600/20 rounded-lg backdrop-blur bg-white/75 dark:bg-gray-900/75;
+    @apply border dark:border-gray-600/75 rounded-lg backdrop-blur bg-white/75 dark:bg-gray-900/75;
   }
   .logo-path {
     @apply fill-[#0f172a] dark:fill-[#f8fafc];
@@ -79,6 +84,7 @@
   margin-bottom: 1.25em;
   margin-top: 1.25em;
 }
+
 .entry-sticky-shares {
   position: relative;
   z-index: 1;
