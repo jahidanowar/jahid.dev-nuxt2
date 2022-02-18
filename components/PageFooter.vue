@@ -63,9 +63,8 @@
     <div class="container mx-auto px-6">
       <hr class="mt-10 mb-6 dark:border-gray-600" />
       <div class="text-center">
-        &copy; 2020-2022 No Rights Reserved 🤣 Copy everything i don't care
-        <br class="sm:hidden" />
-
+        &copy; 2020-2022 No Rights Reserved 🤣
+        <br />
         <nuxt-link to="/">Jahid Anowar</nuxt-link>
       </div>
     </div>
