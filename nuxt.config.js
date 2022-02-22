@@ -32,10 +32,10 @@ export default {
       }
     ],
     script: [
-      {
-        src: '//code.tidio.co/udunhgztvraa9n4fvkphtc4sqxbzugxt.js',
-        defer: true
-      }
+      // {
+      //   src: '//code.tidio.co/udunhgztvraa9n4fvkphtc4sqxbzugxt.js',
+      //   defer: true
+      // }
     ]
   },
   /*
