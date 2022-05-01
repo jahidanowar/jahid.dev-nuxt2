@@ -1,18 +1,11 @@
 <template>
   <div
-    class="
-      bg-pattern
-      p-5
-      h-screen
-      grid
-      place-items-center
-      border-t-8 border-primary
-    "
+    class="bg-gray-100 dark:bg-gray-900 p-5 h-screen grid place-items-center border-t-8 border-primary-500"
   >
     <div class="bio container mx-auto sm:max-w-md">
       <header class="">
         <h1 class="text-4xl md:text-5xl mb-4">
-          <span class="text-primary">hello</span>👋 i'm jahid
+          <span class="text-primary-500">hello</span>👋 i'm jahid
         </h1>
         <p>
           A full stack developer creating fun content with tips, tricks and
@@ -23,115 +16,44 @@
         <a
           href="https://jahid.dev/go/yt"
           target="_blank"
-          class="
-            py-4
-            w-full
-            bg-red-500
-            mb-5
-            rounded-lg
-            text-white text-center
-            transform
-            hover:-translate-y-2
-            transition-transform
-            duration-300
-            relative
-            flex
-            justify-center
-          "
+          class="py-4 w-full bg-primary-500 border border-primary-200 dark:border-primary-400 mb-5 rounded-lg text-white text-center transform hover:-translate-y-1 transition-transform duration-300 relative flex justify-center"
         >
           <span class="font-medium"
             >Explore premium coding shorts for free</span
           >
           <span class="flex absolute h-3 w-3 top-0 right-0 -mt-1 -mr-1">
             <span
-              class="
-                animate-ping
-                absolute
-                inline-flex
-                h-full
-                w-full
-                rounded-full
-                bg-gray-600
-                opacity-75
-              "
+              class="animate-ping absolute inline-flex h-full w-full rounded-full bg-gray-600 dark:bg-gray-300 opacity-75"
             ></span>
             <span
-              class="relative inline-flex rounded-full h-3 w-3 bg-gray-900"
+              class="relative inline-flex rounded-full h-3 w-3 bg-gray-900 dark:bg-gray-100"
             ></span>
           </span>
         </a>
         <nuxt-link
           to="/"
-          class="
-            flex
-            py-3
-            bg-white
-            rounded-lg
-            border
-            transform
-            hover:-translate-y-2
-            transition-transform
-            duration-300
-            justify-center
-            mb-5
-          "
+          class="flex py-3 bg-white dark:bg-gray-700 dark:border-gray-600 rounded-lg border transform hover:-translate-y-1 transition-transform duration-300 justify-center mb-5"
           >👉 website</nuxt-link
         >
         <nuxt-link
           to="/blog"
-          class="
-            flex
-            py-3
-            bg-white
-            rounded-lg
-            border
-            transform
-            hover:-translate-y-2
-            transition-transform
-            duration-300
-            justify-center
-            mb-5
-          "
+          class="flex py-3 bg-white dark:bg-gray-700 dark:border-gray-600 rounded-lg border transform hover:-translate-y-1 transition-transform duration-300 justify-center mb-5"
           >👨‍💻 blog</nuxt-link
         >
         <nuxt-link
           to="/contact"
-          class="
-            flex
-            py-3
-            bg-white
-            rounded-lg
-            border
-            transform
-            hover:-translate-y-2
-            transition-transform
-            duration-300
-            justify-center
-            mb-5
-          "
+          class="flex py-3 bg-white dark:bg-gray-700 dark:border-gray-600 rounded-lg border transform hover:-translate-y-1 transition-transform duration-300 justify-center mb-5"
           >🤙 contact
         </nuxt-link>
         <a
           href="https://foxflue.com"
-          class="
-            flex
-            py-3
-            bg-white
-            rounded-lg
-            border
-            transform
-            hover:-translate-y-2
-            transition-transform
-            duration-300
-            justify-center
-            mb-5
-          "
+          class="flex py-3 bg-white dark:bg-gray-700 dark:border-gray-600 rounded-lg border transform hover:-translate-y-1 transition-transform duration-300 justify-center mb-5"
           >🦊 company
         </a>
       </div>
       <div class="social mb-10">
         <social-buttons class="justify-center">
-          <social-icon link="https://github.com/jahidanowar">
+          <social-icon link="https://github.com/jahidanowar" class="ml-2">
             <svg
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
