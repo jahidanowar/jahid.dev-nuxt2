@@ -1,9 +1,20 @@
 <template>
   <main class="pt-10">
     <div
-      class="container mx-auto flex flex-col sm:flex-row justify-between items-center md:py-16"
+      class="container mx-auto flex flex-col sm:flex-row justify-between items-center md:py-16 relative"
     >
-      <div class="w-11/12 text-center md:px-20 mx-auto md:w-8/12">
+      <div class="globe opacity-50 hidden">
+        <div
+          class="globe-item globe-item__danger rounded-full absolute z-10 w-60 h-60 bg-gradient-to-tr from-pink-600 to-red-400 blur-2xl"
+        ></div>
+        <div
+          class="globe-item globe-item__primary rounded-full absolute z-10 w-96 h-96 bg-gradient-to-tr from-primary-600 to-indigo-400 blur-2xl"
+        ></div>
+        <div
+          class="globe-item globe-item__warning rounded-full absolute z-10 w-60 h-60 bg-gradient-to-tr from-green-600 to-primary-300 blur-2xl"
+        ></div>
+      </div>
+      <div class="w-11/12 text-center md:px-20 mx-auto md:w-8/12 z-20">
         <h2 class="text-3xl md:text-5xl">
           Building
           <span class="text-primary-500">Progressive Web Apps</span> for
@@ -150,12 +161,16 @@
         <h2 class="section-heading mb-4">My Recent Works</h2>
         <p class="text-center mb-4">Take a look at some of my recent works.</p>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-8">
-          <portfolio-grid-card
+          <nuxt-link
             v-for="(portfolio, i) in projects"
             :key="i"
-            :portfolio="portfolio"
-            :no-text="true"
-          ></portfolio-grid-card>
+            :to="{ name: 'portfolio-slug', params: { slug: portfolio.slug } }"
+          >
+            <portfolio-grid-card
+              :portfolio="portfolio"
+              :no-text="true"
+            ></portfolio-grid-card>
+          </nuxt-link>
         </div>
         <div class="mt-12 text-center">
           <nuxt-link
@@ -183,7 +198,7 @@
     <!-- Testimonial Section -->
     <div class="section">
       <div class="container mx-auto">
-        <h2 class="section-heading mb-4">What My Happy Clients Says</h2>
+        <h2 class="section-heading mb-4">What My Happy Clients Say</h2>
         <p class="text-center mb-4">
           I love hearing from my clients. Here is a selection of reviews just
           in!
@@ -302,5 +317,17 @@ export default {
   background-position: center;
   background-size: container;
   background-repeat: no-repeat;
+}
+.globe-item__primary {
+  left: 35%;
+  top: 6%;
+}
+.globe-item__warning {
+  left: 55%;
+  top: 12%;
+}
+.globe-item__danger {
+  left: 25%;
+  top: 10%;
 }
 </style>

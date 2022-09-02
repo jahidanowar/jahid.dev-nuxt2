@@ -121,7 +121,7 @@
         />
         <nuxt-link
           to="/contact"
-          class="btn btn-primary flex justify-center sm:ml-4 border border-primary-400 py-2 shadow dark:shadow mb-5 sm:mb-0"
+          class="btn btn-primary flex justify-center sm:ml-4 border border-primary-400 py-2 shadow dark:shadow mb-5 sm:mb-0 active:text-primary-50 text-primary-50"
           >Contact</nuxt-link
         >
       </nav>

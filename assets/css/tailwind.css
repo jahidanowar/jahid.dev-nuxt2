@@ -25,7 +25,7 @@
     @apply text-lg sm:text-xl font-bold tracking-tight;
   }
   .container {
-    @apply md:max-w-6xl lg:max-w-7xl;
+    @apply md:max-w-5xl lg:max-w-6xl;
   }
   .section {
     @apply py-12;
@@ -68,7 +68,7 @@
     @apply fill-[#0ea5e9];
   }
 }
-nav .nuxt-link-active {
+nav .nuxt-link-active:not(.btn) {
   @apply text-primary-500;
 }
 .content > :first-child {
@@ -135,8 +135,9 @@ nav .nuxt-link-active {
 }
 
 .btn-primary {
-  @apply bg-primary-500 hover:bg-primary-600 border border-primary-400  text-primary-50;
+  @apply bg-primary-500 hover:bg-primary-600 border border-primary-400  text-primary-50 hover:text-primary-50;
 }
+
 .btn-success {
   @apply bg-green-500 hover:bg-green-600 border border-green-400  text-green-50;
 }
