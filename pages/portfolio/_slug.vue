@@ -1,7 +1,7 @@
 <template>
   <div class="portfolio-single">
     <div class="container mx-auto py-10 sm:py-32 px-6 grid grid-cols-10 gap-10">
-      <div class="col-span-5 relative">
+      <div class="col-span-10 sm:col-span-5 relative">
         <div class="sticky top-20">
           <div
             class="w-full rounded-2xl border-[10px] relative h-[400px] overflow-hidden border-gray-50 dark:border-gray-700 shadow-2xl"
@@ -15,7 +15,7 @@
         </div>
       </div>
       <!-- Project Info  -->
-      <div class="col-span-5">
+      <div class="col-span-10 sm:col-span-5">
         <div class="p-10">
           <h1>{{ project.title.rendered }}</h1>
           <p class="mt-5">{{ project.excerpt.rendered }}</p>
