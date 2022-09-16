@@ -8,7 +8,7 @@
         <p class="mb-8">
           Tell us about your project or an idea, I would love to hear that.
         </p>
-        <nuxt-link to="/contact" class="btn btn-primary">Contact Me</nuxt-link>
+        <nuxt-link to="/contact/" class="btn btn-primary">Contact Me</nuxt-link>
       </div>
     </div>
   </div>
