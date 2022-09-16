@@ -53,7 +53,7 @@
         class="px-2 transform sm:flex sm:bg-transparent transition-all duration-100 ease-linear"
       >
         <nuxt-link
-          to="/service"
+          to="/service/"
           class="p-2 rounded-lg hover:text-primary-400 sm:mt-0 sm:ml-2 w-full sm:w-auto inline-flex sm:flex-row items-center flex-row-reverse"
         >
           <svg
@@ -73,7 +73,7 @@
           Service
         </nuxt-link>
         <nuxt-link
-          to="/portfolio"
+          to="/portfolio/"
           class="p-2 rounded-lg hover:text-primary-400 sm:mt-0 sm:ml-2 w-full sm:w-auto inline-flex sm:flex-row items-center flex-row-reverse"
         >
           <svg
@@ -93,7 +93,7 @@
           Portfolio</nuxt-link
         >
         <nuxt-link
-          to="/blog"
+          to="/blog/"
           class="p-2 rounded-lg hover:text-primary-400 sm:mt-0 sm:ml-2 w-full sm:w-auto inline-flex sm:flex-row items-center flex-row-reverse"
         >
           <svg
