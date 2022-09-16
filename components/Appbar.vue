@@ -120,7 +120,7 @@
           class="mb-2 sm:my-0 sm:ml-4 py-2 w-full text-right flex justify-end"
         />
         <nuxt-link
-          to="/contact"
+          to="/contact/"
           class="btn btn-primary flex justify-center sm:ml-4 border border-primary-400 py-2 shadow dark:shadow mb-5 sm:mb-0 active:text-primary-50 text-primary-50"
           >Contact</nuxt-link
         >

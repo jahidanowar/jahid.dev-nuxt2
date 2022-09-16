@@ -136,6 +136,7 @@ export default {
     // options
     hostname: process.env.DOMAIN,
     gzip: true,
+    trailingSlash: true,
     defaults: {
       changefreq: 'daily',
       priority: 1,
@@ -167,6 +168,10 @@ export default {
    ** See https://nuxtjs.org/api/configuration-build/
    */
   build: {},
+
+  router: {
+    trailingSlash: true
+  },
 
   generate: {
     fallback: true

@@ -41,7 +41,7 @@
           >👨‍💻 blog</nuxt-link
         >
         <nuxt-link
-          to="/contact"
+          to="/contact/"
           class="flex py-3 bg-white dark:bg-gray-700 dark:border-gray-600 rounded-lg border transform hover:-translate-y-1 transition-transform duration-300 justify-center mb-5"
           >🤙 contact
         </nuxt-link>

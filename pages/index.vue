@@ -25,10 +25,10 @@
           build and launch their next progressive web app.
         </p>
         <div class="flex my-6 justify-center">
-          <nuxt-link to="/contact" class="btn btn-primary"
+          <nuxt-link to="/contact/" class="btn btn-primary"
             >Get in touch</nuxt-link
           >
-          <nuxt-link to="/blog" class="ml-3 btn btn-secondary"
+          <nuxt-link to="/blog/" class="ml-3 btn btn-secondary"
             >Check out the blog</nuxt-link
           >
         </div>
@@ -228,7 +228,7 @@
             </p>
           </div>
           <div class="self-center justify-self-end mt-4">
-            <nuxt-link to="/contact" class="btn btn-primary"
+            <nuxt-link to="/contact/" class="btn btn-primary"
               >Get in touch!</nuxt-link
             >
           </div>
