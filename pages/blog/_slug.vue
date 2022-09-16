@@ -150,6 +150,7 @@ export default {
     if (posts.length <= 0) {
       return error({ statusCode: 404, message: 'Page not found' })
     }
+    console.log(posts[0])
     return { posts }
   },
   head() {
@@ -210,7 +211,7 @@ pre[class*='language-'] {
   background: #1a202c !important;
 }
 .content img {
-  width: 100%;
+  max-width: 100%;
   border-radius: 0.5rem;
   box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.1);
   margin: 2rem auto;
