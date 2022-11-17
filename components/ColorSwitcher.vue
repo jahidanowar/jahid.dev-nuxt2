@@ -50,10 +50,10 @@ onMounted(() => {
         ></path>
       </svg>
       <ul
-        class="scale-0 group-hover:scale-100 transition-all duration-100 ease-in-out absolute z-50 bottom-full sm:bottom-auto right-0 sm:top-10 sm:-right-10 w-36 cursor-pointer rounded-lg p-4 bg-white dark:bg-gray-800 border dark:border-gray-600 sm:shadow-lg"
+        class="scale-0 group-hover:scale-100 transition-all duration-300 ease-in-out absolute z-50 bottom-full sm:bottom-auto right-0 sm:top-10 sm:-right-10 w-36 cursor-pointer rounded-lg p-4 bg-white dark:bg-gray-800 border dark:border-gray-600 sm:shadow-lg"
       >
         <li
-          class="flex items-center w-full h-ful mb-4"
+          class="flex items-center w-full h-ful hover:bg-gray-100 hover:dark:bg-gray-700 p-2 rounded-lg transition-all duration-300 ease-in-out"
           :class="{ 'text-primary-500': colorMode.preference === 'light' }"
           @click="colorMode.preference = 'light'"
         >
@@ -74,7 +74,7 @@ onMounted(() => {
           Light
         </li>
         <li
-          class="flex items-center w-full h-full mb-4"
+          class="flex items-center w-full h-full hover:bg-gray-100 hover:dark:bg-gray-700 p-2 rounded-lg transition-all duration-300 ease-in-out"
           :class="{ 'text-primary-500': colorMode.preference === 'dark' }"
           @click="colorMode.preference = 'dark'"
         >
@@ -95,7 +95,7 @@ onMounted(() => {
           Dark
         </li>
         <li
-          class="flex items-center w-full h-full"
+          class="flex items-center w-full h-full hover:bg-gray-100 hover:dark:bg-gray-700 p-2 rounded-lg transition-all duration-300 ease-in-out"
           :class="{ 'text-primary-500': colorMode.preference === 'system' }"
           @click="colorMode.preference = 'system'"
         >
