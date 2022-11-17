@@ -39,4 +39,9 @@ export default defineNuxtConfig({
   image: {
     // Options
   },
+  runtimeConfig: {
+    public: {
+      apiBaseUrl: process.env.BASE_URL,
+    },
+  },
 });

@@ -5,5 +5,6 @@
     <!-- Main Area  -->
     <NuxtPage />
     <!-- ./  Main Area  -->
+    <AppFooter />
   </div>
 </template>

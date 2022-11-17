@@ -1,6 +1,8 @@
 <script lang="ts" setup>
+const config = useRuntimeConfig();
+
 const { data: projects } = await useFetch(
-  "https://api.jahid.dev/wp-json/wp/v2/project?_embed=1&page=1&per_page=6"
+  `${config.public.apiBaseUrl}/project?_embed=1&page=1&per_page=6`
 );
 
 const testimonials = reactive([
@@ -253,11 +255,12 @@ const testimonials = reactive([
       </div>
     </div>
     <!-- CTA  -->
-    <div class="px-6 pb-20">
-      <div
-        class="container mx-auto p-12 rounded-2xl border dark:border-gray-600"
-      >
-        <div class="flex flex-wrap align-middle justify-between">
+
+    <div class="section">
+      <div class="container mx-auto p-8">
+        <div
+          class="flex flex-wrap align-middle justify-between rounded-2xl border dark:border-gray-600 p-12"
+        >
           <div class="text">
             <h2 class="text-3xl md:text-4xl">
               Need a next level website for your business?
