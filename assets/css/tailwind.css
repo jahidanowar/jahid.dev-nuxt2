@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-900;
+    @apply text-gray-600 dark:text-gray-300 bg-white dark:bg-gray-900;
   }
 
   h1,
@@ -24,26 +24,55 @@
   h3 {
     @apply text-lg sm:text-xl font-bold tracking-tight;
   }
-  .container {
-    @apply md:max-w-5xl lg:max-w-6xl;
-  }
-  .section {
+
+/* -----------------------
+   Header
+----------------------- */
+.header-wrapper {
+  @apply fixed bottom-0 sm:bottom-auto w-full z-50 transition-all duration-300 border-t md:border-t-0 md:border-b md:py-2 dark:border-gray-700/75 bg-white/75 dark:bg-gray-900/75 backdrop-blur ;
+}
+.header{
+    @apply flex sm:justify-between sm:items-center container mx-auto flex-col-reverse sm:flex-row
+}
+.header-content{
+    @apply flex items-center justify-between px-4 py-3 sm:p-0;
+}
+/* -----------------------
+  Navigation
+----------------------- */
+.navbar{
+  @apply  px-2 transform sm:flex sm:bg-transparent transition-all duration-100 ease-linear pt-5 sm:pt-0;
+}
+.navbar-toggle{
+   @apply block dark:text-gray-100 focus:text-primary-500 focus:outline-none focus:bg-gray-100 dark:focus:bg-gray-800 p-2 rounded-md transition-all duration-300
+}
+.navbar-link{
+    @apply py-[2px] px-4 rounded-lg sm:mt-0 sm:ml-2 w-full sm:w-auto inline-flex sm:flex-row items-center flex-row-reverse hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-300;
+}
+
+.container {
+    @apply mx-auto sm:px-6 lg:px-8 px-4 max-w-7xl;
+    /* @apply md:max-w-5xl lg:max-w-6xl;
+     */
+}
+.section {
     @apply py-12;
     @apply px-6;
-  }
-  .section-heading {
+}
+.section-heading {
     @apply text-center;
     @apply leading-tight;
-  }
-  .section-description {
+}
+.section-description {
     @apply text-center;
-  }
-  .btn {
+}
+.btn {
     @apply rounded-lg;
     @apply px-5;
     @apply py-3;
     @apply leading-tight;
-  }
+    @apply transition-all duration-300
+}
 
   .form-control {
     @apply bg-gray-100 dark:bg-gray-800 rounded-lg border dark:border-gray-700 focus:outline-none focus:border-gray-400 text-base px-4 py-2 w-full;
@@ -135,7 +164,7 @@ nav .nuxt-link-active:not(.btn) {
 }
 
 .btn-primary {
-  @apply bg-primary-500 hover:bg-primary-600 border border-primary-400  text-primary-50 hover:text-primary-50;
+  @apply bg-primary-500 hover:bg-primary-600 border border-primary-400  text-white hover:text-primary-50;
 }
 
 .btn-success {
@@ -145,7 +174,45 @@ nav .nuxt-link-active:not(.btn) {
   @apply bg-red-500 hover:bg-red-600 border border-red-400  text-red-50;
 }
 .btn-secondary {
-  @apply bg-gray-100 hover:bg-gray-200 border dark:border-gray-600 dark:bg-gray-700 dark:hover:bg-gray-800 text-gray-400;
+  @apply bg-gray-100 hover:bg-gray-200 border dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-900 text-gray-500 dark:text-gray-100 ;
+}
+
+/* -----------------------
+  Index Page
+----------------------- */
+.globe-item{
+    @apply blur-3xl;
+}
+
+.globe-item:nth-child(1){
+   animation: blob 5s ease infinite;
+}
+
+.globe-item:nth-child(2){
+   animation: blob 5s ease infinite 1s;
+}
+
+.globe-item:nth-child(3){
+   animation: blob 5s ease infinite 2s;
+}
+
+.globe-item:nth-child(4){
+   animation: blob 5s ease infinite 3s;
+}
+
+@keyframes blob {
+    0% {
+        transform: scale(1) translate(0);
+    }
+    33% {
+        transform: scale(1.1) translate(20px,20px);
+    }
+    66% {
+        transform: scale(.9) translate(-20px,-20px);
+    }
+    100% {
+        transform: scale(1) translate(0);
+    }
 }
 
 /* Reponsive Design */

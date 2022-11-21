@@ -1,47 +1,46 @@
 <template>
   <main class="pt-10">
     <div
-      class="container mx-auto flex flex-col sm:flex-row justify-between items-center md:py-16 relative"
+      class="container mx-auto flex flex-col sm:flex-row justify-between items-center md:py-40 relative w-full"
     >
-      <div class="globe opacity-50 hidden">
+      <div class="globe opacity-30 sm:opacity-50">
         <div
-          class="globe-item globe-item__danger rounded-full absolute z-10 w-60 h-60 bg-gradient-to-tr from-pink-600 to-red-400 blur-2xl"
+          class="globe-item globe-item__danger rounded-full absolute z-10 w-96 h-96 bg-gradient-to-tr from-yellow-500 to-yellow-300 top-[15%] right-0"
         ></div>
         <div
-          class="globe-item globe-item__primary rounded-full absolute z-10 w-96 h-96 bg-gradient-to-tr from-primary-600 to-indigo-400 blur-2xl"
+          class="globe-item globe-item__warning rounded-full absolute z-10 w-96 h-96 bg-gradient-to-tr from-green-500 to-green-300 top-[40%] right-[10%]"
         ></div>
         <div
-          class="globe-item globe-item__warning rounded-full absolute z-10 w-60 h-60 bg-gradient-to-tr from-green-600 to-primary-300 blur-2xl"
+          class="globe-item globe-item__primary rounded-full absolute z-10 w-[400px] h-[400px] bg-gradient-to-tr from-primary-400 to-blue-600 top-[20%] right-[20%]"
+        ></div>
+        <div
+          class="globe-item globe-item__primary rounded-full absolute z-10 w-[300px] h-[300px] bg-gradient-to-tr from-red-300 to-red-500 top-[50%] right-[0%]"
         ></div>
       </div>
-      <div class="w-11/12 text-center md:px-20 mx-auto md:w-8/12 z-20">
-        <h2 class="text-3xl md:text-5xl">
-          Building
-          <span class="text-primary-500">Progressive Web Apps</span> for
-          businesses. <br class="md:hidden" />One at a Time.
-        </h2>
-        <p class="leading-relaxed sm:text-xl mt-6 md:mx-5">
-          Hey this is Jahid, A Full stack developer I help businesses like yours
-          build and launch their next progressive web app.
+      <div
+        class="mx-auto w-full md:w-8/12 z-20 flex flex-col gap-y-4 items-center sm:items-start"
+      >
+        <h1 class="text-4xl md:text-6xl text-center sm:text-left">
+          Architecting the next generation of web / mobile applications
+        </h1>
+        <p
+          class="leading-relaxed sm:text-lg mt-6 w-9/12 sm:w-6/12 text-center sm:text-left"
+        >
+          Hey this is Jahid, A Full stack developer and Indie Hacker. I love
+          building cool things for the web and mobile.
         </p>
-        <div class="flex my-6 justify-center">
-          <nuxt-link to="/contact/" class="btn btn-primary"
-            >Get in touch</nuxt-link
+        <div class="flex my-6">
+          <NuxtLink to="/blog/" class="btn btn-primary"
+            >Check out my blog</NuxtLink
           >
-          <nuxt-link to="/blog/" class="ml-3 btn btn-secondary"
-            >Check out the blog</nuxt-link
+          <NuxtLink to="/contact/" class="ml-3 btn btn-secondary"
+            >Get in touch</NuxtLink
           >
         </div>
       </div>
-      <!-- <div
-        class="w-full md:w-1/2 self-center align-bottom feature-image-box mt-5"
-      >
-        <nuxt-img
-          src="/img/jahid-anowar.png"
-          alt="Jahid Anowar"
-          class="w-full feature-image"
-        />
-      </div> -->
+      <div
+        class="w-full md:w-4/12 self-center align-bottom feature-image-box mt-5"
+      ></div>
     </div>
     <!-- Experience Section -->
     <div class="section border-t border-b dark:border-gray-600">
