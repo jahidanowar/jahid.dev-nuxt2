@@ -170,7 +170,7 @@ export default {
   build: {},
 
   router: {
-    trailingSlash: true
+    // trailingSlash: true
   },
 
   generate: {

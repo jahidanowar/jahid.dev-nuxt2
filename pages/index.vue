@@ -1,33 +1,23 @@
 <template>
-  <main class="pt-10">
+  <main class="pt-10 overflow-hidden sm:overflow-auto">
     <div
-      class="container mx-auto flex flex-col sm:flex-row justify-between items-center md:py-40 relative w-full"
+      class="container mx-auto flex flex-col sm:flex-row justify-between items-start md:py-40 relative w-full"
     >
-      <div class="globe opacity-30 sm:opacity-50">
-        <div
-          class="globe-item globe-item__danger rounded-full absolute z-10 w-96 h-96 bg-gradient-to-tr from-yellow-500 to-yellow-300 top-[15%] right-0"
-        ></div>
-        <div
-          class="globe-item globe-item__warning rounded-full absolute z-10 w-96 h-96 bg-gradient-to-tr from-green-500 to-green-300 top-[40%] right-[10%]"
-        ></div>
-        <div
-          class="globe-item globe-item__primary rounded-full absolute z-10 w-[400px] h-[400px] bg-gradient-to-tr from-primary-400 to-blue-600 top-[20%] right-[20%]"
-        ></div>
-        <div
-          class="globe-item globe-item__primary rounded-full absolute z-10 w-[300px] h-[300px] bg-gradient-to-tr from-red-300 to-red-500 top-[50%] right-[0%]"
-        ></div>
-      </div>
       <div
-        class="mx-auto w-full md:w-8/12 z-20 flex flex-col gap-y-4 items-center sm:items-start"
+        class="mx-auto w-full md:w-7/12 z-20 flex flex-col gap-y-4 items-center sm:items-start"
       >
         <h1 class="text-4xl md:text-6xl text-center sm:text-left">
-          Architecting the next generation of web / mobile applications
+          Architecting the next generation of
+          <span class="underline text-primary-500 dark:text-primary-400">{{
+            tickerText
+          }}</span>
+          applications
         </h1>
         <p
           class="leading-relaxed sm:text-lg mt-6 w-9/12 sm:w-6/12 text-center sm:text-left"
         >
           Hey this is Jahid, A Full stack developer and Indie Hacker. I love
-          building cool things for the web and mobile.
+          building cool things and making videos about it.
         </p>
         <div class="flex my-6">
           <NuxtLink to="/blog/" class="btn btn-primary"
@@ -38,9 +28,63 @@
           >
         </div>
       </div>
-      <div
-        class="w-full md:w-4/12 self-center align-bottom feature-image-box mt-5"
-      ></div>
+      <!-- Video Content  -->
+      <div class="w-full md:w-5/12 feature-image-box mt-5 relative">
+        <div class="globe opacity-30 sm:opacity-50">
+          <div
+            class="globe-item globe-item__primary rounded-full absolute z-10 w-[400px] h-[400px] bg-gradient-to-tr from-primary-400 to-blue-600"
+          ></div>
+          <div
+            class="globe-item globe-item__warning rounded-full absolute z-10 w-96 h-96 bg-gradient-to-tr from-yellow-500 to-yellow-300"
+          ></div>
+          <div
+            class="globe-item globe-item__success rounded-full absolute z-10 w-96 h-96 bg-gradient-to-tr from-green-500 to-green-300"
+          ></div>
+
+          <div
+            class="globe-item globe-item__danger rounded-full absolute z-10 w-[300px] h-[300px] bg-gradient-to-tr from-red-300 to-red-500"
+          ></div>
+        </div>
+
+        <div
+          class="w-full min:h-[300px] relative rounded-2xl border-8 border-white border-opacity-30 dark:border-opacity-70 dark:border-gray-800 bg-white dark:bg-gray-900 backdrop-blur bg-opacity-20 dark:bg-opacity-20 shadow-2xl dark:shadow-2xl overflow-hidden group hover:cursor-pointer mb-12"
+          @click="handleVideoClick"
+        >
+          <div class="h-full w-full relative">
+            <nuxt-img
+              src="https://res.cloudinary.com/jahiddev/image/upload/v1669872286/Deploy_Nuxt_3_App_on_Digital_Ocean_App_Platform_iczdfm.webp"
+              class="w-full h-full"
+            ></nuxt-img>
+            <div
+              class="overlay absolute top-0 right-0 bottom-0 left-0 bg-gray-900 grid place-items-center text-white bg-opacity-40 group-hover:bg-opacity-80 duration-300 backdrop-blur-[0px] group-hover:backdrop-blur-[5px] z-10"
+            >
+              <div class="flex flex-col items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="60"
+                  height="60"
+                  fill="currentColor"
+                  class="bi bi-youtube transition-all duration-300 translate-y-5 group-hover:translate-y-0"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"
+                  />
+                </svg>
+                <a
+                  class="text-white -translate-y-5 scale-0 group-hover:scale-100 group-hover:-translate-y-0 transition-all duration-300"
+                  >it's free 🔥</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="p-4 w-full bg-white dark:bg-gray-900 text-center flex justify-center bg-opacity-60 z-20"
+          >
+            <a href=""><h3>Explore youtube videos</h3></a>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- Experience Section -->
     <div class="section border-t border-b dark:border-gray-600">
@@ -258,6 +302,7 @@ export default {
   /* eslint-enable */
   data() {
     return {
+      tickerText: 'web',
       testimonials: [
         {
           review:
@@ -301,6 +346,17 @@ export default {
         }
       ]
     }
+  },
+  mounted() {
+    const texts = ['web', 'mobile']
+    setInterval(() => {
+      this.tickerText = texts[Math.floor(Math.random() * texts.length)]
+    }, 3000)
+  },
+  methods: {
+    handleVideoClick() {
+      this.$router.push('/go/yt/')
+    }
   }
 }
 </script>
@@ -318,15 +374,19 @@ export default {
   background-repeat: no-repeat;
 }
 .globe-item__primary {
-  left: 35%;
-  top: 6%;
+  top: -15%;
+  left: -10%;
+}
+.globe-item__success {
+  left: 10%;
+  bottom: -35%;
 }
 .globe-item__warning {
-  left: 55%;
-  top: 12%;
+  right: -15%;
+  bottom: -10%;
 }
 .globe-item__danger {
-  left: 25%;
-  top: 10%;
+  right: -10%;
+  top: -15%;
 }
 </style>

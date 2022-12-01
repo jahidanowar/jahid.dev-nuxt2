@@ -14,13 +14,11 @@
       </header>
       <div class="links my-10">
         <a
-          href="https://jahid.dev/go/yt"
+          href="https://jahid.dev/go/yt/"
           target="_blank"
           class="py-4 w-full bg-primary-500 border border-primary-200 dark:border-primary-400 mb-5 rounded-lg text-white text-center transform hover:-translate-y-1 transition-transform duration-300 relative flex justify-center"
         >
-          <span class="font-medium"
-            >Explore premium coding shorts for free</span
-          >
+          <span class="font-medium">Explore Youtube Videos</span>
           <span class="flex absolute h-3 w-3 top-0 right-0 -mt-1 -mr-1">
             <span
               class="animate-ping absolute inline-flex h-full w-full rounded-full bg-gray-600 dark:bg-gray-300 opacity-75"
@@ -31,12 +29,7 @@
           </span>
         </a>
         <nuxt-link
-          to="/"
-          class="flex py-3 bg-white dark:bg-gray-700 dark:border-gray-600 rounded-lg border transform hover:-translate-y-1 transition-transform duration-300 justify-center mb-5"
-          >👉 website</nuxt-link
-        >
-        <nuxt-link
-          to="/blog"
+          to="/blog/"
           class="flex py-3 bg-white dark:bg-gray-700 dark:border-gray-600 rounded-lg border transform hover:-translate-y-1 transition-transform duration-300 justify-center mb-5"
           >👨‍💻 blog</nuxt-link
         >
@@ -45,11 +38,6 @@
           class="flex py-3 bg-white dark:bg-gray-700 dark:border-gray-600 rounded-lg border transform hover:-translate-y-1 transition-transform duration-300 justify-center mb-5"
           >🤙 contact
         </nuxt-link>
-        <a
-          href="https://foxflue.com"
-          class="flex py-3 bg-white dark:bg-gray-700 dark:border-gray-600 rounded-lg border transform hover:-translate-y-1 transition-transform duration-300 justify-center mb-5"
-          >🦊 company
-        </a>
       </div>
       <div class="social mb-10">
         <social-buttons class="justify-center">
