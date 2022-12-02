@@ -1,7 +1,7 @@
 <template>
   <main class="pt-10 overflow-hidden sm:overflow-auto">
     <div
-      class="container mx-auto flex flex-col sm:flex-row justify-between items-start md:py-40 relative w-full"
+      class="container mx-auto flex flex-col sm:flex-row justify-between items-center md:h-screen relative w-full"
     >
       <div
         class="mx-auto w-full md:w-7/12 z-20 flex flex-col gap-y-4 items-center sm:items-start"
