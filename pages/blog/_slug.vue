@@ -133,6 +133,7 @@
       </div>
       <!-- ./ Post Content -->
     </article>
+
     <comments />
   </div>
 </template>
@@ -142,6 +143,7 @@
 import Prism from '~/plugins/prism'
 import SocialButtons from '~/components/SocialButtons'
 import Comments from '../../components/Comments.vue'
+
 export default {
   components: { SocialButtons, Comments },
 
@@ -150,7 +152,6 @@ export default {
     if (posts.length <= 0) {
       return error({ statusCode: 404, message: 'Page not found' })
     }
-    console.log(posts[0])
     return { posts }
   },
   head() {
@@ -206,10 +207,6 @@ export default {
 </script>
 
 <style>
-:not(pre) > code[class*='language-'],
-pre[class*='language-'] {
-  background: #1a202c !important;
-}
 .content img {
   max-width: 100%;
   border-radius: 0.5rem;

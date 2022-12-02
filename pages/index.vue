@@ -257,23 +257,23 @@
       </div>
     </div>
     <!-- CTA  -->
-    <div class="px-6 pb-20">
-      <div
-        class="container mx-auto p-12 rounded-2xl border dark:border-gray-600"
-      >
-        <div class="flex flex-wrap align-middle justify-between">
-          <div class="text">
-            <h2 class="text-3xl md:text-4xl">
-              Need a next level website for your business?
-            </h2>
-            <p class="md:text-xl my-4 md:my-0">
-              Tell me about your product or idea. I'd love to hear it.
-            </p>
-          </div>
-          <div class="self-center justify-self-end mt-4">
-            <nuxt-link to="/contact/" class="btn btn-primary"
-              >Get in touch!</nuxt-link
-            >
+    <div class="section px-6 pb-20">
+      <div class="container mx-auto">
+        <div class="p-12 rounded-2xl border dark:border-gray-600">
+          <div class="flex flex-wrap align-middle justify-between">
+            <div class="text">
+              <h2 class="text-3xl md:text-4xl">
+                Need a next level website for your business?
+              </h2>
+              <p class="md:text-xl my-4 md:my-0">
+                Tell me about your product or idea. I'd love to hear it.
+              </p>
+            </div>
+            <div class="self-center justify-self-end mt-4">
+              <nuxt-link to="/contact/" class="btn btn-primary"
+                >Get in touch!</nuxt-link
+              >
+            </div>
           </div>
         </div>
       </div>
