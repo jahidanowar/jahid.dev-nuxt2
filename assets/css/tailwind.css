@@ -51,9 +51,7 @@
 }
 
 .container {
-    @apply mx-auto sm:px-6 lg:px-8 px-4 max-w-7xl;
-    /* @apply md:max-w-5xl lg:max-w-6xl;
-     */
+    @apply mx-auto px-2 sm:px-6 lg:px-8  sm:max-w-7xl;
 }
 .section {
     @apply py-12;

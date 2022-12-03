@@ -1,8 +1,9 @@
 <template>
   <main class="pt-10 overflow-hidden sm:overflow-auto">
     <div
-      class="container mx-auto flex flex-col sm:flex-row justify-between items-center md:h-screen relative w-full"
+      class="container mx-auto flex flex-col sm:flex-row justify-between items-center md:h-screen relative w-full px-4"
     >
+      <!-- Text  -->
       <div
         class="mx-auto w-full md:w-7/12 z-20 flex flex-col gap-y-4 items-center sm:items-start"
       >
@@ -14,12 +15,12 @@
           applications
         </h1>
         <p
-          class="leading-relaxed sm:text-lg mt-6 w-9/12 sm:w-6/12 text-center sm:text-left"
+          class="leading-relaxed sm:text-lg mt-6 w-11/12 sm:w-7/12 text-center sm:text-left"
         >
           Hey this is Jahid, A Full stack developer and Indie Hacker. I love
           building cool things and making videos about it.
         </p>
-        <div class="flex my-6">
+        <div class="flex my-6 flex-wrap justify-center gap-2">
           <NuxtLink to="/blog/" class="btn btn-primary"
             >Check out my blog</NuxtLink
           >
@@ -81,7 +82,7 @@
           <div
             class="p-4 w-full bg-white dark:bg-gray-900 text-center flex justify-center bg-opacity-60 z-20"
           >
-            <a href=""><h3>Explore youtube videos</h3></a>
+            <h3>Explore youtube videos</h3>
           </div>
         </div>
       </div>

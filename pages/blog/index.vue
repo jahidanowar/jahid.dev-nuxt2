@@ -7,7 +7,7 @@
     ></page-hero>
     <div class="section">
       <div class="container mx-auto">
-        <div class="flex flex-row flex-wrap">
+        <div class="flex flex-wrap">
           <div class="w-full">
             <div v-if="posts" class="flex flex-wrap">
               <post-card

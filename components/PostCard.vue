@@ -1,5 +1,5 @@
 <template>
-  <article class="p-4 group">
+  <article class="group py-4 sm:p-4">
     <nuxt-link
       :to="{ name: 'blog-slug', params: { slug: post.slug } }"
       class="block h-full rounded-3xl overflow-hidden border dark:border-gray-600 transform group-hover:-translate-y-2 duration-300 p-5"
@@ -28,7 +28,7 @@
               ></path></svg
             >{{ post.date | formatDate }}</span
           >
-          <span class="inline-flex">
+          <span class="inline-flex flex-wrap">
             <svg
               class="w-4 h-4 mr-2"
               fill="none"
@@ -49,10 +49,13 @@
           </span>
         </p>
       </h2>
-      <h1 class="title-font text-lg mb-3">
+      <h3 class="title-font text-lg mb-3">
         {{ post.title.rendered }}
-      </h1>
-      <span class="leading-relaxed mb-3" v-html="post.excerpt.rendered"></span>
+      </h3>
+      <p
+        class="leading-relaxed mb-3"
+        v-html="post.excerpt.rendered?.slice(0, 100) + '...'"
+      ></p>
       <span
         class="mt-3 text-primary-500 inline-flex items-center md:mb-2 lg:mb-0 group-hover:underline duration-300"
         >Read more
