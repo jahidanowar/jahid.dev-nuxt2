@@ -3,10 +3,9 @@
     <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-10 gap-10">
       <div class="col-span-1 md:col-span-4">
         <logo class="h-16" />
-        <p class="my-4">
+        <p class="my-4 block sm:w-10/12">
           I’m Jahid Anowar, a Full Stack Web Developer, Programming for the last
-          5 years and have built 150+ human-centered websites and apps for
-          businesses.
+          5 years and currently working as Project Manager.
         </p>
         <social-buttons> </social-buttons>
       </div>
@@ -62,10 +61,16 @@
 
     <div class="container mx-auto px-6">
       <hr class="mt-10 mb-6 dark:border-gray-600" />
-      <div class="text-center">
-        &copy; 2020-2022 No Rights Reserved 🤣
-        <br />
-        <nuxt-link to="/">Jahid Anowar</nuxt-link>
+      <div class="">
+        &copy; 2020-2022 No Right is reserved. Who cares 🤷‍♂️? It's
+        <a
+          href="https://github.com/jahidanowar/jahid.dev"
+          target="_blank"
+          rel="nofollow"
+          class="underline"
+          >open source</a
+        >
+        anyway.
       </div>
     </div>
   </footer>

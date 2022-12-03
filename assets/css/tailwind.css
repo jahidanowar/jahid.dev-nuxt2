@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+/*  Page Global Transitions  */
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.5s;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+
+
+
 @layer base {
   body {
     @apply text-gray-600 dark:text-gray-300 bg-white dark:bg-gray-900;
