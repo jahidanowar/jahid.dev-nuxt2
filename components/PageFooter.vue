@@ -58,7 +58,6 @@
         </div>
       </div>
     </div>
-
     <div class="container mx-auto px-6">
       <hr class="mt-10 mb-6 dark:border-gray-600" />
       <div class="">
