@@ -1,20 +1,12 @@
 <template>
-  <div
-    class="fixed bottom-0 sm:bottom-auto w-full z-50 transition-all duration-300 border-t md:border-t-0 md:border-b md:py-2 dark:border-gray-700/75 bg-white/75 dark:bg-gray-900/75 backdrop-blur"
-  >
-    <header
-      class="flex sm:justify-between sm:items-center sm:px-4 container mx-auto flex-col-reverse sm:flex-row"
-    >
+  <div class="header-wrapper">
+    <header class="header">
       <div class="flex items-center justify-between px-4 py-3 sm:p-0">
         <nuxt-link to="/">
           <logo class="h-8"></logo>
         </nuxt-link>
         <div class="sm:hidden">
-          <button
-            type="button"
-            class="block dark:text-gray-100 focus:text-primary-500 focus:outline-none focus:bg-gray-100 dark:focus:bg-gray-800 p-2 rounded-md transition-all duration-300"
-            @click="isOpen = !isOpen"
-          >
+          <button type="button" class="nav-toggle" @click="isOpen = !isOpen">
             <svg
               v-if="isOpen"
               :class="{ '': isOpen }"
@@ -50,12 +42,9 @@
             ? 'visible opacity-100 translate-y-0 h-auto'
             : 'opacity-0 sm:opacity-100 sm:visible sm:h-auto sm:translate-y-0 invisible translate-y-10 h-0'
         "
-        class="px-2 transform sm:flex sm:bg-transparent transition-all duration-100 ease-linear"
+        class="navbar"
       >
-        <nuxt-link
-          to="/service/"
-          class="p-2 rounded-lg hover:text-primary-400 sm:mt-0 sm:ml-2 w-full sm:w-auto inline-flex sm:flex-row items-center flex-row-reverse"
-        >
+        <nuxt-link to="/service/" class="nav-item">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -72,10 +61,7 @@
           </svg>
           Service
         </nuxt-link>
-        <nuxt-link
-          to="/portfolio/"
-          class="p-2 rounded-lg hover:text-primary-400 sm:mt-0 sm:ml-2 w-full sm:w-auto inline-flex sm:flex-row items-center flex-row-reverse"
-        >
+        <nuxt-link to="/portfolio/" class="nav-item">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -92,10 +78,7 @@
           </svg>
           Portfolio</nuxt-link
         >
-        <nuxt-link
-          to="/blog/"
-          class="p-2 rounded-lg hover:text-primary-400 sm:mt-0 sm:ml-2 w-full sm:w-auto inline-flex sm:flex-row items-center flex-row-reverse"
-        >
+        <nuxt-link to="/blog/" class="nav-item">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
