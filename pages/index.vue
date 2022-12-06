@@ -208,7 +208,7 @@
           <nuxt-link
             v-for="(portfolio, i) in projects"
             :key="i"
-            :to="{ name: 'portfolio-slug', params: { slug: portfolio.slug } }"
+            :to="`/portfolio/${portfolio.slug}/`"
           >
             <portfolio-grid-card
               :portfolio="portfolio"

@@ -1,7 +1,7 @@
 <template>
   <article class="group py-4 sm:p-4">
     <nuxt-link
-      :to="{ name: 'blog-slug', params: { slug: post.slug } }"
+      :to="`/blog/${post.slug}/`"
       class="block h-full rounded-3xl overflow-hidden border dark:border-gray-600 transform group-hover:-translate-y-2 duration-300 p-5"
     >
       <img
