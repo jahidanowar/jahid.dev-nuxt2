@@ -132,6 +132,21 @@
         ></div>
       </div>
       <!-- ./ Post Content -->
+
+      <!-- Post Tags -->
+      <div
+        class="p-4 flex gap-3 flex-wrap border-gray-200 dark:border-gray-800 items-center"
+      >
+        <span class="font-medium">#TAGS:</span>
+        <nuxt-link
+          v-for="category in post._embedded['wp:term']['0']"
+          :key="category.id"
+          to="#"
+          class="py-1 px-3 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-800 transition-all duration-300 rounded-lg"
+          >{{ category.name }}</nuxt-link
+        >
+      </div>
+      <!-- ./ Post Tags -->
     </article>
 
     <comments />
