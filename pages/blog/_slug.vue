@@ -3,18 +3,18 @@
     <article
       v-for="post in posts"
       :key="post.id"
-      class="container mx-auto py-16 px-6"
+      class="max-w-3xl mx-auto py-16 px-6 pb-24"
       itemtype="https://schema.org/CreativeWork"
     >
       <!-- Post Heading -->
-      <div class="max-w-4xl mx-auto text-center px-0 md:px-10 sm:mt-14">
-        <h1 class="text-4xl md:text-6xl tracking-tight leading-tight">
+      <div class="text-center px-0 md:px-10 sm:mt-14">
+        <h1 class="text-4xl md:text-5xl leading-normal">
           {{ post.title.rendered }}
         </h1>
       </div>
       <!-- ./ Post Heading -->
       <!-- Post Thumbnails -->
-      <div class="max-w-4xl mx-auto mt-5 md:mt-10">
+      <div class="mt-5 md:mt-10">
         <img
           :src="post._embedded['wp:featuredmedia']['0'].source_url"
           :alt="post.title.rendred"
@@ -23,36 +23,36 @@
       </div>
       <!-- ./ Post Thumbnails -->
       <!-- Post Meta  -->
-      <div class="max-w-4xl mx-auto mt-8 flex flex-wrap px-0 md:px-6">
-        <div class="w-full md:w-1/3 inline-flex items-center">
+      <div class="mt-8 flex flex-wrap px-0 md:px-6">
+        <div class="w-full md:w-2/5 inline-flex">
           <img
             :src="post._embedded['author']['0'].avatar_urls['96']"
             :alt="post._embedded['author']['0'].name"
-            class="rounded-full border"
+            class="rounded-full border w-16 h-16"
           />
           <div class="ml-4">
-            <h4
+            <p
               class="text-xl font-medium"
               itemprop="author"
               itemtype="http://schema.org/Person"
             >
               {{ post._embedded['author']['0'].name }}
-            </h4>
+            </p>
             <p>
               <time
-                class="entry-date published"
+                class="entry-date published text-sm"
                 :datetime="post.date"
                 itemprop="datePublished"
                 >{{ post.date | formatDate }}</time
               >
             </p>
-            <p>{{ readTime }} Minutes Read</p>
+            <p class="text-sm">{{ readTime }} Minutes Read</p>
           </div>
         </div>
         <div
-          class="w-full md:w-2/3 mt-4 md:mt-0 inline-flex items-center justify-end"
+          class="w-full md:w-3/5 mt-4 md:mt-0 inline-flex items-center justify-end"
         >
-          <div class="font-medium" v-html="post.excerpt.rendered"></div>
+          <div class="font-light italic" v-html="post.excerpt.rendered"></div>
         </div>
       </div>
       <!-- ./ Post Meta -->
@@ -124,7 +124,7 @@
       </div>
       <!-- ./ Social Share  -->
       <!-- Post Content -->
-      <div class="max-w-4xl mx-auto py-6 px-0 md:py-8 md:px-8">
+      <div class="py-6 px-0 md:py-8 md:px-8 leading-relaxed">
         <div
           v-if="post.content"
           class="mt-5 content"
