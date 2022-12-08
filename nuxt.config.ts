@@ -24,15 +24,14 @@ export default defineNuxtConfig({
           href: "https://fonts.googleapis.com/css2?family=Inter&family=Space+Grotesk:wght@500&display=swap",
         },
       ],
-      script: [
-        // {
-        //   src: '//code.tidio.co/udunhgztvraa9n4fvkphtc4sqxbzugxt.js',
-        //   defer: true
-        // }
-      ],
     },
   },
-  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/color-mode", "@nuxt/image-edge"],
+  modules: [
+    "@nuxtjs/tailwindcss",
+    "@nuxtjs/color-mode",
+    "@nuxt/image-edge",
+    "@nuxt/content",
+  ],
   colorMode: {
     classSuffix: "",
   },
@@ -44,4 +43,5 @@ export default defineNuxtConfig({
       apiBaseUrl: process.env.BASE_URL,
     },
   },
+  content: {},
 });
