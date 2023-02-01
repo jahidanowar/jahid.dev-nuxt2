@@ -33,7 +33,7 @@ export default {
   },
   mounted() {
     // window.location.replace(this.links[0]._ta_destination_url)
-    window.location = 'https://discord.gg/5Bq8Z82d'
+    window.location = 'https://discord.gg/sG8TYgxxK2'
   }
 }
 </script>
